@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Une année avec la Règle de saint Benoît : trois lectures intégrales, une étude et une méditation quotidienne.">
+  <title>Une année avec saint Benoît — Frère du Seuil</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .rule-hero {
+      background: linear-gradient(rgba(20,42,34,.91),rgba(20,42,34,.91));
+      color: #f4f0e6;
+      text-align: center;
+      padding: 85px 20px;
+    }
+    .rule-hero h1 {
+      font-size: clamp(42px,8vw,70px);
+      font-weight: 400;
+      margin: 15px 0;
+    }
+    .rule-hero .subtitle {
+      font-style: italic;
+      font-size: 22px;
+    }
+    .rule-content {
+      max-width: 950px;
+      margin: auto;
+      padding: 55px 22px;
+    }
+    .rule-intro {
+      max-width: 720px;
+      margin: auto;
+      text-align: center;
+    }
+    .cycle-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 16px;
+      margin: 35px 0;
+    }
+    .cycle {
+      padding: 24px 18px;
+      background: #e9e1d1;
+      border: 1px solid #d5cbb7;
+      text-align: center;
+    }
+    .cycle h3 {
+      color: #203b30;
+      font-size: 25px;
+      font-weight: 500;
+    }
+    .cycle p {
+      font-size: 16px;
+      color: #777365;
+    }
+    .day-card {
+      margin-top: 35px;
+      padding: 30px;
+      background: #f4f0e6;
+      border: 1px solid #d5cbb7;
+    }
+    .day-card h2 {
+      color: #203b30;
+      font-size: 32px;
+      font-weight: 400;
+    }
+    .day-card h3 {
+      color: #203b30;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .day-card p {
+      color: #555247;
+    }
+    .reading-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: #203b30;
+      font-family: Arial,sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .section-title {
+      margin-top: 55px;
+      color: #203b30;
+      font-size: 34px;
+      font-weight: 400;
+      text-align: center;
+    }
+    .method {
+      padding: 25px;
+      margin-top: 18px;
+      border-left: 3px solid #ad9564;
+      background: #f4f0e6;
+    }
+    .method h3 {
+      color: #203b30;
+      font-size: 23px;
+      font-weight: 500;
+      margin: 0 0 8px;
+    }
+    .method p {
+      margin: 0;
+      color: #777365;
+      font-size: 18px;
+    }
+    .calendar-link {
+      display: block;
+      max-width: 400px;
+      margin: 35px auto;
+      padding: 15px;
+      text-align: center;
+      color: #f4f0e6;
+      background: #203b30;
+      text-decoration: none;
+      font-family: Arial,sans-serif;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    .notice {
+      padding: 20px;
+      margin-top: 25px;
+      background: #e9e1d1;
+      color: #625e52;
+      font-size: 16px;
+    }
+    @media(max-width:650px) {
+      .cycle-grid { grid-template-columns: 1fr; }
+      .rule-content { padding: 40px 18px; }
+      .day-card { padding: 22px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <a class="brand" href="index.html">FRÈRE DU SEUIL</a>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="#cycles">Les trois lectures</a>
+    <a href="#jour">Lecture du jour</a>
+    <a href="#methode">La méthode</a>
+  </nav>
+</header>
+
+<section class="rule-hero">
+  <p class="eyebrow">ÉCOLE DU SERVICE DU SEIGNEUR</p>
+  <h1>Une année avec<br>saint Benoît</h1>
+  <div class="ornament">✦</div>
+  <p class="subtitle">
+    Trois lectures de la Règle.<br>
+    Un chemin d'écoute, d'étude et de conversion.
+  </p>
+</section>
+
+<main class="rule-content">
+
+  <section class="rule-intro">
+    <p class="eyebrow">LE CHEMIN PROPOSÉ</p>
+    <h2>Revenir chaque jour à la sagesse de Benoît</h2>
+    <p>
+      La Règle de saint Benoît est une école pour apprendre
+      à chercher Dieu, à écouter sa Parole et à ordonner
+      toute sa vie à son amour.
+    </p>
+    <p>
+      Trois fois dans l'année, nous parcourons intégralement
+      la Règle. Le même texte revient, mais notre regard,
+      notre intelligence et notre expérience peuvent grandir.
+    </p>
+  </section>
+
+  <section id="cycles">
+    <h2 class="section-title">Les trois lectures annuelles</h2>
+
+    <div class="cycle-grid">
+      <article class="cycle">
+        <p>PREMIÈRE LECTURE</p>
+        <h3>Écouter</h3>
+        <strong>1er janvier</strong>
+        <p>Recevoir la Règle et découvrir son enseignement.</p>
+      </article>
+
+      <article class="cycle">
+        <p>DEUXIÈME LECTURE</p>
+        <h3>Comprendre</h3>
+        <strong>2 mai</strong>
+        <p>Approfondir le texte, son histoire et sa sagesse.</p>
+      </article>
+
+      <article class="cycle">
+        <p>TROISIÈME LECTURE</p>
+        <h3>Intérioriser</h3>
+        <strong>1er septembre</strong>
+        <p>Accueillir la Règle dans la vie quotidienne.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="jour">
+    <h2 class="section-title">La lecture quotidienne</h2>
+
+    <article class="day-card">
+      <p class="eyebrow">5 NOVEMBRE 2026 — TROISIÈME LECTURE</p>
+      <h2>Jour de lecture</h2>
+      <h3>RB 31, 1-2</h3>
+      <p>
+        Les qualités que doit avoir le cellérier du monastère.
+        Saint Benoît décrit celui qui reçoit la responsabilité
+        des biens matériels de la communauté et doit exercer
+        cette charge avec sagesse, justice et sollicitude.
+      </p>
+      <a class="reading-link"
+         href="https://la.regle.org/">
+        Lire le texte de la Règle →
+      </a>
+
+      <div class="notice">
+        <strong>Commentaire de Dom Delatte</strong>
+        <p>
+          Cet espace accueillera le commentaire correspondant,
+          ajouté manuellement.
+        </p>
+        <strong>Étude et méditation</strong>
+        <p>Cette méditation sera préparée progressivement.</p>
+        <strong>Question du jour</strong>
+        <p>Comment est-ce que je prends soin des biens et des responsabilités qui me sont confiés ?</p>
+      </div>
+    </article>
+  </section>
+
+  <section id="methode">
+    <h2 class="section-title">Une méthode de lecture</h2>
+
+    <div class="method">
+      <h3>1. Lire</h3>
+      <p>Recevoir attentivement le passage quotidien de la Règle.</p>
+    </div>
+
+    <div class="method">
+      <h3>2. Étudier</h3>
+      <p>Comprendre le contexte historique, les mots et la pensée de saint Benoît.</p>
+    </div>
+
+    <div class="method">
+      <h3>3. Approfondir avec Dom Delatte</h3>
+      <p>Lire son commentaire, ajouté manuellement à chaque journée.</p>
+    </div>
+
+    <div class="method">
+      <h3>4. Méditer</h3>
+      <p>Accueillir l'enseignement dans la prière et le silence.</p>
+    </div>
+
+    <div class="method">
+      <h3>5. Vivre</h3>
+      <p>Discerner comment cet enseignement peut éclairer la vie familiale, professionnelle et chrétienne.</p>
+    </div>
+  </section>
+
+  <a class="calendar-link"
+     href="https://la.regle.org/">
+    CONSULTER LE CALENDRIER DE LA RÈGLE
+  </a>
+
+  <p class="notice">
+    Ce parcours est une démarche personnelle de lecture et
+    de méditation chrétienne. Il ne remplace ni la vie de
+    l'Église, ni l'accompagnement spirituel.
+  </p>
+
+</main>
+
+<footer>
+  <p>FRÈRE DU SEUIL</p>
+  <p>Silence — Fidélité — Simplicité</p>
+  <a href="index.html">Retour à l'accueil</a>
+</footer>
+
+</body>
+</html>
