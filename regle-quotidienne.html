@@ -218,25 +218,51 @@ footer a {
 
 
 <script>
+
 const date = new Date();
 
 const lectures = {
   "2026-11-05": {
     reference: "Chapitre 31 — Le cellérier du monastère, § 152–153"
   },
+
   "2026-11-06": {
     reference: "Chapitre 31 — Le cellérier du monastère, § 154–156"
   },
+
   "2026-11-07": {
     reference: "Chapitre 31 — Le cellérier du monastère, § 157–160",
+
     texte: `
       <p><strong>157.</strong> Avant tout, qu’il ait l’humilité, et s’il ne peut accorder ce qu’on lui demande, qu’il donne du moins en réponse une bonne parole, selon qu’il est écrit : « Une bonne parole est encore le meilleur des dons. [Si 18, 16] »</p>
-
       <p><strong>158.</strong> Qu’il prenne soin de tout ce que l’Abbé lui aura confié, et qu’il ne se mêle pas de ce dont il lui aura défendu de s’occuper. Qu’il donne aux frères la portion déterminée sans contrecœur ni résistance, de peur que ceux-ci ne se scandalisent — se souvenant de la punition dont la parole divine menace « quiconque aura scandalisé l’un des plus petits. [Mt 18, 6] »</p>
-
       <p><strong>159.</strong> Si la communauté est nombreuse, il recevra des aides ; afin qu’avec leur secours il puisse remplir son office l’âme en paix.</p>
-
       <p><strong>160.</strong> On donnera et on demandera aux heures convenables ce qui doit être donné ou demandé, afin que personne ne soit troublé ni contristé dans la maison de DIEU.</p>
+    `,
+
+    commentaire: `
+      <p>Le cellérier est chargé de prendre soin des biens matériels du monastère et de répondre aux besoins des frères. Saint Benoît ne lui demande pas seulement d'être compétent : il doit avant tout être humble.</p>
+      <p>Il ne possède pas ce qui lui est confié. Il en est le serviteur. Il doit accueillir les demandes sans impatience, respecter ce qui lui est demandé et veiller à ce que personne ne soit blessé par sa manière d'agir.</p>
+      <p>La bonne parole devient ainsi un véritable acte de charité. Elle peut parfois être le seul don que nous sommes en mesure d'offrir.</p>
+    `,
+
+    meditation: `
+      <p>Il est facile de vouloir servir Dieu à travers de grandes intentions, tout en oubliant la manière dont nous traitons ceux qui vivent auprès de nous.</p>
+      <p>Nous pouvons accomplir beaucoup de choses, respecter nos obligations et même prier fidèlement, mais répondre avec sécheresse à une demande, manifester notre contrariété ou imposer notre humeur à notre entourage.</p>
+      <p>Saint Benoît nous ramène à l'essentiel : la vie spirituelle se vérifie aussi dans la qualité de notre présence aux autres.</p>
+      <p>Le Frère du Seuil ne cherche pas à faire de sa maison un monastère par l'accumulation de pratiques. Il apprend à la sanctifier par la charité, jusque dans les gestes les plus ordinaires.</p>
+      <p><strong>Suis-je capable de donner une bonne parole lorsque je suis fatigué, contrarié ou sollicité au mauvais moment ?</strong></p>
+    `,
+
+    pratique: `
+      <p>Aujourd'hui, je veillerai particulièrement à la qualité de mes réponses.</p>
+      <ul>
+        <li>Ne pas répondre sèchement à une demande.</li>
+        <li>Ne pas laisser ma fatigue devenir celle des autres.</li>
+        <li>Accepter de rendre un service sans manifester de contrariété.</li>
+        <li>Si je ne peux pas satisfaire une demande, répondre avec douceur.</li>
+      </ul>
+      <p>Je chercherai à faire de ma maison un lieu où chacun peut trouver une parole paisible.</p>
     `
   }
 };
@@ -258,8 +284,6 @@ function afficherDate(d) {
 }
 
 function afficher() {
-  
-function afficher() {
   document.getElementById("date-du-jour").textContent =
     afficherDate(date);
 
@@ -269,71 +293,41 @@ function afficher() {
   document.getElementById("cycle").textContent =
     "Troisième cycle de lecture";
 
+  const regle = document.getElementById("texte-regle");
+  const reference = document.getElementById("reference");
+
+  const commentaire = document.getElementById("commentaire");
+  const meditation = document.getElementById("meditation");
+  const pratique = document.getElementById("pratique");
+
   if (lecture) {
-    document.getElementById("reference").textContent =
-      lecture.reference;
+    reference.textContent = lecture.reference;
+    regle.innerHTML = lecture.texte ||
+      '<p class="placeholder">Texte à intégrer prochainement.</p>';
 
-    document.getElementById("texte-regle").innerHTML =
-      lecture.texte ||
-      '<p class="placeholder">Le texte de cette lecture sera intégré prochainement.</p>';
+    commentaire.innerHTML = lecture.commentaire ||
+      '<p class="placeholder">Commentaire à venir.</p>';
+
+    meditation.innerHTML = lecture.meditation ||
+      '<p class="placeholder">Méditation à venir.</p>';
+
+    pratique.innerHTML = lecture.pratique ||
+      '<p class="placeholder">Application à venir.</p>';
+
   } else {
-    document.getElementById("reference").textContent =
-      "Lecture à intégrer au calendrier";
+    reference.textContent = "Lecture à intégrer au calendrier";
 
-    document.getElementById("texte-regle").innerHTML =
-      '<p class="placeholder">Cette journée sera ajoutée progressivement.</p>';
-  }
+    regle.innerHTML =
+      '<p class="placeholder">Cette lecture sera ajoutée progressivement.</p>';
 
-  const sections = document.querySelectorAll("section.card");
+    commentaire.innerHTML =
+      '<p class="placeholder">Commentaire à venir.</p>';
 
-  sections.forEach(section => {
-    const titre = section.querySelector("h3");
-    const contenu = section.querySelector("div");
+    meditation.innerHTML =
+      '<p class="placeholder">Méditation à venir.</p>';
 
-    if (!titre || !contenu) return;
-
-    const nom = titre.textContent.trim();
-
-    if (cle === "2026-11-07") {
-
-      if (nom === "Comprendre") {
-        contenu.innerHTML = `
-          <p>Le cellérier est chargé de prendre soin des biens matériels du monastère et de répondre aux besoins des frères. Saint Benoît ne lui demande pas seulement d'être compétent : il doit avant tout être humble.</p>
-          <p>Il ne possède pas ce qui lui est confié. Il en est le serviteur. Il doit accueillir les demandes sans impatience, respecter ce qui lui est demandé et veiller à ce que personne ne soit blessé par sa manière d'agir.</p>
-          <p>La bonne parole devient ainsi un véritable acte de charité. Elle peut parfois être le seul don que nous sommes en mesure d'offrir.</p>
-        `;
-      }
-
-      if (nom === "Méditer") {
-        contenu.innerHTML = `
-          <p>Il est facile de vouloir servir Dieu à travers de grandes intentions, tout en oubliant la manière dont nous traitons ceux qui vivent auprès de nous.</p>
-          <p>Nous pouvons accomplir beaucoup de choses, respecter nos obligations et même prier fidèlement, mais répondre avec sécheresse à une demande, manifester notre contrariété ou imposer notre humeur à notre entourage.</p>
-          <p>Saint Benoît nous ramène à l'essentiel : la vie spirituelle se vérifie aussi dans la qualité de notre présence aux autres.</p>
-          <p>Le Frère du Seuil ne cherche pas à faire de sa maison un monastère par l'accumulation de pratiques. Il apprend à la sanctifier par la charité, jusque dans les gestes les plus ordinaires.</p>
-          <p><strong>Suis-je capable de donner une bonne parole lorsque je suis fatigué, contrarié ou sollicité au mauvais moment ?</strong></p>
-        `;
-      }
-
-      if (nom === "Vivre aujourd'hui") {
-        contenu.innerHTML = `
-          <p>Aujourd'hui, je veillerai particulièrement à la qualité de mes réponses.</p>
-          <ul>
-            <li>Ne pas répondre sèchement à une demande.</li>
-            <li>Ne pas laisser ma fatigue devenir celle des autres.</li>
-            <li>Accepter de rendre un service sans manifester de contrariété.</li>
-            <li>Si je ne peux pas satisfaire une demande, répondre avec douceur.</li>
-          </ul>
-          <p>Je chercherai à faire de ma maison un lieu où chacun peut trouver une parole paisible.</p>
-        `;
-      }
-
-    } else {
-      contenu.innerHTML =
-        '<p class="placeholder">Le contenu de cette journée sera ajouté progressivement.</p>';
-    }
-  });
-}
-
+    pratique.innerHTML =
+      '<p class="placeholder">Application à venir.</p>';
   }
 }
 
@@ -347,7 +341,7 @@ document.getElementById("suivant").onclick = () => {
   afficher();
 };
 
-afficher();
+
 </script>
 
 
