@@ -215,8 +215,28 @@ footer a {
   <a href="index.html">Retour au Frère du Seuil</a>
 </footer>
 
+
 <script>
 const date = new Date();
+
+const lectures = {
+  "2026-11-05": {
+    reference: "Chapitre 31 — Le cellérier du monastère, § 152–153"
+  },
+  "2026-11-06": {
+    reference: "Chapitre 31 — Le cellérier du monastère, § 154–156"
+  },
+  "2026-11-07": {
+    reference: "Chapitre 31 — Le cellérier du monastère, § 157–160"
+  }
+};
+
+function cleDate(d) {
+  const annee = d.getFullYear();
+  const mois = String(d.getMonth() + 1).padStart(2, "0");
+  const jour = String(d.getDate()).padStart(2, "0");
+  return `${annee}-${mois}-${jour}`;
+}
 
 function afficherDate(d) {
   return d.toLocaleDateString("fr-FR", {
@@ -231,22 +251,25 @@ function afficher() {
   document.getElementById("date-du-jour").textContent =
     afficherDate(date);
 
-  const debut = new Date(date.getFullYear(), 0, 1);
-  const jour = Math.floor((date - debut) / 86400000) + 1;
-
-  let cycle = "Troisième cycle";
-  if (date.getMonth() < 4 ||
-      (date.getMonth() === 4 && date.getDate() < 2)) {
-    cycle = "Premier cycle";
-  } else if (
-    date.getMonth() < 8 ||
-    (date.getMonth() === 8 && date.getDate() < 1)
-  ) {
-    cycle = "Deuxième cycle";
-  }
+  const cle = cleDate(date);
+  const lecture = lectures[cle];
 
   document.getElementById("cycle").textContent =
-    cycle + " · Jour " + jour;
+    "Troisième cycle de lecture";
+
+  if (lecture) {
+    document.getElementById("reference").textContent =
+      lecture.reference;
+
+    document.getElementById("texte-regle").innerHTML =
+      '<p class="placeholder">Le texte de ce passage sera intégré à la prochaine étape.</p>';
+  } else {
+    document.getElementById("reference").textContent =
+      "Lecture à intégrer au calendrier";
+
+    document.getElementById("texte-regle").innerHTML =
+      '<p class="placeholder">Cette journée sera ajoutée progressivement.</p>';
+  }
 }
 
 document.getElementById("precedent").onclick = () => {
@@ -261,6 +284,7 @@ document.getElementById("suivant").onclick = () => {
 
 afficher();
 </script>
+
 
 </body>
 </html>
