@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#26382f">
+<title>La Règle au quotidien — Frère du Seuil</title>
+
+<style>
+:root {
+  --vert: #26382f;
+  --or: #b49a68;
+  --fond: #f5f2eb;
+  --texte: #343a34;
+  --blanc: #fffefa;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: Georgia, serif;
+  line-height: 1.75;
+}
+
+header {
+  background: var(--vert);
+  color: var(--blanc);
+  text-align: center;
+  padding: 42px 20px 36px;
+}
+
+header .surtitle {
+  color: var(--or);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font: 11px Arial, sans-serif;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 16px 0 8px;
+}
+
+header p {
+  font-style: italic;
+  color: #dedbd0;
+  margin: 0;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+
+.date {
+  text-align: center;
+  margin: 10px 0 30px;
+}
+
+.date small {
+  color: #82775f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font: 11px Arial, sans-serif;
+}
+
+.date h2 {
+  color: var(--vert);
+  font-size: 25px;
+  font-weight: normal;
+  margin: 8px 0;
+}
+
+.card {
+  background: var(--blanc);
+  padding: 25px;
+  margin: 18px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px #00000009;
+}
+
+.card h3 {
+  color: var(--vert);
+  font-size: 21px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.card h3:before {
+  content: "✦";
+  color: var(--or);
+  margin-right: 10px;
+}
+
+.reference {
+  color: #8b7957;
+  font-style: italic;
+}
+
+.placeholder {
+  color: #77766e;
+  font-style: italic;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.navigation button {
+  background: var(--vert);
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding: 13px 18px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.navigation button:disabled {
+  opacity: .35;
+}
+
+footer {
+  text-align: center;
+  padding: 28px 15px;
+  color: #77766e;
+  font-size: 13px;
+}
+
+footer a {
+  color: var(--vert);
+}
+
+@media (max-width: 480px) {
+  header h1 { font-size: 25px; }
+  .card { padding: 20px; }
+  .navigation button { padding: 11px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="surtitle">Frère du Seuil</div>
+  <h1>La Règle au quotidien</h1>
+  <p>Un chemin de stabilité, de silence et de conversion</p>
+</header>
+
+<main>
+
+  <div class="date">
+    <small>Notre lecture quotidienne</small>
+    <h2 id="date-du-jour"></h2>
+    <div id="cycle" class="reference"></div>
+  </div>
+
+  <section class="card">
+    <h3>La Règle aujourd'hui</h3>
+    <p id="reference" class="reference">
+      Lecture du jour
+    </p>
+    <div id="texte-regle">
+      <p class="placeholder">
+        Le calendrier des lectures sera intégré ici.
+      </p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Comprendre</h3>
+    <div id="commentaire">
+      <p class="placeholder">
+        Le commentaire spirituel et historique du jour sera ajouté progressivement.
+      </p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Méditer</h3>
+    <div id="meditation">
+      <p class="placeholder">
+        Un temps de méditation personnelle accompagnera chaque lecture.
+      </p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Vivre aujourd'hui</h3>
+    <div id="pratique">
+      <p class="placeholder">
+        Une invitation concrète pour vivre la Parole au quotidien.
+      </p>
+    </div>
+  </section>
+
+  <div class="navigation">
+    <button id="precedent">← Veille</button>
+    <button id="suivant">Lendemain →</button>
+  </div>
+
+</main>
+
+<footer>
+  <p>Ora et labora</p>
+  <a href="index.html">Retour au Frère du Seuil</a>
+</footer>
+
+<script>
+const date = new Date();
+
+function afficherDate(d) {
+  return d.toLocaleDateString("fr-FR", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  });
+}
+
+function afficher() {
+  document.getElementById("date-du-jour").textContent =
+    afficherDate(date);
+
+  const debut = new Date(date.getFullYear(), 0, 1);
+  const jour = Math.floor((date - debut) / 86400000) + 1;
+
+  let cycle = "Troisième cycle";
+  if (date.getMonth() < 4 ||
+      (date.getMonth() === 4 && date.getDate() < 2)) {
+    cycle = "Premier cycle";
+  } else if (
+    date.getMonth() < 8 ||
+    (date.getMonth() === 8 && date.getDate() < 1)
+  ) {
+    cycle = "Deuxième cycle";
+  }
+
+  document.getElementById("cycle").textContent =
+    cycle + " · Jour " + jour;
+}
+
+document.getElementById("precedent").onclick = () => {
+  date.setDate(date.getDate() - 1);
+  afficher();
+};
+
+document.getElementById("suivant").onclick = () => {
+  date.setDate(date.getDate() + 1);
+  afficher();
+};
+
+afficher();
+</script>
+
+</body>
+</html>
