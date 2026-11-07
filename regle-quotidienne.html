@@ -216,6 +216,7 @@ footer a {
 </footer>
 
 
+
 <script>
 const date = new Date();
 
@@ -227,7 +228,16 @@ const lectures = {
     reference: "Chapitre 31 — Le cellérier du monastère, § 154–156"
   },
   "2026-11-07": {
-    reference: "Chapitre 31 — Le cellérier du monastère, § 157–160"
+    reference: "Chapitre 31 — Le cellérier du monastère, § 157–160",
+    texte: `
+      <p><strong>157.</strong> Avant tout, qu’il ait l’humilité, et s’il ne peut accorder ce qu’on lui demande, qu’il donne du moins en réponse une bonne parole, selon qu’il est écrit : « Une bonne parole est encore le meilleur des dons. [Si 18, 16] »</p>
+
+      <p><strong>158.</strong> Qu’il prenne soin de tout ce que l’Abbé lui aura confié, et qu’il ne se mêle pas de ce dont il lui aura défendu de s’occuper. Qu’il donne aux frères la portion déterminée sans contrecœur ni résistance, de peur que ceux-ci ne se scandalisent — se souvenant de la punition dont la parole divine menace « quiconque aura scandalisé l’un des plus petits. [Mt 18, 6] »</p>
+
+      <p><strong>159.</strong> Si la communauté est nombreuse, il recevra des aides ; afin qu’avec leur secours il puisse remplir son office l’âme en paix.</p>
+
+      <p><strong>160.</strong> On donnera et on demandera aux heures convenables ce qui doit être donné ou demandé, afin que personne ne soit troublé ni contristé dans la maison de DIEU.</p>
+    `
   }
 };
 
@@ -262,7 +272,8 @@ function afficher() {
       lecture.reference;
 
     document.getElementById("texte-regle").innerHTML =
-      '<p class="placeholder">Le texte de ce passage sera intégré à la prochaine étape.</p>';
+      lecture.texte ||
+      '<p class="placeholder">Le texte de cette lecture sera intégré prochainement.</p>';
   } else {
     document.getElementById("reference").textContent =
       "Lecture à intégrer au calendrier";
@@ -284,6 +295,7 @@ document.getElementById("suivant").onclick = () => {
 
 afficher();
 </script>
+
 
 
 </body>
