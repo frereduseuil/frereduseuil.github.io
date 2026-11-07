@@ -352,7 +352,15 @@ function afficher() {
     afficherDate(date);
 
   const cle = cleDate(date);
-  const lecture = lectures[cle];
+
+const correspondances = {
+  "03-08": "2026-11-07",
+  "07-08": "2026-11-07",
+  "11-07": "2026-11-07"
+};
+
+const cleLecture = correspondances[cle.slice(5)] || cle;
+const lecture = lectures[cleLecture];
 
   document.getElementById("cycle").textContent =
     "Troisième cycle de lecture";
