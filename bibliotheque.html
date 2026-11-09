@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#26382f">
+<meta name="description" content="La Bibliothèque du Seuil — textes, livres, vidéos et ressources pour nourrir la vie spirituelle.">
+<title>Bibliothèque du Seuil — Frère du Seuil</title>
+
+<style>
+:root {
+  --vert: #26382f;
+  --vert-clair: #40594a;
+  --or: #b49a68;
+  --fond: #f5f3ed;
+  --blanc: #fffefa;
+  --texte: #343a35;
+  --gris: #777d76;
+  --ligne: #e5e1d7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  background: var(--vert);
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 21px;
+  letter-spacing: 2px;
+}
+
+.logo small {
+  display: block;
+  color: #d1c4a6;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-top: 2px;
+}
+
+nav {
+  display: flex;
+  gap: 23px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+nav a {
+  color: #f0eee7;
+}
+
+nav a:hover {
+  color: var(--or);
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(25, 43, 34, .78), rgba(25, 43, 34, .82)),
+    url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1800&q=85");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 105px 20px 95px;
+}
+
+.surtitre {
+  color: var(--or);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.hero h1 {
+  font-size: clamp(35px, 6vw, 55px);
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #e9e7df;
+  font-size: 18px;
+}
+
+.intro {
+  max-width: 850px;
+  margin: 65px auto 45px;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.intro h2 {
+  color: var(--vert);
+  font-size: 29px;
+  font-weight: normal;
+}
+
+.intro p {
+  color: #626960;
+  font-size: 17px;
+}
+
+.ornement {
+  color: var(--or);
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.container {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 25px 75px;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--vert);
+  font-size: 26px;
+  font-weight: normal;
+  margin: 50px 0 25px;
+}
+
+.rayons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 15px;
+  margin-bottom: 55px;
+}
+
+.rayon {
+  background: var(--blanc);
+  border: 1px solid var(--ligne);
+  padding: 23px 17px;
+  text-align: center;
+  transition: .2s;
+}
+
+.rayon:hover {
+  border-color: var(--or);
+  transform: translateY(-3px);
+}
+
+.rayon .symbole {
+  font-size: 25px;
+  color: var(--or);
+}
+
+.rayon h3 {
+  color: var(--vert);
+  font-size: 17px;
+  font-weight: normal;
+  margin: 8px 0 3px;
+}
+
+.rayon p {
+  color: var(--gris);
+  font-size: 13px;
+  margin: 0;
+}
+
+.outils {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+#recherche {
+  flex: 1;
+  min-width: 220px;
+  padding: 13px 16px;
+  border: 1px solid var(--ligne);
+  background: var(--blanc);
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--texte);
+  outline: none;
+}
+
+#recherche:focus {
+  border-color: var(--or);
+}
+
+.filtres {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filtre {
+  border: 1px solid var(--ligne);
+  background: var(--blanc);
+  padding: 10px 15px;
+  color: var(--vert);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.filtre.actif,
+.filtre:hover {
+  background: var(--vert);
+  color: white;
+  border-color: var(--vert);
+}
+
+.ressources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.ressource {
+  background: var(--blanc);
+  border: 1px solid var(--ligne);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  min-height: 230px;
+}
+
+.type {
+  color: var(--or);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.ressource h3 {
+  color: var(--vert);
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.35;
+  margin: 13px 0 9px;
+}
+
+.ressource p {
+  color: #697068;
+  font-size: 14px;
+  margin: 0 0 18px;
+}
+
+.lien-ressource {
+  color: var(--vert-clair);
+  font-size: 13px;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--ligne);
+}
+
+.lien-ressource a {
+  color: var(--vert-clair);
+}
+
+.lien-ressource a:hover {
+  color: #9a7d45;
+}
+
+.message-vide {
+  display: none;
+  text-align: center;
+  padding: 35px;
+  color: var(--gris);
+  grid-column: 1 / -1;
+}
+
+.conclusion {
+  background: #eae8df;
+  text-align: center;
+  padding: 55px 25px;
+  color: var(--vert);
+}
+
+.conclusion p {
+  max-width: 650px;
+  margin: 12px auto;
+  font-size: 17px;
+}
+
+footer {
+  background: var(--vert);
+  color: #d8d9d2;
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 13px;
+}
+
+footer a {
+  color: #d6c49e;
+}
+
+@media(max-width: 600px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 75px 20px;
+  }
+
+  .intro {
+    margin-top: 45px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="logo">
+    FRÈRE DU SEUIL
+    <small>UNE FORME DE VIE BÉNÉDICTINE DANS LE MONDE</small>
+  </a>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="index.html#esprit">L'Esprit</a>
+    <a href="index.html#chemins">Les Chemins</a>
+    <a href="bibliotheque.html">Bibliothèque</a>
+    <a href="index.html#apropos">À propos</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="surtitre">Frère du Seuil</div>
+  <h1>La Bibliothèque du Seuil</h1>
+  <p>
+    Lire, écouter, méditer.
+    Des ressources pour approfondir la foi et nourrir
+    une vie intérieure tournée vers Dieu.
+  </p>
+</section>
+
+<section class="intro">
+  <div class="ornement">✦</div>
+  <h2>Un lieu pour approfondir</h2>
+  <p>
+    Cette bibliothèque rassemble des textes, des livres,
+    des conférences, des vidéos et des documents qui
+    peuvent accompagner le cheminement spirituel.
+  </p>
+  <p>
+    Elle s'inspire de la tradition chrétienne, de la sagesse
+    des Pères et de la Règle de saint Benoît.
+    Chacun est invité à y puiser avec simplicité,
+    selon son besoin et son chemin.
+  </p>
+  <div class="ornement">❦</div>
+</section>
+
+<main class="container">
+
+  <h2 class="section-title">Les rayons de la bibliothèque</h2>
+
+  <div class="rayons">
+
+    <a class="rayon" href="#ressources" data-rayon="regle">
+      <div class="symbole">✥</div>
+      <h3>La Règle de saint Benoît</h3>
+      <p>Textes et commentaires</p>
+    </a>
+
+    <a class="rayon" href="#ressources" data-rayon="peres">
+      <div class="symbole">✧</div>
+      <h3>Les Pères spirituels</h3>
+      <p>Tradition et enseignements</p>
+    </a>
+
+    <a class="rayon" href="#ressources" data-rayon="priere">
+      <div class="symbole">✝</div>
+      <h3>Prière et liturgie</h3>
+      <p>La prière de l'Église</p>
+    </a>
+
+    <a class="rayon" href="#ressources" data-rayon="lectures">
+      <div class="symbole">❧</div>
+      <h3>Lectures et méditations</h3>
+      <p>Livres et documents</p>
+    </a>
+
+    <a class="rayon" href="#ressources" data-rayon="videos">
+      <div class="symbole">▷</div>
+      <h3>À écouter et à regarder</h3>
+      <p>Vidéos et conférences</p>
+    </a>
+
+  </div>
+
+  <h2 class="section-title" id="ressources">Explorer les ressources</h2>
+
+  <div class="outils">
+    <input
+      type="search"
+      id="recherche"
+      placeholder="Rechercher un titre, un thème..."
+      aria-label="Rechercher une ressource">
+
+    <div class="filtres">
+      <button class="filtre actif" data-filtre="tous">Tout</button>
+      <button class="filtre" data-filtre="regle">Règle</button>
+      <button class="filtre" data-filtre="peres">Pères</button>
+      <button class="filtre" data-filtre="priere">Prière</button>
+      <button class="filtre" data-filtre="lectures">Lectures</button>
+      <button class="filtre" data-filtre="videos">Vidéos</button>
+    </div>
+  </div>
+
+  <div class="ressources" id="liste-ressources">
+
+    <!-- MODÈLE DE FICHE :
+    Duplique le bloc article pour ajouter une ressource.
+
+    data-categorie : regle, peres, priere, lectures ou videos
+    data-recherche : mots utiles pour la recherche
+
+    Remplace le titre, le descriptif, le type et le lien.
+    -->
+
+    <article class="ressource"
+      data-categorie="regle"
+      data-recherche="règle saint benoît texte bénédictin pdf">
+      <div class="type">PDF · Texte</div>
+      <h3>La Règle de saint Benoît</h3>
+      <p>
+        Le texte fondateur de la tradition bénédictine,
+        à lire et à méditer jour après jour.
+      </p>
+      <div class="lien-ressource">Lien à ajouter</div>
+    </article>
+
+    <article class="ressource"
+      data-categorie="peres"
+      data-recherche="pères désert sagesse monastique spiritualité">
+      <div class="type">Texte · Lecture</div>
+      <h3>Les Pères du désert</h3>
+      <p>
+        Découvrir les paroles et les enseignements
+        des premiers maîtres de la vie spirituelle.
+      </p>
+      <div class="lien-ressource">Lien à ajouter</div>
+    </article>
+
+    <article class="ressource"
+      data-categorie="priere"
+      data-recherche="liturgie heures office prière église">
+      <div class="type">Document · Prière</div>
+      <h3>La prière des heures</h3>
+      <p>
+        Approfondir le sens de la prière liturgique
+        et de la sanctification du temps.
+      </p>
+      <div class="lien-ressource">Lien à ajouter</div>
+    </article>
+
+    <article class="ressource"
+      data-categorie="lectures"
+      data-recherche="lecture méditation vie intérieure livre">
+      <div class="type">Livre · Lecture</div>
+      <h3>Lectures spirituelles</h3>
+      <p>
+        Des ouvrages pour nourrir la méditation,
+        la connaissance de Dieu et la vie intérieure.
+      </p>
+      <div class="lien-ressource">Lien à ajouter</div>
+    </article>
+
+    <article class="ressource"
+      data-categorie="videos"
+      data-recherche="vidéo conférence enseignement monastique">
+      <div class="type">Vidéo · Conférence</div>
+      <h3>Conférences et enseignements</h3>
+      <p>
+        Des paroles et des enseignements pour approfondir
+        la tradition chrétienne et monastique.
+      </p>
+      <div class="lien-ressource">Lien à ajouter</div>
+    </article>
+
+    <div class="message-vide" id="message-vide">
+      Aucune ressource ne correspond à votre recherche.
+    </div>
+
+  </div>
+
+</main>
+
+<section class="conclusion">
+  <div class="ornement">✦</div>
+  <h2 style="font-weight:normal;">Lire pour mieux vivre</h2>
+  <p>
+    La connaissance n'est pas une fin en elle-même.
+    Elle trouve son accomplissement dans une vie
+    plus attentive à Dieu, plus humble et plus fraternelle.
+  </p>
+  <div class="ornement">❦</div>
+</section>
+
+<footer>
+  <p>FRÈRE DU SEUIL</p>
+  <p>Une forme de vie bénédictine dans le monde.</p>
+  <p><a href="index.html">Retour à l'accueil</a></p>
+</footer>
+
+<script>
+const recherche = document.getElementById("recherche");
+const filtres = document.querySelectorAll(".filtre");
+const ressources = document.querySelectorAll(".ressource");
+const messageVide = document.getElementById("message-vide");
+
+let filtreActif = "tous";
+
+function actualiserRessources() {
+  const terme = recherche.value.toLowerCase().trim();
+  let visibles = 0;
+
+  ressources.forEach(ressource => {
+    const categorie = ressource.dataset.categorie;
+    const contenu = (
+      ressource.innerText + " " +
+      (ressource.dataset.recherche || "")
+    ).toLowerCase();
+
+    const correspondCategorie =
+      filtreActif === "tous" || categorie === filtreActif;
+
+    const correspondRecherche = contenu.includes(terme);
+
+    const afficher = correspondCategorie && correspondRecherche;
+
+    ressource.style.display = afficher ? "flex" : "none";
+
+    if (afficher) visibles++;
+  });
+
+  messageVide.style.display = visibles === 0 ? "block" : "none";
+}
+
+filtres.forEach(bouton => {
+  bouton.addEventListener("click", () => {
+    filtreActif = bouton.dataset.filtre;
+
+    filtres.forEach(item => item.classList.remove("actif"));
+    bouton.classList.add("actif");
+
+    actualiserRessources();
+  });
+});
+
+recherche.addEventListener("input", actualiserRessources);
+
+document.querySelectorAll(".rayon").forEach(rayon => {
+  rayon.addEventListener("click", () => {
+    filtreActif = rayon.dataset.rayon;
+
+    filtres.forEach(item => {
+      item.classList.toggle(
+        "actif",
+        item.dataset.filtre === filtreActif
+      );
+    });
+
+    actualiserRessources();
+  });
+});
+</script>
+
+</body>
+</html>
