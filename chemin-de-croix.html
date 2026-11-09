@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#26382f">
+<title>Le Chemin de Croix — Frère du Seuil</title>
+<style>
+:root{
+  --vert:#26382f;
+  --vert-clair:#354b40;
+  --or:#b49a68;
+  --fond:#f5f3ed;
+  --papier:#fffefa;
+  --texte:#292d29;
+  --secondaire:#70766f;
+  --ligne:#e5e0d5;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--fond);color:var(--texte);
+  font-family:Georgia,"Times New Roman",serif;line-height:1.72;
+}
+header{
+  background:var(--vert);color:#fff;text-align:center;
+  padding:42px 20px 36px;border-bottom:4px solid var(--or);
+}
+header .surtitle{
+  color:#d8c8a5;text-transform:uppercase;letter-spacing:.16em;
+  font:12px Arial,sans-serif;margin:0 0 12px;
+}
+header h1{font-weight:normal;font-size:clamp(30px,6vw,48px);line-height:1.15;margin:0}
+header .subtitle{font-style:italic;color:#e8e2d5;margin:13px 0 0}
+header .verse{max-width:620px;margin:25px auto 0;color:#f5f0e5;font-size:18px}
+header .verse small{display:block;color:#d8c8a5;font:12px Arial,sans-serif;margin-top:6px}
+.topnav{
+  position:sticky;top:0;z-index:10;background:#fffefa;
+  border-bottom:1px solid var(--ligne);display:flex;justify-content:center;
+  gap:10px;flex-wrap:wrap;padding:10px 14px;
+}
+.topnav a{
+  color:var(--vert);text-decoration:none;font:13px Arial,sans-serif;
+  padding:7px 10px;border-radius:20px;
+}
+.topnav a:hover{background:#eee9dd}
+main{max-width:850px;margin:0 auto;padding:28px 18px 60px}
+.intro,.opening,.closing,.resolution{
+  background:var(--papier);border:1px solid var(--ligne);
+  border-radius:14px;padding:24px;margin:0 0 22px;
+}
+h2{color:var(--vert);font-size:25px;font-weight:normal;margin:0 0 14px}
+h3{color:var(--vert);font-size:22px;font-weight:normal;margin:0 0 14px}
+h4{color:var(--or);font:12px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;margin:0 0 8px}
+p{margin:0 0 13px}
+.lead{font-size:18px}
+.muted{color:var(--secondaire)}
+.station{
+  background:var(--papier);border:1px solid var(--ligne);
+  border-radius:14px;margin:14px 0;overflow:hidden;
+}
+.station summary{
+  list-style:none;cursor:pointer;padding:18px 20px;
+  display:flex;align-items:center;gap:15px;color:var(--vert);
+  font-size:19px;
+}
+.station summary::-webkit-details-marker{display:none}
+.station summary:after{content:"＋";margin-left:auto;color:var(--or);font:22px Arial,sans-serif}
+.station[open] summary:after{content:"−"}
+.number{
+  flex:0 0 36px;width:36px;height:36px;border:1px solid var(--or);
+  border-radius:50%;display:grid;place-items:center;color:var(--or);
+  font:14px Arial,sans-serif;
+}
+.station-content{padding:0 22px 22px 71px}
+.station-content h4{margin-top:18px}
+.station-content .response{
+  color:var(--vert);font-style:italic;border-left:2px solid var(--or);
+  padding-left:13px;margin:16px 0;
+}
+.station-content .silence{
+  text-align:center;color:var(--or);font-style:italic;margin-top:20px;
+}
+.group-title{
+  margin:34px 0 14px;padding:16px 18px;background:#eae7dd;
+  border-left:3px solid var(--or);border-radius:8px;
+}
+.group-title h3{font-size:21px;margin:0 0 4px}
+.group-title p{color:var(--secondaire);font-style:italic;margin:0}
+.prayer{white-space:normal}
+.actions{
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  margin:22px 0;
+}
+.btn{
+  display:inline-block;border:1px solid var(--or);border-radius:24px;
+  padding:10px 17px;background:transparent;color:var(--vert);
+  text-decoration:none;font:14px Arial,sans-serif;cursor:pointer;
+}
+.btn.primary{background:var(--vert);border-color:var(--vert);color:white}
+footer{text-align:center;background:var(--vert);color:#e8e2d5;padding:25px 18px;font-size:14px}
+footer a{color:#e8d5ad}
+@media(max-width:600px){
+  header{padding:32px 17px}
+  main{padding:18px 12px 42px}
+  .intro,.opening,.closing,.resolution{padding:19px}
+  .station summary{font-size:17px;padding:15px}
+  .station-content{padding:0 17px 20px}
+  .number{flex-basis:32px;width:32px;height:32px}
+}
+@media print{
+  .topnav,.actions,footer{display:none}
+  body{background:white}
+  .station{break-inside:avoid}
+  .station:not([open]) .station-content{display:block}
+  .station summary:after{display:none}
+}
+</style>
+</head>
+<body>
+<header id="haut">
+  <p class="surtitle">Prière du vendredi</p>
+  <h1>Le Chemin de Croix</h1>
+  <p class="subtitle">Chemin de silence, de dépouillement et d'abandon</p>
+  <p class="verse">« Ce n'est plus moi qui vis, c'est le Christ qui vit en moi. »<small>Galates 2, 20</small></p>
+</header>
+
+<nav class="topnav" aria-label="Navigation du chemin de croix">
+  <a href="#esprit">L'esprit du chemin</a>
+  <a href="#ouverture">Prière d'ouverture</a>
+  <a href="#stations">Les stations</a>
+  <a href="#cloture">Prière de clôture</a>
+  <a href="index.html">Accueil</a>
+</nav>
+
+<main>
+<section class="intro" id="esprit">
+  <h2>L'esprit du chemin de croix</h2>
+  <p class="lead">Je viens contempler le Christ dans sa Passion.</p>
+  <p>Je ne viens pas chercher des émotions passagères, ni simplement méditer sur les souffrances qu'Il a endurées. Je viens me tenir auprès de Lui, regarder son amour et apprendre à vivre davantage en Lui.</p>
+  <p>En contemplant son chemin vers la Croix, je découvre combien mon propre cœur demeure encore attaché à lui-même. Je veux décider, prévoir, posséder et maîtriser. Je désire la paix, mais je cherche souvent à la construire selon ma propre volonté.</p>
+  <p>Le Christ me montre une autre voie. Il m'enseigne le silence lorsque je voudrais répondre, l'humilité lorsque je voudrais être reconnu, la patience lorsque je voudrais que tout change et l'abandon lorsque je voudrais tout contrôler.</p>
+  <p>Ce chemin n'est pas une recherche de souffrance. Il n'est pas davantage une volonté de me rendre plus fort par mes propres efforts. Il est une école d'amour.</p>
+  <p>À travers les quatorze stations, je désire apprendre à renoncer à ma volonté propre, à accueillir ma faiblesse et à m'abandonner à la grâce, à demeurer humble dans les contrariétés, à aimer sans attendre de retour, à remettre à Dieu ce que je ne peux maîtriser et à demeurer fidèle lorsque la consolation disparaît.</p>
+  <p><strong>Je veux apprendre à ne plus vivre pour moi-même, mais à vivre en Christ.</strong></p>
+</section>
+
+<section class="opening" id="ouverture">
+  <h2>Préparation et prière d'ouverture</h2>
+  <p>Je choisis un lieu calme. Je peux placer devant moi une croix ou une icône du Christ. Je prends quelques instants pour faire silence, déposer mes préoccupations et me rendre intérieurement présent à Dieu.</p>
+  <p class="muted"><em>Je ne cherche pas à produire un sentiment particulier. Je viens simplement me tenir devant Lui.</em></p>
+  <h3>Prière d'ouverture</h3>
+  <p class="prayer">Au nom du Père, et du Fils, et du Saint-Esprit. Amen.</p>
+  <p class="prayer">Seigneur Jésus-Christ,</p>
+  <p class="prayer">Me voici devant Toi.</p>
+  <p class="prayer">Je viens marcher à Tes côtés sur le chemin de Ta Passion. Je ne viens pas chercher des paroles nouvelles, ni des émotions passagères. Je viens Te regarder, T'écouter et demeurer auprès de Toi.</p>
+  <p class="prayer">Tu connais mon cœur, ses désirs et ses résistances. Tu connais ma volonté qui veut encore décider de tout, mes attachements, mes inquiétudes et mes impatiences.</p>
+  <p class="prayer">Apprends-moi à ne plus vivre pour moi-même.</p>
+  <p class="prayer">Délivre-moi de ce qui m'éloigne de Toi. Apprends-moi le silence qui écoute, l'humilité qui consent, la patience qui demeure et l'amour qui se donne.</p>
+  <p class="prayer">Que Ta Passion éclaire ma vie quotidienne. Que mon foyer devienne un lieu de charité, que mon travail soit accompli en Ta présence et que mes journées soient offertes à Ta gloire.</p>
+  <p class="prayer">Je ne veux pas seulement méditer Ta Croix. Je veux apprendre à Te suivre.</p>
+  <p class="prayer">Conduis-moi jusqu'au silence du tombeau et fais grandir en moi l'espérance de Ta Résurrection.</p>
+  <p class="prayer">Amen.</p>
+</section>
+
+<div id="stations">
+  <h2>Les quatorze stations</h2>
+  <p class="muted">Ouvrir chaque station pour lire la Parole, contempler le Christ et prier.</p>
+
+  <div class="group-title"><h3>Premier mouvement — Le consentement</h3><p>Apprendre à ne plus résister à l'œuvre de Dieu.</p></div>
+
+  <details class="station">
+    <summary><span class="number">I</span>Jésus est condamné à mort</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Alors Pilate leur livra Jésus pour qu'il soit crucifié. » — Jean 19, 16</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>Jésus se tient devant Pilate. Celui qui est la Vérité est condamné par les hommes. Celui qui n'a commis aucune faute accepte le jugement injuste. Il ne cherche pas à sauver son honneur. Il ne répond pas à la violence par la violence. Il demeure dans la vérité de son amour. Pilate sait que Jésus est innocent, mais il cède à la pression de la foule. Il préfère préserver sa position plutôt que défendre la vérité.</p>
+      <h4>Méditation</h4><p>Seigneur, lorsque je Te contemple devant Pilate, je découvre combien je demeure attaché au regard des autres.</p><p>Je veux être reconnu, compris et apprécié. Je souffre lorsque ma personne est méconnue ou jugée. Je cherche parfois à me justifier, à défendre mon image et à avoir le dernier mot.</p><p>Pourquoi est-ce que je donne tant d'importance au jugement des hommes ?</p><p>Apprends-moi à ne plus être esclave du regard du monde. Donne-moi la force de demeurer dans la vérité, même lorsque je ne suis pas compris. Délivre-moi de l'orgueil qui cherche continuellement à être reconnu.</p>
+      <h4>Prière</h4><p>Seigneur Jésus, apprends-moi Ton humilité. Que je ne recherche plus ma propre gloire, mais que je désire seulement Te plaire. Donne-moi un cœur libre du jugement des hommes et fidèle à la vérité.</p>
+      <p class="silence">Silence.</p>
+    </div>
+  </details>
+
+  <details class="station">
+    <summary><span class="number">II</span>Jésus est chargé de sa Croix</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Jésus, portant lui-même sa croix, sortit en direction du lieu dit Le Crâne. » — Jean 19, 17</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>La Croix est déposée sur les épaules de Jésus. Il ne détourne pas son regard. Il reçoit le bois qui sera l'instrument de son supplice. Il ne choisit pas la facilité. Il avance sur le chemin qui lui est confié.</p>
+      <h4>Méditation</h4><p>Seigneur, je voudrais souvent choisir moi-même le chemin que je dois parcourir.</p><p>Je désire une vie paisible, débarrassée des contrariétés, des fatigues et des imprévus. Je voudrais que les événements correspondent à mes attentes.</p><p>Pourtant, Tu me montres que Te suivre signifie aussi accueillir ma vie telle qu'elle m'est confiée.</p><p>Mes responsabilités, mon travail, ma famille, mes devoirs quotidiens ne sont pas des obstacles à ma vie spirituelle. Ils sont le lieu même où Tu m'attends.</p><p>Apprends-moi à ne pas murmurer continuellement contre ce qui m'est donné. Délivre-moi de cette volonté de tout organiser selon mes désirs. Que je sache recevoir chaque journée comme une occasion de T'aimer et de Te servir.</p>
+      <h4>Prière</h4><p>Seigneur Jésus, apprends-moi à porter avec Toi ce qui m'est confié. Donne-moi un cœur patient, humble et disponible. Que je cesse de rechercher constamment une autre vie et que j'apprenne à Te rencontrer dans celle que je vis.</p>
+      <p class="silence">Silence.</p>
+    </div>
+  </details>
+
+  <details class="station">
+    <summary><span class="number">III</span>Jésus tombe pour la première fois</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Il était méprisé, abandonné des hommes, homme de douleurs, familier de la souffrance. » — Isaïe 53, 3</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>Le poids de la Croix accable Jésus. Ses forces diminuent. Il tombe sur le chemin. Le Fils de Dieu accepte de connaître la faiblesse de notre condition humaine. Il ne se détourne pas de notre fragilité. Il la rejoint.</p>
+      <h4>Méditation</h4><p>Seigneur, je reconnais combien j'ai du mal à accepter ma faiblesse.</p><p>Je voudrais être fort, constant, toujours fidèle à mes résolutions. Je voudrais maîtriser mes pensées, mes paroles et mes actes.</p><p>Mais je tombe. Je me disperse, je m'impatiente, je reprends ce que j'avais décidé de Te remettre. Je découvre alors combien je compte encore sur mes propres forces.</p><p>Apprends-moi à ne pas désespérer de mes chutes. Donne-moi l'humilité de reconnaître ma pauvreté et la confiance de revenir vers Toi. Je ne veux ni me glorifier de mes progrès ni me décourager de mes faiblesses. Je veux apprendre à me relever avec Toi.</p>
+      <h4>Prière</h4><p>Seigneur Jésus, lorsque je tombe, garde-moi du découragement. Apprends-moi à reconnaître ma pauvreté sans me replier sur moi-même. Que je ne compte pas sur mes seules forces, mais sur Ta miséricorde.</p>
+      <p class="silence">Silence.</p>
+    </div>
+  </details>
+
+  <details class="station">
+    <summary><span class="number">IV</span>Jésus rencontre sa Mère</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Syméon les bénit, puis il dit à Marie sa mère : Voici que cet enfant provoquera la chute et le relèvement de beaucoup en Israël. » — Luc 2, 34</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>Sur le chemin du Calvaire, Jésus rencontre sa Mère. La tradition chrétienne contemple cette rencontre douloureuse. Marie ne peut arrêter le supplice de son Fils. Elle ne peut prendre sa place. Mais elle demeure. Il y a dans cette présence une fidélité qui ne demande pas de paroles.</p>
+      <h4>Méditation</h4><p>Seigneur, apprends-moi à aimer comme Marie.</p><p>Je crois parfois que l'amour doit toujours agir, résoudre et intervenir. Je voudrais trouver les mots justes, apporter des solutions et changer ce qui me semble mauvais.</p><p>Mais il existe un amour qui consiste simplement à demeurer auprès de celui qui souffre.</p><p>Je reconnais combien je cherche parfois à contrôler les situations et les personnes que j'aime. Apprends-moi à les accueillir telles qu'elles sont. Donne-moi la patience de rester présent, même lorsque je ne peux rien changer.</p><p>Que je sache aimer sans imposer, accompagner sans dominer et servir sans attendre de reconnaissance.</p>
+      <h4>Prière</h4><p>Sainte Marie, Mère de Jésus, apprends-moi la fidélité silencieuse. Que je sache demeurer auprès de ceux que Dieu m'a confiés, avec un cœur disponible, patient et aimant.</p>
+      <p class="silence">Silence.</p>
+    </div>
+  </details>
+
+  <div class="group-title"><h3>Deuxième mouvement — Le dépouillement</h3><p>Apprendre à ne plus être le centre de ma propre existence.</p></div>
+
+  <details class="station">
+    <summary><span class="number">V</span>Simon de Cyrène aide Jésus à porter sa Croix</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Ils réquisitionnent Simon de Cyrène, qui revenait des champs, pour porter la croix derrière Jésus. » — Marc 15, 21</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>Simon revient de son travail. Il ne s'attendait pas à rencontrer le condamné sur son chemin. Il est réquisitionné pour porter la Croix. Il entre ainsi, presque malgré lui, dans le mystère de la Passion.</p>
+      <h4>Méditation</h4><p>Seigneur, je passe souvent mes journées absorbé par mes occupations et mes préoccupations.</p><p>Je ne vois pas toujours les personnes qui ont besoin de moi. Je peux être tellement préoccupé par mes propres affaires que j'oublie de regarder ceux qui m'entourent.</p><p>Apprends-moi à accueillir les occasions de servir qui se présentent à moi.</p><p>Je reconnais aussi combien mon orgueil me pousse parfois à vouloir tout faire seul. Je veux être autonome, ne dépendre de personne et ne pas montrer mes faiblesses. Pourtant, Tu m'apprends que nous avons besoin les uns des autres.</p><p>Donne-moi l'humilité de recevoir autant que celle de donner.</p>
+      <h4>Prière</h4><p>Seigneur, délivre-moi de l'égoïsme et de l'orgueil. Fais de ma maison un lieu de service et de charité. Apprends-moi à porter avec amour les fardeaux de ceux qui m'entourent.</p>
+      <p class="silence">Silence.</p>
+    </div>
+  </details>
+
+  <details class="station">
+    <summary><span class="number">VI</span>Véronique essuie le visage de Jésus</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Ce que vous avez fait à l'un de ces plus petits de mes frères, c'est à moi que vous l'avez fait. » — Matthieu 25, 40</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>La tradition chrétienne nous présente Véronique s'approchant de Jésus pour essuyer son visage. Au milieu de la foule hostile, un geste de compassion apparaît. Il est petit, presque insignifiant aux yeux du monde. Pourtant, il témoigne d'un amour véritable.</p>
+      <h4>Méditation</h4><p>Seigneur, je reconnais que je cherche parfois à accomplir de grandes choses tout en négligeant les petits gestes d'amour qui se présentent à moi.</p><p>Je voudrais que ma vie ait un sens remarquable. Je désire parfois être reconnu pour mes efforts et mes engagements. Mais Tu me montres le chemin de la charité discrète.</p><p>Apprends-moi à aimer sans être vu, à servir sans être remercié et à accomplir le bien sans attendre de récompense.</p><p>Donne-moi un regard capable de reconnaître Ton visage dans les personnes que je rencontre, particulièrement celles que je serais tenté d'ignorer. Que mon silence intérieur ne me rende jamais indifférent à la souffrance des autres.</p>
+      <h4>Prière</h4><p>Seigneur Jésus, donne-moi un regard pur et compatissant. Apprends-moi la charité discrète, celle qui ne cherche aucune récompense et qui trouve sa joie dans le don de soi.</p>
+      <p class="silence">Silence.</p>
+    </div>
+  </details>
+
+  <details class="station">
+    <summary><span class="number">VII</span>Jésus tombe pour la deuxième fois</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Lui-même a porté nos péchés, dans son corps, sur le bois. » — 1 Pierre 2, 24</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>Jésus tombe encore. Le chemin est long. La fatigue s'accumule. La souffrance ne diminue pas. Il n'est pas épargné par la répétition de l'épreuve. Il se relève et poursuit son chemin.</p>
+      <h4>Méditation</h4><p>Seigneur, je voudrais que ma conversion soit rapide et que mes efforts portent immédiatement leurs fruits.</p><p>Je me lasse parfois de devoir recommencer. Les mêmes pensées reviennent, les mêmes impatiences se manifestent et les mêmes attachements résistent. Je voudrais avancer sans rechute et prier sans distraction.</p><p>Mais Tu m'enseignes la patience.</p><p>Apprends-moi à ne pas confondre fidélité et perfection. Donne-moi la grâce de recommencer chaque jour, sans me décourager. Je ne veux pas rechercher les commencements enthousiastes, mais apprendre à demeurer auprès de Toi dans la durée.</p>
+      <h4>Prière</h4><p>Seigneur Jésus, donne-moi la persévérance. Lorsque je me lasse du combat intérieur, lorsque les mêmes faiblesses reviennent, garde-moi dans la confiance. Apprends-moi la fidélité humble et quotidienne.</p>
+      <p class="silence">Silence.</p>
+    </div>
+  </details>
+
+  <details class="station">
+    <summary><span class="number">VIII</span>Jésus rencontre les femmes de Jérusalem</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Filles de Jérusalem, ne pleurez pas sur moi ! Pleurez plutôt sur vous-mêmes et sur vos enfants ! » — Luc 23, 28</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>Des femmes pleurent sur le chemin du Calvaire. Jésus se tourne vers elles. Même dans sa souffrance, Il les invite à regarder plus profondément. Il ne veut pas seulement leur compassion. Il les appelle à la conversion.</p>
+      <h4>Méditation</h4><p>Seigneur, je peux être ému par Ta Passion et pourtant demeurer inchangé.</p><p>Je peux aimer les belles prières, les textes spirituels et les cérémonies sans laisser Ta grâce transformer mon cœur.</p><p>Je reconnais combien il m'est facile de voir les défauts des autres et combien il m'est difficile de regarder honnêtement les miens. Je juge, je compare, je critique. Je voudrais parfois corriger les autres avant de m'être moi-même laissé corriger.</p><p>Détourne mon regard de cette volonté de juger. Apprends-moi à regarder mon propre cœur avec humilité et confiance en Ta miséricorde. Que ma prière ne reste pas une émotion, mais devienne une véritable conversion.</p>
+      <h4>Prière</h4><p>Seigneur, apprends-moi à ne pas juger mon prochain. Donne-moi l'humilité de reconnaître mes propres fautes et le courage de me convertir.</p>
+      <p class="silence">Silence.</p>
+    </div>
+  </details>
+
+  <div class="group-title"><h3>Troisième mouvement — L'abandon</h3><p>Apprendre à remettre entièrement ma volonté entre les mains du Père.</p></div>
+
+  <details class="station">
+    <summary><span class="number">IX</span>Jésus tombe pour la troisième fois</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Ma grâce te suffit, car ma puissance donne toute sa mesure dans la faiblesse. » — 2 Corinthiens 12, 9</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>Jésus tombe une troisième fois. Il est arrivé au bout de ses forces humaines. La Croix pèse toujours. Le Calvaire est proche, mais le chemin n'est pas terminé. Dans cette chute, nous contemplons le Christ qui accepte pleinement la faiblesse de notre humanité.</p>
+      <h4>Méditation</h4><p>Seigneur, je reconnais combien je veux encore être maître de moi-même et de mon existence.</p><p>Je voudrais être toujours fort, toujours serein et toujours capable de faire face aux événements. Je cherche à ne dépendre que de mes propres forces.</p><p>Mais je ne suis pas mon propre sauveur.</p><p>Apprends-moi à accepter ma pauvreté. Que je cesse de vouloir tout porter seul et de me croire capable de tout résoudre. Je veux découvrir que ma faiblesse peut devenir un lieu de rencontre avec Toi.</p><p>Que je ne cherche plus à me construire une force personnelle, mais à m'appuyer davantage sur Ta grâce.</p>
+      <h4>Prière</h4><p>Seigneur Jésus, je Te remets ma faiblesse. Délivre-moi de l'illusion de ma propre suffisance. Apprends-moi à recevoir Ta grâce et à ne plus chercher à me sauver par mes seules forces.</p>
+      <p class="silence">Silence.</p>
+    </div>
+  </details>
+
+  <details class="station">
+    <summary><span class="number">X</span>Jésus est dépouillé de ses vêtements</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Ils prirent ses vêtements ; ils en firent quatre parts, une pour chaque soldat. » — Jean 19, 23</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>Jésus est dépouillé de ses vêtements. Celui qui a tout donné est maintenant privé de tout. Il ne conserve rien pour protéger son apparence, son rang ou sa dignité humaine. Il se laisse exposer au regard des hommes.</p>
+      <h4>Méditation</h4><p>Seigneur, je reconnais combien mon cœur s'attache aux choses de ce monde.</p><p>Je possède des objets, des habitudes, des sécurités et des images de moi-même auxquelles je ne veux pas renoncer. Je veux être quelqu'un aux yeux des autres. Je cherche parfois ma valeur dans ce que je possède, dans ce que j'accomplis ou dans la manière dont je suis considéré.</p><p>En Te contemplant dépouillé de tout, je comprends que ma véritable richesse ne se trouve pas dans ces choses.</p><p>Apprends-moi à posséder sans m'attacher, à vivre simplement et à ne pas rechercher les apparences. Dépouille mon cœur de ce qui m'empêche de T'appartenir entièrement.</p>
+      <h4>Prière</h4><p>Seigneur, dépouille mon cœur de ses attachements désordonnés. Apprends-moi à vivre simplement, à ne pas rechercher les apparences et à trouver ma véritable richesse en Toi.</p>
+      <p class="silence">Silence.</p>
+    </div>
+  </details>
+
+  <details class="station">
+    <summary><span class="number">XI</span>Jésus est cloué sur la Croix</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Père, pardonne-leur : ils ne savent pas ce qu'ils font. » — Luc 23, 34</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>Jésus est étendu sur le bois. Ses mains sont clouées. Ses pieds sont immobilisés. Lui qui a parcouru les chemins de Galilée ne peut plus avancer. Ses mains qui ont béni, guéri et relevé les hommes sont maintenant fixées à la Croix. Et pourtant, de ses lèvres monte encore une parole de pardon.</p>
+      <h4>Méditation</h4><p>Seigneur, je reconnais combien je confonds parfois liberté et maîtrise.</p><p>Je veux décider, organiser, prévoir et contrôler. Je supporte difficilement que les événements échappent à mes projets. Je veux que ma volonté soit faite.</p><p>Mais Toi, Tu me montres une autre liberté : celle de l'amour qui demeure fidèle même lorsqu'il ne maîtrise plus les événements.</p><p>Apprends-moi à remettre ma volonté entre les mains du Père. Délivre-moi du ressentiment, de la rancune et du besoin de rendre le mal pour le mal.</p><p>Je ne veux pas seulement demander que les autres changent. Je veux Te laisser transformer mon propre cœur.</p>
+      <h4>Prière</h4><p>Seigneur Jésus, apprends-moi à pardonner. Délivre-moi du besoin de tout contrôler. Apprends-moi à remettre ma volonté entre les mains du Père et à demeurer dans l'amour lorsque je suis contrarié. Que Ta volonté soit faite en moi.</p>
+      <p class="silence">Silence.</p>
+    </div>
+  </details>
+
+  <details class="station">
+    <summary><span class="number">XII</span>Jésus meurt sur la Croix</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Père, entre tes mains je remets mon esprit. » — Luc 23, 46</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>Le Christ remet son esprit au Père. Il a aimé jusqu'au bout. Il a pardonné. Il a donné sa vie. Le silence descend sur le Golgotha. Le Fils s'abandonne entièrement à son Père.</p>
+      <h4>Méditation</h4><p>Seigneur Jésus, je me tiens devant le mystère de Ton amour.</p><p>Toute Ta vie est un mouvement d'amour vers le Père. Tu ne vis pas pour Toi-même. Tu reçois tout du Père et Tu Lui remets tout.</p><p>Je découvre combien ma propre vie demeure encore centrée sur moi-même. Je veux garder mes projets, mes désirs, mes sécurités et mes certitudes. Je voudrais suivre Dieu sans perdre la maîtrise de mon existence.</p><p>Mais Tu m'appelles à davantage. Je ne veux plus faire de ma volonté la mesure ultime de toute chose.</p><p>Je veux apprendre à Te remettre mes pensées, mes projets, mon travail, mes relations et mes désirs. Je ne veux pas disparaître, mais laisser Ta vie grandir en moi.</p>
+      <h4>Prière</h4><p>Seigneur Jésus, apprends-moi le véritable abandon. Que je cesse de vouloir garder ma vie pour moi-même. Père, entre Tes mains je remets mon esprit, ma vie et tout ce que je suis. Amen.</p>
+      <p class="silence">Silence prolongé.</p>
+    </div>
+  </details>
+
+  <div class="group-title"><h3>Quatrième mouvement — Le silence et l'espérance</h3><p>Apprendre à demeurer auprès du Christ lorsque tout semble achevé.</p></div>
+
+  <details class="station">
+    <summary><span class="number">XIII</span>Jésus est descendu de la Croix</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Joseph d'Arimathie, qui était disciple de Jésus, mais en secret par peur des Juifs, demanda à Pilate de pouvoir enlever le corps de Jésus. » — Jean 19, 38</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>Le corps de Jésus est descendu de la Croix. La violence a cessé. Le corps meurtri repose désormais dans les bras de ceux qui l'aiment. Marie demeure dans la douleur. Les disciples sont silencieux. Il n'y a plus de parole à ajouter. Il n'y a plus d'action à entreprendre. Il reste l'amour fidèle.</p>
+      <h4>Méditation</h4><p>Seigneur, j'ai tant de mal à accepter les moments où je ne peux plus rien faire.</p><p>Je veux intervenir, expliquer, réparer et maîtriser. Je cherche souvent à remplir le silence par des paroles ou des actions.</p><p>Mais Tu m'enseignes qu'il existe des moments où la seule attitude juste est de demeurer auprès de Toi.</p><p>Apprends-moi ce silence qui n'est pas une fuite, mais un acte de confiance. Lorsque je ne comprends pas, lorsque je ne peux rien changer, lorsque mes forces sont épuisées, garde-moi près de Toi.</p><p>Délivre-moi de cette agitation intérieure qui m'empêche parfois simplement d'être présent.</p>
+      <h4>Prière</h4><p>Seigneur, apprends-moi le silence qui aime. Que je sache demeurer devant Toi sans chercher toujours à agir, à comprendre ou à parler.</p>
+      <p class="silence">Silence prolongé.</p>
+    </div>
+  </details>
+
+  <details class="station">
+    <summary><span class="number">XIV</span>Jésus est mis au tombeau</summary>
+    <div class="station-content">
+      <h4>Parole de Dieu</h4><p>« Ils prirent donc le corps de Jésus, qu'ils lièrent de linges, en employant les aromates selon la coutume juive d'ensevelir les morts. » — Jean 19, 40</p>
+      <p class="response">Nous t'adorons, ô Christ, et nous te bénissons. Parce que tu as racheté le monde par ta sainte Croix.</p>
+      <h4>Contemplation</h4><p>Le corps de Jésus est déposé dans un tombeau neuf. Une pierre est roulée à l'entrée. Tout semble achevé. Les disciples ne voient pas encore la lumière de la Résurrection. Ils connaissent le deuil, la peur et l'incertitude. Mais Dieu demeure à l'œuvre, même dans le silence.</p>
+      <h4>Méditation</h4><p>Seigneur, je voudrais souvent connaître à l'avance le fruit de mes efforts.</p><p>Je désire des signes, des résultats et des certitudes. Je voudrais sentir Ta présence et comprendre ce que Tu accomplis dans ma vie.</p><p>Mais le tombeau m'enseigne à attendre.</p><p>Je ne veux plus mesurer Ta présence à ce que je ressens. Je ne veux plus croire seulement lorsque je vois les fruits de ma conversion.</p><p>Apprends-moi à demeurer fidèle dans les jours lumineux comme dans les jours obscurs. Lorsque ma prière semble pauvre, lorsque mon cœur demeure inquiet et lorsque je ne comprends pas le chemin que Tu me fais parcourir, garde-moi dans la confiance.</p><p>Je veux apprendre à attendre en Toi. La Croix n'est pas le dernier mot. Ta Résurrection est notre espérance.</p>
+      <h4>Prière</h4><p>Seigneur Jésus, apprends-moi à attendre en Toi. Je Te remets ce que je ne comprends pas, ce que je ne peux changer et ce que je ne peux encore espérer. Que je demeure auprès de Toi, dans la confiance et dans l'espérance de Ta Résurrection.</p>
+      <p class="silence">Silence prolongé.</p>
+    </div>
+  </details>
+</div>
+
+<section class="closing" id="cloture">
+  <h2>Prière de clôture</h2>
+  <p>Seigneur Jésus-Christ,</p>
+  <p>J'ai parcouru avec Toi le chemin de Ta Passion.</p>
+  <p>J'ai contemplé Ton humilité, Ton silence, Ta patience et Ton abandon au Père.</p>
+  <p>Je reconnais combien mon cœur demeure encore attaché à lui-même. Je veux maîtriser ce qui m'échappe, posséder ce qui passe, être reconnu et comprendre ce qui m'est donné.</p>
+  <p>Mais Toi, Seigneur, Tu m'appelles à une autre vie.</p>
+  <p>Apprends-moi à mourir chaque jour à ma volonté propre, non par mépris de la vie, mais pour que Ta vie grandisse en moi.</p>
+  <p>Que je sache Te retrouver dans le silence de la prière, dans les offices de l'Église, dans le visage de mon épouse, dans la présence de mon enfant, dans mon travail et dans les rencontres de chaque journée.</p>
+  <p>Que ma maison soit un lieu de paix et de charité.</p>
+  <p>Que mon cœur soit libre de ses attachements.</p>
+  <p>Que ma volonté soit remise entre Tes mains.</p>
+  <p>Et lorsque viendront la fatigue, l'inquiétude, l'épreuve ou le découragement, rappelle-moi que je ne marche pas seul.</p>
+  <p>Tu es mon chemin, ma vérité et ma vie.</p>
+  <p>Je ne veux plus vivre séparé de Toi.</p>
+  <p>Demeure en moi, Seigneur, et apprends-moi à demeurer en Toi.</p>
+  <p>Amen.</p>
+  <p><strong>Notre Père…</strong></p>
+  <p><strong>Je vous salue Marie…</strong></p>
+  <p><strong>Gloire au Père…</strong></p>
+  <p>Au nom du Père, et du Fils, et du Saint-Esprit. Amen.</p>
+</section>
+
+<section class="resolution">
+  <h2>La résolution du vendredi</h2>
+  <p style="text-align:center;font-size:25px;color:var(--vert);font-style:italic">« Demeurer en Lui. »</p>
+  <p style="text-align:center">Ne pas chercher à tout maîtriser.<br>Ne pas chercher à tout comprendre.<br>Ne pas chercher à tout posséder.</p>
+  <p style="text-align:center"><strong>Apprendre à aimer, à servir et à demeurer fidèle.</strong></p>
+</section>
+
+<div class="actions">
+  <a class="btn" href="#haut">Revenir en haut</a>
+  <button class="btn primary" onclick="window.print()">Imprimer le chemin de croix</button>
+  <a class="btn" href="index.html">Retour à l'accueil</a>
+</div>
+</main>
+
+<footer>
+  <p>Le Chemin de Croix — Prière du vendredi</p>
+  <p><a href="index.html">Retour au portail Frère du Seuil</a></p>
+</footer>
+</body>
+</html>
