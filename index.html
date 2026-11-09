@@ -1,128 +1,775 @@
 
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Frère du Seuil — une forme de vie bénédictine dans le monde.">
-  <title>Frère du Seuil — Une vie bénédictine dans le monde</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#26382f">
+<meta name="description" content="Frère du Seuil — une forme de vie bénédictine dans le monde. Découvrir une démarche chrétienne inspirée de la Règle de saint Benoît.">
+<title>Entrer dans le Seuil — Frère du Seuil</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+#seuil-page {
+  --vert: #26382f;
+  --vert-clair: #354b3e;
+  --or: #b49a68;
+  --fond: #f7f5ef;
+  --texte: #343a34;
+  --muted: #777970;
+  color: var(--texte);
+  background: var(--fond);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.8;
+}
+
+#seuil-page * {
+  box-sizing: border-box;
+}
+
+#seuil-page a {
+  color: inherit;
+}
+
+#seuil-page .site-header {
+  background: var(--vert);
+  color: #f5f0e5;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+#seuil-page .brand {
+  text-decoration: none;
+  color: var(--or);
+  letter-spacing: 3px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+#seuil-page nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+#seuil-page nav a {
+  text-decoration: none;
+  color: #f5f0e5;
+  font-size: 13px;
+  letter-spacing: .5px;
+}
+
+#seuil-page nav a:hover {
+  color: var(--or);
+}
+
+#seuil-page .hero {
+  min-height: 590px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 24px;
+  color: #fff;
+  background:
+    linear-gradient(rgba(20,34,27,.57),rgba(20,34,27,.72)),
+    url("https://images.unsplash.com/photo-1632176670590-bef2ab0ae455?auto=format&fit=crop&w=2000&q=85")
+    center 50% / cover;
+}
+
+#seuil-page .eyebrow {
+  color: var(--or);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+  font-family: Arial, sans-serif;
+}
+
+#seuil-page .hero h1 {
+  color: #fff;
+  font-size: clamp(42px, 7vw, 76px);
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+#seuil-page .ornament {
+  color: var(--or);
+  font-size: 25px;
+  margin: 16px 0;
+}
+
+#seuil-page .hero .subtitle {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: 0 0 24px;
+  color: #e5dfd3;
+  font-family: Arial, sans-serif;
+}
+
+#seuil-page .hero .intro {
+  font-size: clamp(19px, 3vw, 25px);
+  font-style: italic;
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 auto 32px;
+}
+
+#seuil-page .discover {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid var(--or);
+  padding: 12px 30px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  transition: .25s;
+}
+
+#seuil-page .discover:hover {
+  background: var(--or);
+  color: var(--vert);
+}
+
+#seuil-page .section {
+  padding: 85px 24px;
+  max-width: 1050px;
+  margin: auto;
+}
+
+#seuil-page .section h2 {
+  font-size: clamp(27px, 4vw, 38px);
+  font-weight: normal;
+  color: var(--vert);
+  line-height: 1.3;
+  margin: 0 0 28px;
+}
+
+#seuil-page .section h3 {
+  color: var(--vert);
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 0 12px;
+}
+
+#seuil-page .section p {
+  margin: 0 0 19px;
+}
+
+#seuil-page .section-intro {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+#seuil-page .section-image {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+  margin: 35px 0;
+  border-radius: 3px;
+}
+
+#seuil-page .two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+#seuil-page .two-columns img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+#seuil-page .church-section {
+  background: #eeeae0;
+  padding: 80px 24px;
+}
+
+#seuil-page .church-inner {
+  max-width: 1050px;
+  margin: auto;
+}
+
+#seuil-page .pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+#seuil-page .pillar {
+  text-align: center;
+  background: #fff;
+  padding: 30px 22px;
+  border-bottom: 2px solid var(--or);
+}
+
+#seuil-page .pillar .number {
+  color: var(--or);
+  font-size: 25px;
+}
+
+#seuil-page .pillar h3 {
+  font-size: 21px;
+  color: var(--vert);
+  font-weight: normal;
+}
+
+#seuil-page .pillar p {
+  font-size: 15px;
+  margin: 0;
+}
+
+#seuil-page .paths {
+  background: #eeece4;
+}
+
+#seuil-page .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 38px;
+}
+
+#seuil-page .card {
+  background: #fff;
+  padding: 30px;
+  border-bottom: 2px solid var(--or);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#seuil-page .card img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  margin-bottom: 22px;
+}
+
+#seuil-page .card .number {
+  color: var(--or);
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+#seuil-page .card h3 {
+  margin-top: 8px;
+}
+
+#seuil-page .card p {
+  font-size: 15px;
+  flex: 1;
+}
+
+#seuil-page .card a {
+  color: var(--vert);
+  text-decoration: none;
+  border-bottom: 1px solid var(--or);
+  padding-bottom: 4px;
+  font-size: 14px;
+}
+
+#seuil-page .card a:hover {
+  color: #987b48;
+}
+
+#seuil-page .closing {
+  background: var(--vert);
+  color: #f5f0e5;
+  text-align: center;
+  padding: 90px 24px;
+}
+
+#seuil-page .closing h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: normal;
+  line-height: 1.35;
+  color: #e9ddc5;
+}
+
+#seuil-page .closing p {
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+#seuil-page .closing img {
+  width: 100%;
+  max-width: 650px;
+  height: 260px;
+  object-fit: cover;
+  margin: 30px auto;
+  display: block;
+}
+
+#seuil-page footer {
+  background: #1d2b23;
+  color: #ddd5c7;
+  text-align: center;
+  padding: 35px 20px;
+  font-size: 13px;
+}
+
+#seuil-page footer .footer-brand {
+  color: var(--or);
+  letter-spacing: 3px;
+  font-size: 17px;
+}
+
+#seuil-page footer a {
+  color: #ddd5c7;
+}
+
+#seuil-page .image-credit {
+  font-size: 11px;
+  color: #999;
+  text-align: center;
+  padding: 15px;
+}
+
+#seuil-page .image-credit a {
+  color: inherit;
+}
+
+@media(max-width:700px) {
+  #seuil-page .site-header {
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  #seuil-page nav {
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  #seuil-page nav a {
+    font-size: 12px;
+  }
+
+  #seuil-page .hero {
+    min-height: 520px;
+    padding: 75px 20px;
+  }
+
+  #seuil-page .section {
+    padding: 60px 22px;
+  }
+
+  #seuil-page .two-columns,
+  #seuil-page .pillars,
+  #seuil-page .cards {
+    grid-template-columns: 1fr;
+  }
+
+  #seuil-page .two-columns img {
+    height: 270px;
+  }
+
+  #seuil-page .section-image {
+    height: 250px;
+  }
+
+  #seuil-page .card img {
+    height: 210px;
+  }
+}
+</style>
 </head>
+
 <body>
+<div id="seuil-page">
 
-  <header class="header">
-    <a class="brand" href="index.html">FRÈRE DU SEUIL</a>
-    <nav>
-      <a href="#esprit">L'esprit du Seuil</a>
-      <a href="#chemins">Les chemins</a>
-      <a href="#apropos">À propos</a>
-    </nav>
-  </header>
+<header class="site-header">
+  <a class="brand" href="index.html">FRÈRE DU SEUIL</a>
+  <nav aria-label="Navigation principale">
+    <a href="#sens">Le Seuil</a>
+    <a href="#regle">La Règle</a>
+    <a href="#eglise">L'Église</a>
+    <a href="#vie">La vie au seuil</a>
+    <a href="#chemins">Les chemins</a>
+  </nav>
+</header>
 
-  <main>
-    <section class="hero">
-      <p class="eyebrow">UNE FORME DE VIE BÉNÉDICTINE DANS LE MONDE</p>
-      <h1>Frère du Seuil</h1>
-      <div class="ornament">✦</div>
-      <p class="intro">
-        Chercher Dieu en toutes choses.<br>
-        Habiter le monde sans lui donner<br>
-        le centre de son cœur.
-      </p>
-      <a class="discover" href="#esprit">Entrer dans cet esprit</a>
-    </section>
+<main>
 
-    <section class="welcome" id="esprit">
-      <p class="eyebrow">LE SENS DU SEUIL</p>
-      <h2>Au cœur du monde, tourné vers Dieu</h2>
+<!-- ACCUEIL -->
+
+<section class="hero">
+  <p class="eyebrow">UNE FORME DE VIE BÉNÉDICTINE DANS LE MONDE</p>
+  <h1>Frère du Seuil</h1>
+  <div class="ornament">✦</div>
+  <p class="intro">
+    Ne pas quitter le monde,<br>
+    mais apprendre à y demeurer avec Dieu.
+  </p>
+  <a class="discover" href="#sens">Entrer dans le Seuil</a>
+</section>
+
+<!-- LE SENS DU SEUIL -->
+
+<section class="section" id="sens">
+  <div class="section-intro">
+    <p class="eyebrow">I — LE SENS DU SEUIL</p>
+    <h2>Un passage intérieur</h2>
+    <p>
+      Il existe des appels qui ne bouleversent pas nécessairement
+      les circonstances extérieures de notre existence, mais qui
+      en transforment profondément le centre.
+    </p>
+  </div>
+
+  <img class="section-image"
+    src="https://images.unsplash.com/photo-1632176670590-bef2ab0ae455?auto=format&fit=crop&w=1600&q=85"
+    alt="Ancienne porte de pierre ouverte sur un paysage verdoyant"
+    loading="lazy">
+
+  <p>
+    On demeure dans sa maison, auprès de son épouse, de ses enfants,
+    dans son travail et ses responsabilités. Pourtant, quelque chose
+    change : le désir de ne plus vivre pour soi-même, de ne plus
+    laisser les préoccupations du monde occuper toute la place,
+    mais de tourner son cœur vers Dieu.
+  </p>
+
+  <p>
+    Le Seuil désigne ce passage intérieur. Il se tient entre une
+    existence vécue principalement selon ses propres désirs et une
+    existence progressivement remise entre les mains du Christ.
+  </p>
+
+  <p>
+    Franchir le Seuil ne signifie pas fuir le monde. Cela signifie
+    apprendre à y vivre autrement, avec un cœur qui cherche Dieu
+    en toutes choses.
+  </p>
+</section>
+
+<!-- LA REGLE -->
+
+<section class="section" id="regle">
+  <div class="two-columns">
+    <div>
+      <p class="eyebrow">II — UNE INSPIRATION</p>
+      <h2>À l'école de saint Benoît</h2>
+
       <p>
-        Le Frère du Seuil ne quitte pas le monde. Il demeure époux,
-        père et travailleur, mais désire apprendre à vivre chaque
-        chose en présence de Dieu.
+        La Règle de saint Benoît constitue le fondement de
+        Frère du Seuil.
       </p>
+
       <p>
-        À l'école de saint Benoît, de la prière et du silence,
-        il cherche une vie plus simple, plus fidèle et plus recueillie.
+        Écrite pour organiser la vie d'une communauté monastique,
+        elle demeure une école de sagesse chrétienne dont les
+        enseignements peuvent nourrir celui qui désire ordonner
+        toute son existence à Dieu.
       </p>
-    </section>
 
-    <section class="sections" id="chemins">
-      <p class="eyebrow">ENTRER DANS LA PRIÈRE</p>
-      <h2>Les chemins du Seuil</h2>
+      <p><em>
+        « Écoute, ô mon fils, les préceptes du maître,
+        et prête l'oreille de ton cœur. »
+      </em></p>
 
-      <div class="cards">
-        <article class="card">
-          <span>01</span>
-          <h3>Le Rosaire</h3>
-          <p>
-            Sous le regard de Marie, contempler le Christ
-            et apprendre à demeurer auprès de Lui.
-          </p>
-          <a href="https://frereduseuil.github.io/rosaire-frere-du-seuil/">
-            Découvrir le Rosaire →
-          </a>
-        </article>
+      <p>
+        Écouter, obéir, prier, travailler, servir, garder le silence,
+        pratiquer l'humilité : autant de dispositions qui façonnent
+        progressivement une vie tournée vers Dieu.
+      </p>
 
-        <article class="card">
-          <span>02</span>
-          <h3>Le Parcours de Noël</h3>
-          <p>
-            Un chemin spirituel pour préparer son cœur
-            à accueillir le mystère de la Nativité.
-          </p>
-          <a href="https://frereduseuil.github.io/Desert-avent-2026/">
-            Entrer dans le parcours →
-          </a>
-        </article>
+      <p>
+        Frère du Seuil ne prétend pas transposer la vie monastique
+        dans un foyer ni reproduire une abbaye dans le monde.
+        Il cherche plutôt à recevoir de saint Benoît une manière
+        de vivre : ordonnée, fidèle, humble et orientée vers le Christ.
+      </p>
+    </div>
 
-        <article class="card">
+    <img
+      src="https://images.unsplash.com/photo-1723130038126-50c91c19ebe3?auto=format&fit=crop&w=1100&q=85"
+      alt="Livre ouvert et lumière d'une bougie sur une table"
+      loading="lazy">
+  </div>
+</section>
 
-<span>03</span>
+<!-- L'EGLISE -->
 
-<h3>La Règle quotidienne</h3>
+<section class="church-section" id="eglise">
+  <div class="church-inner">
+    <div class="two-columns">
+      <img
+        src="https://images.unsplash.com/photo-1769088508143-7f3f711877ee?auto=format&fit=crop&w=1100&q=85"
+        alt="Croix et cierges dans une église"
+        loading="lazy">
 
-<p>
-Un parcours quotidien à l’école de saint Benoît :
-lecture, commentaire, méditation et mise en pratique
-au cœur de notre vie dans le monde.
+      <div>
+        <p class="eyebrow">III — DEMEURER DANS L'ÉGLISE</p>
+        <h2>Un chemin en communion avec l'Église</h2>
+
+        <p>
+          Frère du Seuil ne se substitue ni à l'Église,
+          ni à ses sacrements, ni à la vie paroissiale.
+        </p>
+
+        <p>
+          Il s'inscrit dans la tradition chrétienne et dans la
+          communion de l'Église catholique.
+        </p>
+
+        <p>
+          La participation à l'Eucharistie, la réception des
+          sacrements, la confession, la liturgie et l'accompagnement
+          spirituel constituent des éléments essentiels de ce chemin.
+        </p>
+
+        <p>
+          La prière personnelle ne remplace pas la prière de l'Église.
+          La Règle ne remplace pas l'Évangile. Et aucune démarche
+          personnelle ne saurait se substituer à la vie sacramentelle.
+        </p>
+
+        <p>
+          C'est dans l'Église que le chrétien reçoit, célèbre
+          et nourrit la vie du Christ.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIE QUOTIDIENNE -->
+
+<section class="section" id="vie">
+  <div class="section-intro">
+    <p class="eyebrow">IV — HABITER LE MONDE AUTREMENT</p>
+    <h2>Le quotidien comme lieu de fidélité</h2>
+  </div>
+
+  <img class="section-image"
+    src="https://images.unsplash.com/photo-1749476101600-90b2eb7efa89?auto=format&fit=crop&w=1600&q=85"
+    alt="Table simple baignée par la lumière du matin"
+    loading="lazy">
+
+  <p>
+    Le Frère du Seuil ne quitte pas ses responsabilités.
+    Sa maison devient le premier lieu de sa fidélité.
+    Sa famille, le premier lieu de son amour.
+    Son travail, un lieu de service.
+    Le temps ordinaire, une occasion de sanctification.
+  </p>
+
+  <p>Il apprend à :</p>
+
+  <ul>
+    <li>Faire silence pour se tenir devant Dieu.</li>
+    <li>Sanctifier les heures par la prière.</li>
+    <li>Accueillir les devoirs familiaux comme un service.</li>
+    <li>Accomplir son travail avec conscience et fidélité.</li>
+    <li>Se dépouiller du superflu.</li>
+    <li>Renoncer progressivement à sa volonté propre.</li>
+    <li>Accueillir les contrariétés sans perdre la charité.</li>
+  </ul>
+
+  <p>
+    Il ne s'agit pas de multiplier les pratiques ou les obligations,
+    mais de laisser progressivement toute la vie être transformée
+    par la présence de Dieu.
+  </p>
+</section>
+
+<!-- DISPOSITIONS -->
+
+<section class="church-section">
+  <div class="church-inner">
+    <div class="section-intro">
+      <p class="eyebrow">V — LES DISPOSITIONS DU FRÈRE DU SEUIL</p>
+      <h2>Trois attitudes intérieures</h2>
+      <p>
+        Trois dispositions donnent une orientation particulière
+        à cette démarche.
+      </p>
+    </div>
+
+    <div class="pillars">
+      <article class="pillar">
+        <div class="number">I</div>
+        <h3>L'obéissance</h3>
+        <p><em>Apprendre à faire confiance.</em></p>
+        <p>
+          Ne plus vouloir tout contrôler, mais chercher à accueillir
+          la volonté de Dieu.
+        </p>
+      </article>
+
+      <article class="pillar">
+        <div class="number">II</div>
+        <h3>La chasteté</h3>
+        <p><em>Apprendre à garder son cœur.</em></p>
+        <p>
+          Vivre dans la pureté du regard, des intentions et des
+          relations, en laissant Dieu ordonner ses affections.
+        </p>
+      </article>
+
+      <article class="pillar">
+        <div class="number">III</div>
+        <h3>La pauvreté</h3>
+        <p><em>Apprendre à ne pas s'attacher.</em></p>
+        <p>
+          Se libérer du superflu, de la possession et du désir
+          incessant d'avoir davantage.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- LES CHEMINS -->
+
+<section class="section paths" id="chemins">
+  <div class="section-intro">
+    <p class="eyebrow">VI — LES CHEMINS DU SEUIL</p>
+    <h2>Avancer jour après jour</h2>
+    <p>
+      Le chemin s'incarne dans des pratiques simples, nourries
+      par la tradition de l'Église et la sagesse bénédictine.
+      Ces chemins ne sont pas des objectifs à accumuler.
+      Ils sont des moyens de demeurer auprès du Christ.
+    </p>
+  </div>
+
+  <div class="cards">
+
+    <article class="card">
+      <img
+        src="https://images.unsplash.com/photo-1769088508143-7f3f711877ee?auto=format&fit=crop&w=900&q=80"
+        alt="Cierges allumés devant une croix"
+        loading="lazy">
+      <span class="number">01</span>
+      <h3>Le Rosaire</h3>
+      <p>
+        Sous le regard de Marie, contempler le Christ
+        et apprendre à demeurer auprès de Lui.
+      </p>
+      <a href="https://frereduseuil.github.io/rosaire-frere-du-seuil/">
+        Découvrir le Rosaire →
+      </a>
+    </article>
+
+    <article class="card">
+      <img
+        src="https://images.unsplash.com/photo-1749476101600-90b2eb7efa89?auto=format&fit=crop&w=900&q=80"
+        alt="Lumière douce sur une table simple"
+        loading="lazy">
+      <span class="number">02</span>
+      <h3>Le Parcours de Noël</h3>
+      <p>
+        Un chemin spirituel pour préparer son cœur
+        à accueillir le mystère de la Nativité.
+      </p>
+      <a href="https://frereduseuil.github.io/Desert-avent-2026/">
+        Entrer dans le parcours →
+      </a>
+    </article>
+
+    <article class="card">
+      <img
+        src="https://images.unsplash.com/photo-1723130038126-50c91c19ebe3?auto=format&fit=crop&w=900&q=80"
+        alt="Livre ouvert à la lumière d'une bougie"
+        loading="lazy">
+      <span class="number">03</span>
+      <h3>La Règle quotidienne</h3>
+      <p>
+        Un parcours quotidien à l'école de saint Benoît :
+        lecture, commentaire, méditation et mise en pratique
+        au cœur de notre vie dans le monde.
+      </p>
+      <a href="regle-quotidienne.html">
+        Entrer dans le parcours →
+      </a>
+    </article>
+
+    <article class="card">
+      <img
+        src="https://images.unsplash.com/photo-1632176670590-bef2ab0ae455?auto=format&fit=crop&w=900&q=80"
+        alt="Ancienne porte de pierre"
+        loading="lazy">
+      <span class="number">04</span>
+      <h3>Le Chemin de Croix</h3>
+      <p>
+        Suivre le Christ sur le chemin de sa Passion,
+        dans le silence, le dépouillement et l'abandon.
+      </p>
+      <a href="chemin-de-croix.html">
+        Entrer dans le Chemin de Croix →
+      </a>
+    </article>
+
+  </div>
+</section>
+
+<!-- FRANCHIR LE SEUIL -->
+
+<section class="closing">
+  <p class="eyebrow">VII — FRANCHIR LE SEUIL</p>
+
+  <h2>Une seule chose est nécessaire.</h2>
+
+  <img
+    src="https://images.unsplash.com/photo-1769088508143-7f3f711877ee?auto=format&fit=crop&w=1300&q=85"
+    alt="Croix et cierges dans une chapelle"
+    loading="lazy">
+
+  <p>
+    Il n'est pas nécessaire de tout changer en un jour.
+  </p>
+
+  <p>
+    Le chemin commence par une écoute, un désir,
+    une disponibilité.
+  </p>
+
+  <p>
+    Il demande de la patience, car la conversion ne s'accomplit
+    pas en un instant. Elle se poursuit dans la fidélité des jours
+    ordinaires, dans les recommencements et dans l'abandon
+    confiant à la grâce de Dieu.
+  </p>
+
+  <p>
+    Le Frère du Seuil n'est pas celui qui a atteint la perfection.
+    C'est celui qui accepte de se laisser conduire.
+  </p>
+
+  <div class="ornament">✦</div>
+
+  <h2>Frère du Seuil</h2>
+  <p><em>Demeurer auprès du Christ, et apprendre à tout vivre en Lui.</em></p>
+</section>
+
+</main>
+
+<footer>
+  <p class="footer-brand">FRÈRE DU SEUIL</p>
+  <p>Une forme de vie bénédictine dans le monde.</p>
+  <p>Fidélité — Silence — Simplicité</p>
+  <p><a href="index.html">Accueil</a></p>
+</footer>
+
+<p class="image-credit">
+  Photographies : <a href="https://unsplash.com/license">Unsplash License</a>.
 </p>
 
-<a href="regle-quotidienne.html">
-Entrer dans le parcours →
-</a>
-          
-</article>
-
-        
-        <article class="card">
-          <span>04</span>
-          <h3>Le Chemin de Croix</h3>
-          <p>
-            Suivre le Christ sur le chemin de sa Passion,
-            dans le silence, le dépouillement et l'abandon.
-          </p>
-          <a href="chemin-de-croix.html">
-            Entrer dans le Chemin de Croix →
-          </a>
-        </article>
-
-      </div>
-    </section>
-
-    <section class="closing" id="apropos">
-      <p class="eyebrow">FIDÉLITÉ — SILENCE — SIMPLICITÉ</p>
-      <h2>Habiter le seuil,<br>demeurer en Dieu.</h2>
-      <p>
-        Une démarche personnelle de vie chrétienne
-        d'inspiration bénédictine, vécue au cœur du monde.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>FRÈRE DU SEUIL</p>
-    <p>Une démarche personnelle, au service d'une vie tournée vers Dieu.</p>
-  </footer>
-
+</div>
 </body>
 </html>
