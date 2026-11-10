@@ -370,6 +370,7 @@ footer a {
 
 <script>
 
+  
 const date = new Date();
 
 const lectures = {
@@ -598,6 +599,163 @@ const lectures = {
     `
   },
 
+
+/* ==========================================
+   CALENDRIER DE LA RÈGLE DE SAINT BENOÎT
+   Source : édition Morin / Schmitz 2023
+========================================== */
+
+const calendrierRegle = [
+  { dates: ["01-01", "05-02", "09-01"], paragraphes: "1" },
+  { dates: ["01-02", "05-03", "09-02"], paragraphes: "2" },
+  { dates: ["01-03", "05-04", "09-03"], paragraphes: "3" },
+  { dates: ["01-04", "05-05", "09-04"], paragraphes: "4" },
+  { dates: ["01-05", "05-06", "09-05"], paragraphes: "5" },
+  { dates: ["01-06", "05-07", "09-06"], paragraphes: "6" },
+  { dates: ["01-07", "05-08", "09-07"], paragraphes: "7" },
+  { dates: ["01-08", "05-09", "09-08"], paragraphes: "8-9" },
+  { dates: ["01-09", "05-10", "09-09"], paragraphes: "10-11" },
+  { dates: ["01-10", "05-11", "09-10"], paragraphes: "12" },
+  { dates: ["01-11", "05-12", "09-11"], paragraphes: "13" },
+  { dates: ["01-12", "05-13", "09-12"], paragraphes: "14-15" },
+  { dates: ["01-13", "05-14", "09-13"], paragraphes: "16-18" },
+  { dates: ["01-14", "05-15", "09-14"], paragraphes: "19-21" },
+  { dates: ["01-15", "05-16", "09-15"], paragraphes: "22" },
+  { dates: ["01-16", "05-17", "09-16"], paragraphes: "23" },
+  { dates: ["01-17", "05-18", "09-17"], paragraphes: "24" },
+  { dates: ["01-18", "05-19", "09-18"], paragraphes: "25" },
+  { dates: ["01-19", "05-20", "09-19"], paragraphes: "26" },
+  { dates: ["01-20", "05-21", "09-20"], paragraphes: "27" },
+  { dates: ["01-21", "05-22", "09-21"], paragraphes: "28" },
+  { dates: ["01-22", "05-23", "09-22"], paragraphes: "29" },
+  { dates: ["01-23", "05-24", "09-23"], paragraphes: "30-31" },
+  { dates: ["01-24", "05-25", "09-24"], paragraphes: "32-34" },
+  { dates: ["01-25", "05-26", "09-25"], paragraphes: "35-37" },
+  { dates: ["01-26", "05-27", "09-26"], paragraphes: "38-40" },
+  { dates: ["01-27", "05-28", "09-27"], paragraphes: "41-45" },
+  { dates: ["01-28", "05-29", "09-28"], paragraphes: "46-51" },
+  { dates: ["01-29", "05-30", "09-29"], paragraphes: "52-54" },
+  { dates: ["01-30", "05-31", "09-30"], paragraphes: "55-57" },
+  { dates: ["01-31", "06-01", "10-01"], paragraphes: "58-62" },
+  { dates: ["02-01", "06-02", "10-02"], paragraphes: "63-68" },
+  { dates: ["02-02", "06-03", "10-03"], paragraphes: "69-70" },
+  { dates: ["02-03", "06-04", "10-04"], paragraphes: "71" },
+  { dates: ["02-04", "06-05", "10-05"], paragraphes: "72" },
+  { dates: ["02-05", "06-06", "10-06"], paragraphes: "73" },
+  { dates: ["02-06", "06-07", "10-07"], paragraphes: "74-75" },
+  { dates: ["02-07", "06-08", "10-08"], paragraphes: "76" },
+  { dates: ["02-08", "06-09", "10-09"], paragraphes: "77-78" },
+  { dates: ["02-09", "06-10", "10-10"], paragraphes: "79" },
+  { dates: ["02-10", "06-11", "10-11"], paragraphes: "80" },
+  { dates: ["02-11", "06-12", "10-12"], paragraphes: "81" },
+  { dates: ["02-12", "06-13", "10-13"], paragraphes: "82" },
+  { dates: ["02-13", "06-14", "10-14"], paragraphes: "83" },
+  { dates: ["02-14", "06-15", "10-15"], paragraphes: "84-85" },
+  { dates: ["02-15", "06-16", "10-16"], paragraphes: "86" },
+  { dates: ["02-16", "06-17", "10-17"], paragraphes: "87" },
+  { dates: ["02-17", "06-18", "10-18"], paragraphes: "88" },
+  { dates: ["02-18", "06-19", "10-19"], paragraphes: "89-90" },
+  { dates: ["02-19", "06-20", "10-20"], paragraphes: "91" },
+  { dates: ["02-20", "06-21", "10-21"], paragraphes: "92-93" },
+  { dates: ["02-21", "06-22", "10-22"], paragraphes: "94-95" },
+  { dates: ["02-22", "06-23", "10-23"], paragraphes: "96-97" },
+  { dates: ["02-23", "06-24", "10-24"], paragraphes: "98" },
+  { dates: ["02-24", "06-25", "10-25"], paragraphes: "99-129" },
+  { dates: ["02-25", "06-26", "10-26"], paragraphes: "130" },
+  { dates: ["02-26", "06-27", "10-27"], paragraphes: "131" },
+  { dates: ["02-27", "06-28", "10-28"], paragraphes: "132" },
+  { dates: ["02-28", "06-29", "10-29"], paragraphes: "133-139" },
+  { dates: ["02-29", "06-30", "10-30"], paragraphes: "140-141" },
+  { dates: ["03-01", "07-01", "10-31"], paragraphes: "142-146" },
+  { dates: ["03-02", "07-02", "11-01"], paragraphes: "147" },
+  { dates: ["03-03", "07-03", "11-02"], paragraphes: "148" },
+  { dates: ["03-04", "07-04", "11-03"], paragraphes: "149" },
+  { dates: ["03-05", "07-05", "11-04"], paragraphes: "150-151" },
+  { dates: ["03-06", "07-06", "11-05"], paragraphes: "152-153" },
+  { dates: ["03-07", "07-07", "11-06"], paragraphes: "154-156" },
+  { dates: ["03-08", "07-08", "11-07"], paragraphes: "157-160" },
+  { dates: ["03-09", "07-09", "11-08"], paragraphes: "161-162" },
+  { dates: ["03-10", "07-10", "11-09"], paragraphes: "163-164" },
+  { dates: ["03-11", "07-11", "11-10"], paragraphes: "165-166" },
+  { dates: ["03-12", "07-12", "11-11"], paragraphes: "167-169" },
+  { dates: ["03-13", "07-13", "11-12"], paragraphes: "170-171" },
+  { dates: ["03-14", "07-14", "11-13"], paragraphes: "172-173" },
+  { dates: ["03-15", "07-15", "11-14"], paragraphes: "174-177" },
+  { dates: ["03-16", "07-16", "11-15"], paragraphes: "178" },
+  { dates: ["03-17", "07-17", "11-16"], paragraphes: "179-182" },
+  { dates: ["03-18", "07-18", "11-17"], paragraphes: "183-187" },
+  { dates: ["03-19", "07-19", "11-18"], paragraphes: "188-198" },
+  { dates: ["03-20", "07-20", "11-19"], paragraphes: "199" },
+  { dates: ["03-21", "07-21", "11-20"], paragraphes: "200-208" },
+  { dates: ["03-22", "07-22", "11-21"], paragraphes: "209-210" },
+  { dates: ["03-23", "07-23", "11-22"], paragraphes: "211-212" },
+  { dates: ["03-24", "07-24", "11-23"], paragraphes: "213-214" },
+  { dates: ["03-25", "07-25", "11-24"], paragraphes: "215-222" },
+  { dates: ["03-26", "07-26", "11-25"], paragraphes: "223-224" },
+  { dates: ["03-27", "07-27", "11-26"], paragraphes: "225-227" },
+  { dates: ["03-28", "07-28", "11-27"], paragraphes: "228-230" },
+  { dates: ["03-29", "07-29", "11-28"], paragraphes: "231-232" },
+  { dates: ["03-30", "07-30", "11-29"], paragraphes: "233-239" },
+  { dates: ["03-31", "07-31", "11-30"], paragraphes: "240-242" },
+  { dates: ["04-01", "08-01", "12-01"], paragraphes: "243-244" },
+  { dates: ["04-02", "08-02", "12-02"], paragraphes: "245-246" },
+  { dates: ["04-03", "08-03", "12-03"], paragraphes: "247-250" },
+  { dates: ["04-04", "08-04", "12-04"], paragraphes: "251-254" },
+  { dates: ["04-05", "08-05", "12-05"], paragraphes: "255" },
+  { dates: ["04-06", "08-06", "12-06"], paragraphes: "256-257" },
+  { dates: ["04-07", "08-07", "12-07"], paragraphes: "258" },
+  { dates: ["04-08", "08-08", "12-08"], paragraphes: "259-260" },
+  { dates: ["04-09", "08-09", "12-09"], paragraphes: "261" },
+  { dates: ["04-10", "08-10", "12-10"], paragraphes: "262-263" },
+  { dates: ["04-11", "08-11", "12-11"], paragraphes: "264-268" },
+  { dates: ["04-12", "08-12", "12-12"], paragraphes: "269-272" },
+  { dates: ["04-13", "08-13", "12-13"], paragraphes: "273-275" },
+  { dates: ["04-14", "08-14", "12-14"], paragraphes: "276-279" },
+  { dates: ["04-15", "08-15", "12-15"], paragraphes: "280-281" },
+  { dates: ["04-16", "08-16", "12-16"], paragraphes: "282-284" },
+  { dates: ["04-17", "08-17", "12-17"], paragraphes: "285-288" },
+  { dates: ["04-18", "08-18", "12-18"], paragraphes: "289-290" },
+  { dates: ["04-19", "08-19", "12-19"], paragraphes: "291" },
+  { dates: ["04-20", "08-20", "12-20"], paragraphes: "292" },
+  { dates: ["04-21", "08-21", "12-21"], paragraphes: "293-296" },
+  { dates: ["04-22", "08-22", "12-22"], paragraphes: "297-300" },
+  { dates: ["04-23", "08-23", "12-23"], paragraphes: "301-304" },
+  { dates: ["04-24", "08-24", "12-24"], paragraphes: "305-309" },
+  { dates: ["04-25", "08-25", "12-25"], paragraphes: "310-312" },
+  { dates: ["04-26", "08-26", "12-26"], paragraphes: "313-315" },
+  { dates: ["04-27", "08-27", "12-27"], paragraphes: "316" },
+  { dates: ["04-28", "08-28", "12-28"], paragraphes: "317-318" },
+  { dates: ["04-29", "08-29", "12-29"], paragraphes: "319-322" },
+  { dates: ["04-30", "08-30", "12-30"], paragraphes: "323-327" },
+  { dates: ["05-01", "08-31", "12-31"], paragraphes: "328-330" }
+];
+
+/* Adapter le 28 février les années non bissextiles */
+function obtenirLectureCalendrier(d) {
+  const moisJour =
+    String(d.getMonth() + 1).padStart(2, "0") + "-" +
+    String(d.getDate()).padStart(2, "0");
+
+  const lecture = calendrierRegle.find(
+    entree => entree.dates.includes(moisJour)
+  );
+
+  if (!lecture) return null;
+
+  const annee = d.getFullYear();
+  const bissextile =
+    new Date(annee, 1, 29).getMonth() === 1;
+
+  if (moisJour === "02-28" && !bissextile) {
+    return {
+      ...lecture,
+      paragraphes: "133-141"
+    };
+  }
+
+  return lecture;
+}
+
   
 };
 
@@ -652,29 +810,14 @@ function afficher() {
 
   const cle = cleDate(date);
 
+  const entreeCalendrier = obtenirLectureCalendrier(date);
 
-  const correspondances = {
-  "03-08": "2026-11-07",
-  "07-08": "2026-11-07",
-  "11-07": "2026-11-07",
+// Les méditations déjà rédigées sont conservées.
+// On utilise le troisième cycle comme référence commune.
+const cleLecture = entreeCalendrier
+  ? "2026-" + entreeCalendrier.dates[2]
+  : cle;
 
-  "03-09": "2026-11-08",
-  "07-09": "2026-11-08",
-  "11-08": "2026-11-08",
-
-  "03-10": "2026-11-09",
-  "07-10": "2026-11-09",
-  "11-09": "2026-11-09",
-
-    
-  "03-11": "2026-11-10",
-  "07-11": "2026-11-10",
-  "11-10": "2026-11-10",
-
-
-};
-
-const cleLecture = correspondances[cle.slice(5)] || cle;
 const lecture = lectures[cleLecture];
 
   document.getElementById("cycle").textContent =
@@ -702,8 +845,9 @@ const lecture = lectures[cleLecture];
       '<p class="placeholder">Application à venir.</p>';
 
   } else {
-    reference.textContent = "Lecture à intégrer au calendrier";
-
+    reference.textContent = entreeCalendrier
+  ? "Paragraphes " + entreeCalendrier.paragraphes
+  : "Lecture à intégrer au calendrier";
     regle.innerHTML =
       '<p class="placeholder">Cette lecture sera ajoutée progressivement.</p>';
 
