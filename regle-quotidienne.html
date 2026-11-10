@@ -145,6 +145,74 @@ footer a {
   .card { padding: 20px; }
   .navigation button { padding: 11px; }
 }
+
+
+/* MODES DE CONSULTATION */
+
+.modes-consultation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 0 28px;
+}
+
+.mode-btn {
+  background: var(--blanc);
+  color: var(--vert);
+  border: 1px solid #d8d1c2;
+  border-radius: 7px;
+  padding: 14px 8px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.mode-btn:hover,
+.mode-btn.actif {
+  background: var(--vert);
+  color: white;
+  border-color: var(--vert);
+}
+
+.outil-consultation {
+  background: var(--blanc);
+  border: 1px solid #ded8ca;
+  border-radius: 8px;
+  padding: 22px;
+  margin-bottom: 25px;
+}
+
+.outil-consultation h3 {
+  color: var(--vert);
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.outil-consultation label {
+  display: block;
+  margin: 12px 0 5px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+.outil-consultation input,
+.outil-consultation select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d8d1c2;
+  border-radius: 5px;
+  background: white;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+@media (max-width: 480px) {
+  .modes-consultation {
+    grid-template-columns: 1fr;
+  }
+}
+
 </style>
 </head>
 
@@ -164,6 +232,89 @@ footer a {
     <div id="cycle" class="reference"></div>
   </div>
 
+  
+  <!-- MODES DE CONSULTATION -->
+
+  <div class="modes-consultation">
+
+    <button class="mode-btn actif" data-mode="quotidien">
+      Lecture du jour
+    </button>
+
+    <button class="mode-btn" data-mode="calendrier">
+      Choisir une date
+    </button>
+
+    <button class="mode-btn" data-mode="recherche">
+      Rechercher dans la Règle
+    </button>
+
+  </div>
+
+  <!-- ESPACE CALENDRIER -->
+
+  <div id="outil-calendrier"
+       class="outil-consultation"
+       hidden>
+
+    <h3>Choisir une date</h3>
+
+    <p>
+      Retrouver la lecture et la méditation correspondant
+      à une journée du parcours annuel.
+    </p>
+
+    <label for="date-selection">
+      Date de consultation
+    </label>
+
+    <input
+      type="date"
+      id="date-selection"
+    >
+
+    <button id="afficher-date" class="mode-btn">
+      Afficher cette journée
+    </button>
+
+  </div>
+
+  <!-- ESPACE RECHERCHE DANS LA REGLE -->
+
+  <div id="outil-recherche"
+       class="outil-consultation"
+       hidden>
+
+    <h3>Rechercher dans la Règle de saint Benoît</h3>
+
+    <p>
+      Retrouver un passage de la Règle et la méditation
+      qui l'accompagne.
+    </p>
+
+    <label for="choix-chapitre">
+      Choisir un chapitre
+    </label>
+
+    <select id="choix-chapitre">
+      <option value="">Sélectionner un chapitre</option>
+    </select>
+
+    <label for="choix-paragraphe">
+      Choisir un paragraphe
+    </label>
+
+    <select id="choix-paragraphe" disabled>
+      <option value="">Choisir d'abord un chapitre</option>
+    </select>
+
+    <button id="afficher-paragraphe" class="mode-btn">
+      Retrouver ce passage
+    </button>
+
+  </div>
+
+  
   <section class="card">
     <h3>La Règle aujourd'hui</h3>
     <p id="reference" class="reference">
@@ -457,6 +608,35 @@ function cleDate(d) {
   return `${annee}-${mois}-${jour}`;
 }
 
+/* ==================================
+   IDENTIFICATION DU CYCLE ANNUEL
+================================== */
+
+function determinerCycle(d) {
+
+  const mois = d.getMonth() + 1;
+  const jour = d.getDate();
+
+  // Premier cycle : 1er janvier au 1er mai
+  if (
+    mois < 5 ||
+    (mois === 5 && jour === 1)
+  ) {
+    return "Premier cycle de lecture";
+  }
+
+  // Deuxième cycle : 2 mai au 31 août
+  if (
+    mois < 9
+  ) {
+    return "Deuxième cycle de lecture";
+  }
+
+  // Troisième cycle : 1er septembre au 31 décembre
+  return "Troisième cycle de lecture";
+}
+
+  
 function afficherDate(d) {
   return d.toLocaleDateString("fr-FR", {
     weekday: "long",
@@ -498,7 +678,7 @@ const cleLecture = correspondances[cle.slice(5)] || cle;
 const lecture = lectures[cleLecture];
 
   document.getElementById("cycle").textContent =
-    "Troisième cycle de lecture";
+    determinerCycle(date);
 
   const regle = document.getElementById("texte-regle");
   const reference = document.getElementById("reference");
@@ -548,6 +728,81 @@ document.getElementById("suivant").onclick = () => {
   afficher();
 };
 
+  
+/* ==================================
+   MODES DE CONSULTATION
+================================== */
+
+const boutonsModes = document.querySelectorAll(".mode-btn[data-mode]");
+
+boutonsModes.forEach(bouton => {
+
+  bouton.addEventListener("click", () => {
+
+    const mode = bouton.dataset.mode;
+
+    // Actualiser le bouton actif
+    boutonsModes.forEach(b => b.classList.remove("actif"));
+    bouton.classList.add("actif");
+
+    // Afficher ou masquer les espaces
+    document.getElementById("outil-calendrier").hidden =
+      mode !== "calendrier";
+
+    document.getElementById("outil-recherche").hidden =
+      mode !== "recherche";
+
+  });
+
+});
+
+
+/* ==================================
+   CHOISIR UNE DATE
+================================== */
+
+document.getElementById("afficher-date").addEventListener("click", () => {
+
+  const valeur = document.getElementById("date-selection").value;
+
+  if (!valeur) {
+    alert("Veuillez choisir une date.");
+    return;
+  }
+
+  const morceaux = valeur.split("-");
+
+  // Construire une date locale, sans décalage de fuseau horaire
+  date.setFullYear(
+    Number(morceaux[0]),
+    Number(morceaux[1]) - 1,
+    Number(morceaux[2])
+  );
+
+  afficher();
+
+});
+
+
+/* ==================================
+   PREPARER LA RECHERCHE
+================================== */
+
+const choixChapitre = document.getElementById("choix-chapitre");
+
+for (let i = 1; i <= 73; i++) {
+
+  const option = document.createElement("option");
+
+  option.value = String(i);
+  option.textContent = "Chapitre " + i;
+
+  choixChapitre.appendChild(option);
+
+}
+
+
+  
 afficher ();
 </script>
 
