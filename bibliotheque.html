@@ -265,6 +265,22 @@ nav a:hover {
   margin: 0 0 18px;
 }
 
+  .lecteur-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 12px 0 18px;
+  overflow: hidden;
+  background: #000;
+}
+
+.lecteur-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+  
+
 .lien-ressource {
   color: var(--vert-clair);
   font-size: 13px;
@@ -524,6 +540,39 @@ footer a {
       <div class="lien-ressource">Lien à ajouter</div>
     </article>
 
+    <article class="ressource"
+  data-categorie="videos"
+  data-recherche="règle saint benoît bénédictin temps vidéo enseignement">
+
+  <div class="type">Vidéo · Règle de saint Benoît</div>
+
+  <h3>La Règle de saint Benoît — Première vidéo</h3>
+
+  <p>
+    Un enseignement vidéo consacré à la Règle de saint Benoît,
+    pour approfondir sa compréhension et nourrir sa mise en pratique.
+  </p>
+
+  <div class="lecteur-video">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/sWhPzIPAlVA"
+      title="Vidéo sur la Règle de saint Benoît"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="lien-ressource">
+    <a href="https://youtu.be/sWhPzIPAlVA"
+       target="_blank" rel="noopener">
+      Voir également sur YouTube →
+    </a>
+  </div>
+
+</article>
+    
     <article class="ressource"
       data-categorie="videos"
       data-recherche="vidéo conférence enseignement monastique">
