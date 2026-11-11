@@ -76,8 +76,6 @@ const regleComplete = {
   29: `Qu’il sache donc bien que celui qui a reçu des âmes à conduire doit se préparer à en rendre compte. Quel que soit le nombre des frères confiés à ses soins, qu’il tienne pour certain qu’au jour du jugement il aura à répondre au Seigneur de leurs âmes à tous, en plus, sans nul doute, de la sienne propre. Ainsi, continuellement dans la crainte de l’examen qui attend le pasteur au sujet de ses brebis, ce compte qu’il doit rendre d’autrui le rendra attentif au sien, et en corrigeant autrui par ses instructions, il se corrigera lui-même de ses propres défauts.`
 
 
-  // CHAPITRE 3 — LA CONVOCATION DES FRÈRES EN CONSEIL
-
  
   // CHAPITRE 3 — L'APPEL DES FRÈRES EN CONSEIL
 
@@ -91,6 +89,95 @@ const regleComplete = {
 
   34: `Quant aux affaires moins importantes, d’usage dans le monastère, l’Abbé prendra conseil des anciens seulement, selon qu’il est écrit : « Fais tout avec conseil, et après l’avoir fait, tu n’auras pas de regret » (Si 32, 24).`
 
-    };
+   
+  // CHAPITRE 4 — LES INSTRUMENTS DES BONNES ŒUVRES
+
+  35: `Avant tout, aimer le Seigneur Dieu de tout son cœur, de toute son âme et de toute sa force (Dt 6, 5 ; Mt 22, 37 ; Mc 12, 30) ; ensuite le prochain comme soi-même (Mt 22, 39 ; Mc 12, 31 ; Lc 10, 27).`,
+
+  36: `Ensuite ne pas tuer (Ex 20, 13 ; Dt 5, 17 ; Lc 18, 20), ni commettre d’adultère (Ex 20, 14 ; Dt 5, 18 ; Mt 5, 27-32), ni voler (Ex 20, 15 ; Dt 5, 19), ni convoiter (Ex 20, 17 ; Dt 5, 21 ; Rm 13, 9), ni porter de faux témoignage (Ex 20, 16 ; Dt 5, 20 ; Mt 19, 18-19 ; Mc 10, 19 ; Lc 18, 20).`,
+
+  37: `Honorer tous les hommes (1 P 2, 17), et ne pas faire à autrui ce qu’on ne ne veut pas qu’on nous fasse (Tb 4, 15 ; Mt 7, 12).`,
+
+  38: `Renoncer à soi-même pour suivre le Christ (Mt 16, 24 ; Lc 9, 23).`,
+
+  39: `Réprimer son corps (1 Co 9, 27) ; ne pas aspirer aux délices (2 P 2, 13), mais aimer le jeûne (Jl 1, 14 ; Jl 2, 12.15).`,
+
+  40: `Soulager les pauvres (Tb 4, 7), vêtir celui qui est nu (Is 58, 7), visiter les malades (Mt 25, 36), ensevelir les morts (Tb 1, 17 ; Tb 2, 4), secourir ceux qui sont dans l’épreuve (Is 1, 17) et consoler les affligés (Is 40, 1 ; Is 61, 2 ; 2 Co 1, 4 ; 1 Th 5, 14).`,
+
+  41: `Se rendre étranger aux préoccupations du monde (Jc 1, 27) et ne rien préférer à l’amour du Christ (Mt 10, 37-39).`,
+
+  42: `Ne pas satisfaire sa colère (Mt 5, 22), ni se réserver un temps pour exercer sa vengeance (Ep 4, 26).`,
+
+  43: `Ne pas entretenir de fausseté dans son cœur (Ps 14, 2), ni donner une fausse paix (Ps 27, 3 ; Rm 12, 9).`,
+
+  44: `Ne pas abandonner la charité (1 Co 13, 8 ; 1 P 4, 8).`,
+
+  45: `Ne pas jurer, de crainte de se parjurer (Mt 5, 33-37), et dire la vérité du cœur comme des lèvres (Ps 14, 2).`,
+
+  46: `Ne pas rendre le mal pour le mal (1 Th 5, 15 ; 1 P 3, 9).`,
+
+  47: `Ne faire d’injustice à personne, mais supporter patiemment celle qu’on nous fait (1 Co 6, 7).`,
+
+  48: `Aimer ses ennemis (Mt 5, 44 ; Lc 6, 35).`,
+
+  49: `Ne pas répondre par la malédiction à ceux qui nous maudissent, mais plutôt les bénir (Lc 6, 28 ; 1 Co 4, 12 ; 1 P 3, 9).`
+
+50: `Soutenir la persécution pour la justice (Mt 5, 10 ; 1 P 3, 14).`,
+
+51: `Ne pas être orgueilleux, ni adonné au vin (Tt 1, 7 ; 1 Tm 3, 3), ni gourmand (Si 37, 29), ni somnolent (Pr 20, 13), ni paresseux (Rm 12, 11), ni prompt au murmure (1 Co 10, 10) ou médisant (Sg 1, 11).`,
+
+52: `Mettre en Dieu son espérance (Ps 72, 28 ; Ps 77, 7).`,
+
+53: `Ce que l’on verra de bon en soi, le rapporter à Dieu et non à soi-même (1 Co 4, 7). Quant au mal, comprendre toujours qu’on l’a fait soi-même et le mettre à son compte.`,
+
+54: `Craindre le jour du jugement (Jb 31, 14) ; redouter l’enfer (Mt 10, 28) et désirer la vie éternelle de toute l’ardeur de son esprit (Ph 1, 23).`,
+
+55: `Avoir tous les jours la mort présente devant les yeux (Mt 24, 42) ; veiller à toute heure sur les actions de sa vie (Dt 4, 9) et tenir pour certain qu’en tout lieu Dieu nous regarde (Ps 13, 2 ; Pr 5, 21).`,
+
+56: `Briser contre le Christ les pensées mauvaises, aussitôt qu’elles se présentent au cœur (Ps 136, 9), et s’en ouvrir à un ancien doté d’esprit (Si 8, 11).`,
+
+57: `Garder sa langue de tout propos mauvais ou nuisible (Ps 33, 14) ; ne pas aimer à beaucoup parler (Pr 10, 19), ne pas dire de paroles vaines ou qui ne portent qu’à rire (Mt 12, 36), et ne pas aimer le rire trop fréquent ou trop bruyant (Si 21, 20).`,
+
+58: `Entendre volontiers les lectures saintes (Lc 11, 28).`,
+
+59: `S’appliquer fréquemment à la prière (Col 4, 2) ; y confesser chaque jour à Dieu, avec larmes et gémissements, ses fautes passées (Ps 6, 7), et à l’avenir se corriger de ces fautes.`,
+
+60: `Ne pas satisfaire les désirs de la chair (Ga 5, 16) et haïr la volonté propre (Si 18, 30).`,
+
+61: `Obéir en tout aux ordres de l’Abbé, même si — pourvu que non ! — il agirait autrement, nous rappelant ce précepte du Seigneur : « Ce qu’ils disent, faites-le ; mais ce qu’ils font, ne le faites pas. » (Mt 23, 3)`,
+
+62: `Ne pas vouloir être appelé saint avant de l’être, mais l’être d’abord, afin qu’on le dise avec plus de vérité (Mt 6, 1).`,
+
+63: `Accomplir chaque jour par ses œuvres les préceptes de Dieu (Si 6, 37).`,
+
+64: `Aimer la chasteté (1 Tm 5, 22).`,
+
+65: `Ne haïr personne (Lv 19, 17), ne pas avoir de jalousie (Jc 3, 14-16), ne pas agir par envie (Ga 5, 26), ne pas aimer à contester (2 Tm 2, 14.24) et fuir l’exaltation du cœur (Ps 130, 1 ; Pr 16, 5).`,
+
+66: `Vénérer les anciens (Lv 19, 32) et aimer les plus jeunes (1 Tm 5, 1).`,
+
+67: `Prier pour ses ennemis dans l’amour du Christ (Mt 5, 44).`,
+
+68: `Rétablir la paix avant le coucher du soleil avec celui dont nous sépare la discorde (Ep 4, 26), et ne jamais désespérer de la miséricorde de Dieu (Ps 51, 10).`,
+
+69: `Voilà quels sont les instruments de l’art spirituel. Si nous en faisons un usage constant, le jour et la nuit, alors quand au jour du jugement nous les remettrons, notre récompense sera celle que le Seigneur a promis : « Ce que l’œil n’a pas vu, ni l’oreille n’a entendu, ce que Dieu a préparé pour ceux qui l’aiment. » (1 Co 2, 9)`,
+
+70: `Or, l’atelier où nous devons travailler diligemment à l’aide de ces instruments, c’est l’enceinte du monastère avec la stabilité dans la communauté.`
+
+// CHAPITRE 5 — DE L'OBÉISSANCE
+
+71: `La première vertu de l’humilité est l’obéissance sans délai. Elle convient à ceux qui n’ont rien de plus cher que le Christ. À cause du saint service qu’ils ont professé, ou par crainte de l’enfer et pour la gloire de la vie éternelle, dès qu’un ordre leur est donné par le supérieur, ils ne souffrent aucun retard dans son exécution, comme si Dieu lui-même leur en avait donné l’ordre.`,
+
+72: `C’est d’eux que le Seigneur dit : « Dès que son oreille m’a entendu, il m’a obéi » (Ps 17, 45). Et il dit encore à ceux qui enseignent : « Celui qui vous écoute m’écoute » (Lc 10, 16).`,
+
+73: `Ces frères donc, abandonnant aussitôt leurs propres affaires et renonçant à leur volonté propre, les mains libres et laissant inachevé ce qu’ils faisaient, obéissent par leurs actes à la voix de celui qui commande. Et, comme d’un seul mouvement, les pieds de l’obéissance exécutent l’ordre reçu, tandis que la crainte de Dieu les y pousse avec empressement. Ainsi, ces deux choses s’accomplissent ensemble chez ceux que l’amour de parvenir à la vie éternelle anime.`,
+
+74: `C’est pourquoi ils s’empressent d’entrer dans la voie étroite dont le Seigneur dit : « Étroite est la voie qui conduit à la vie » (Mt 7, 14), en sorte qu’ils ne vivent pas selon leur volonté propre, ni ne suivent leurs désirs et leurs plaisirs, mais marchent sous le jugement et le commandement d’autrui, désirant vivre dans les monastères et avoir un Abbé à leur tête.`,
+
+75: `Sans aucun doute, ceux-là imitent cette parole du Seigneur : « Je ne suis pas venu faire ma volonté, mais la volonté de celui qui m’a envoyé » (Jn 6, 38).`
+
+
+};
+
 
 
