@@ -1016,6 +1016,99 @@ choixChapitre.addEventListener("change", function () {
 
 });
 
+  
+/* ==================================
+   RETROUVER UN PARAGRAPHE
+================================== */
+
+document.getElementById("afficher-paragraphe")
+  .addEventListener("click", function () {
+
+    const valeurChapitre = choixChapitre.value;
+    const valeurParagraphe = choixParagraphe.value;
+
+    if (valeurChapitre === "" || valeurParagraphe === "") {
+      alert("Veuillez choisir un chapitre et un paragraphe.");
+      return;
+    }
+
+    const numero = Number(valeurParagraphe);
+
+    // Chercher la lecture qui contient ce paragraphe.
+    const entree = Object.values(lectures).find(lecture => {
+
+      if (!lecture.reference) return false;
+
+      const bornes = lecture.reference.match(
+        /§{1,2}\s*(\d+)\s*[–-]\s*(\d+)/
+      );
+
+      if (!bornes) return false;
+
+      return numero >= Number(bornes[1]) &&
+             numero <= Number(bornes[2]);
+
+    });
+
+    const reference = document.getElementById("reference");
+    const regle = document.getElementById("texte-regle");
+    const commentaire = document.getElementById("commentaire");
+    const meditation = document.getElementById("meditation");
+    const pratique = document.getElementById("pratique");
+
+    document.getElementById("date-du-jour").textContent =
+      "Consultation de la Règle de saint Benoît";
+
+    document.getElementById("cycle").textContent =
+      "Recherche par chapitre et paragraphe";
+
+    reference.textContent =
+      "Paragraphe " + numero;
+
+    if (!entree) {
+
+      regle.innerHTML =
+        '<p class="placeholder">Le texte de ce passage sera intégré progressivement.</p>';
+
+      commentaire.innerHTML =
+        '<p class="placeholder">Commentaire à venir.</p>';
+
+      meditation.innerHTML =
+        '<p class="placeholder">Méditation à venir.</p>';
+
+      pratique.innerHTML =
+        '<p class="placeholder">Application à venir.</p>';
+
+      return;
+    }
+
+    // Extraire uniquement le paragraphe demandé.
+    const expression = new RegExp(
+      '<p\\b[^>]*>\\s*<strong>\\s*' +
+      numero +
+      '\\.\\s*<\\/strong>[\\s\\S]*?<\\/p>',
+      "i"
+    );
+
+    const passage = entree.texte
+      ? entree.texte.match(expression)
+      : null;
+
+    regle.innerHTML = passage
+      ? passage[0]
+      : '<p class="placeholder">Le texte de ce paragraphe sera intégré progressivement.</p>';
+
+    commentaire.innerHTML = entree.commentaire ||
+      '<p class="placeholder">Commentaire à venir.</p>';
+
+    meditation.innerHTML = entree.meditation ||
+      '<p class="placeholder">Méditation à venir.</p>';
+
+    pratique.innerHTML = entree.pratique ||
+      '<p class="placeholder">Application à venir.</p>';
+
+  });
+
 afficher();
 
 </script>
