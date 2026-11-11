@@ -257,7 +257,12 @@ const regleComplete = {
 // CHAPITRE 7 — DE L'HUMILITÉ (douzième degré)
 
 104: `Le douzième degré d’humilité est qu’un moine non seulement garde l’humilité dans son cœur, mais encore la manifeste constamment dans son attitude extérieure à ceux qui le voient. C’est-à-dire qu’à l’office divin, à l’oratoire, dans le monastère, au jardin, en chemin, dans les champs, partout où il se trouve, assis, marchant ou debout, il ait toujours la tête inclinée, les yeux baissés, se jugeant à toute heure coupable de ses péchés, s’imaginant déjà comparaître au redoutable jugement de Dieu, et disant sans cesse en son cœur ce que disait le publicain de l’Évangile, les yeux fixés vers la terre : « Seigneur, je ne suis pas digne, moi pécheur, de lever les yeux vers le ciel. » (Lc 18, 13) Et encore avec le Prophète : « Je suis courbé et humilié de toutes parts. » (Ps 37, 7)`,
-  
+
+// CHAPITRE 7 — DE L'HUMILITÉ (conclusion)
+
+105: `Une fois gravis tous ces degrés d’humilité, le moine parviendra bientôt à cet amour de Dieu, qui — parfait — bannit la crainte (1 Jn 4, 18), et fait que tout ce qu’il n’observait auparavant qu’avec frayeur, il commence alors à le garder sans peine, comme naturellement et par habitude. Il n’agira plus par crainte de l’enfer, mais par amour du Christ, par l’habitude même du bien et par l’attrait des vertus.`,
+
+106: `Voilà ce que le Seigneur daignera faire paraître dans son ouvrier, purifié de ses vices et de ses péchés par l’Esprit-Saint.`  
   
   
   };
