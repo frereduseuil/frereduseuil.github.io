@@ -87,7 +87,7 @@ const regleComplete = {
 
   33: `Néanmoins, l’Abbé doit faire toutes choses dans la crainte de Dieu et conformément à la Règle, sachant que, sans aucun doute, il devra rendre compte de toutes ses décisions à Dieu, ce juge souverainement équitable.`,
 
-  34: `Quant aux affaires moins importantes, d’usage dans le monastère, l’Abbé prendra conseil des anciens seulement, selon qu’il est écrit : « Fais tout avec conseil, et après l’avoir fait, tu n’auras pas de regret » (Si 32, 24).\,`
+  34: `Quant aux affaires moins importantes, d’usage dans le monastère, l’Abbé prendra conseil des anciens seulement, selon qu’il est écrit : « Fais tout avec conseil, et après l’avoir fait, tu n’auras pas de regret » (Si 32, 24).`,
 
    
   // CHAPITRE 4 — LES INSTRUMENTS DES BONNES ŒUVRES
