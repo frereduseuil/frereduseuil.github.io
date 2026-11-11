@@ -378,6 +378,203 @@ const regleComplete = {
 
 151: `Chaque âge et chaque degré d’intelligence demandent une règle de conduite particulière. Aussi, lorsque les enfants ou les plus jeunes frères, ou ceux qui sont incapables de comprendre la portée de la peine de l’excommunication, tomberont dans une faute, on leur infligera des jeûnes prolongés, ou on les punira par de rudes coups de bâton, afin qu’ils guérissent.`,
   
+// CHAPITRE 31 — LES QUALITÉS QUE DOIT AVOIR LE CELLÉRIER DU MONASTÈRE
+
+152: `On choisira pour cellérier du monastère quelqu’un qui soit sage, d’un caractère mûr, sobre, ni gourmand, ni hautain, ni turbulent, ni injuste, ni négligent, ni prodigue, mais rempli de la crainte de DIEU, et qui soit comme un père pour toute la communauté.`,
+
+153: `Qu’il prenne soin de tout. Qu’il ne fasse rien sans l’ordre de l’Abbé. Qu’il observe exactement ce qui est commandé. Qu’il ne contriste pas les frères. Si un frère lui fait une demande déraisonnable, qu’il ne lui fasse pas de peine en le rebutant avec mépris ; mais qu’il refuse avec raison et avec humilité ce qu’on lui demande mal à propos.`,
+
+154: `Qu’il veille à la garde de son âme, se souvenant toujours de cette parole de l’Apôtre : « Celui qui aura bien administré, s’acquiert ainsi un rang élevé. » (1 Tm 3, 13)`,
+
+155: `Qu’il prenne un soin tout particulier des malades, des enfants, des hôtes et des pauvres, sachant à n’en pas douter qu’au jour du jugement il lui faudra rendre compte de sa conduite envers eux tous.`,
+
+156: `Qu’il regarde tous les objets et tous les biens du monastère comme les vases sacrés de l’autel. Qu’il ne néglige rien. Qu’il ne soit ni avare, ni prodigue, ni dilapidateur du patrimoine du monastère ; mais qu’il fasse tout avec mesure et conformément aux ordres de l’Abbé.`,
+
+157: `Avant tout, qu’il ait l’humilité, et s’il ne peut accorder ce qu’on lui demande, qu’il donne du moins en réponse une bonne parole, selon qu’il est écrit : « Une bonne parole est encore le meilleur des dons. » (Si 18, 16)`,
+
+158: `Qu’il prenne soin de tout ce que l’Abbé lui aura confié, et qu’il ne se mêle pas de ce dont il lui aura défendu de s’occuper. Qu’il donne aux frères la portion déterminée sans contrecœur ni résistance, de peur que ceux-ci ne se scandalisent — se souvenant de la punition dont la parole divine menace « quiconque aura scandalisé l’un des plus petits. » (Mt 18, 6)`,
+
+159: `Si la communauté est nombreuse, il recevra des aides ; afin qu’avec leur secours il puisse remplir son office l’âme en paix.`,
+
+160: `On donnera et on demandera aux heures convenables ce qui doit être donné ou demandé, afin que personne ne soit troublé ni contristé dans la maison de DIEU.`,
+
+// CHAPITRE 32 — LES OUTILS ET LES OBJETS DU MONASTÈRE
+
+161: `L’Abbé chargera ceux des frères dont la vie et les mœurs lui inspirent confiance de tout ce que le monastère possède en outils, vêtements et autres objets. Il leur en confiera le soin particulier, selon qu’il le jugera utile à leur entretien et à leur conservation. L’Abbé en tiendra un inventaire pour savoir, lorsque les frères se succèdent tour à tour dans ces charges, ce qu’il donne et ce qu’il reçoit.`,
+
+162: `Si quelqu’un traite avec malpropreté ou négligence les choses appartenant au monastère, il sera réprimandé ; s’il ne s’amende pas, il sera soumis à la discipline régulière.`,
+
+// CHAPITRE 33 — SI LES MOINES DOIVENT AVOIR QUELQUE CHOSE EN PROPRE
+
+163: `Avant tout, il faut retrancher radicalement du monastère ce vice de la propriété. Que personne ne se permette de rien donner ou recevoir sans l’autorisation de l’Abbé, ni d’avoir quoi que ce soit en propre, absolument aucune chose — ni livres, ni tablettes, ni stylet pour écrire ; en un mot, rien du tout —, puisqu’il n’est pas même permis aux moines d’avoir en propre ni leur corps, ni leurs volontés, mais qu’ils doivent attendre du père du monastère tout ce qui leur est nécessaire. Qu’il ne leur soit donc jamais licite d’avoir quelque chose que l’Abbé n’aurait pas donné ou permis.`,
+
+164: `Que tout soit commun à tous, ainsi qu’il est écrit (Ac 4, 32) ; que personne n’ait la témérité de s’approprier quoi que ce soit, pas même en paroles. Si quelqu’un devait se complaire en ce vice détestable, on l’avertira une première et une seconde fois ; s’il ne s’amende pas, il sera soumis à la correction.`,
+
+// CHAPITRE 34 — SI TOUS DOIVENT RECEVOIR ÉGALEMENT LE NÉCESSAIRE
+
+165: `Comme il est écrit : « On partageait à chacun selon ses besoins. » (Ac 4, 35) Nous n’entendons pas dire par là qu’on soit partial envers personne — pourvu que non ! — mais qu’on ait égard aux infirmités. Celui qui a besoin de moins, qu’il rende grâce à DIEU et ne s’attriste pas ; faut-il à un autre davantage, qu’il s’humilie de sa faiblesse et ne s’élève pas de la miséricorde qu’on a pour lui. Ainsi tous les membres seront en paix.`,
+
+166: `Avant tout, que jamais n’apparaisse le vice du murmure, pour quelque raison que se soit, ni dans le moindre mot, ni dans un signe quelconque. Si quelqu’un y est surpris, qu’il soit soumis à une correction sévère.`,
+
+// CHAPITRE 35 — LES SERVITEURS DE SEMAINE DE LA CUISINE
+
+167: `Les frères se serviront mutuellement. Personne ne sera dispensé du travail de la cuisine, si ce n’est pour cause de maladie ou pour s’occuper d’affaires plus utiles. C’est par cet exercice, en effet, qu’on acquiert plus de mérite et un accroissement de charité. On donnera des aides à ceux qui sont faibles, afin qu’ils n’accomplissent pas cette tâche avec tristesse. Tous auront ainsi des aides, selon que le demandera l’état de la communauté ou la situation du lieu.`,
+
+168: `Si la communauté est nombreuse, le cellérier sera dispensé de la cuisine, ainsi que ceux qui ont à travailler, comme nous l’avons dit, à des occupations plus importantes ; tous les autres se serviront mutuellement avec charité.`,
+
+169: `Celui qui sort de semaine fera le samedi le nettoyage. Il lavera les linges avec lesquels les frères s’essuient les mains et les pieds. Il lavera aussi les pieds à tous, aidé de celui qui doit entrer en semaine. Il remettra au cellérier, propres et en bon état, les objets de son service. Le cellérier les confiera à celui qui entre en semaine, afin de savoir ce qu’il donne et ce qu’il reçoit.`,
+
+170: `Une heure avant le repas, les serviteurs de semaine recevront chacun, en plus de la portion ordinaire, un coup à boire et un morceau de pain ; afin qu’au moment du repas ils puissent servir leurs frères sans murmure et sans trop de fatigue. Mais aux jours des solennités, ils attendront jusqu’après la Messe.`,
+
+171: `Ceux qui entrent en semaine et ceux qui en sortent se prosterneront aux genoux de tous à l’oratoire, le dimanche aussitôt après les Laudes, et demanderont que l’on prie pour eux. Celui qui sort de semaine dira ce verset : « Tu es béni, Seigneur DIEU, toi qui m’aides et me consoles. » (Dn 3, 52 ; Ps 85, 17) Après l’avoir dit trois fois, il recevra la bénédiction. Celui qui entre en semaine dira ensuite : « DIEU, viens me délivrer ; Seigneur, viens vite à mon secours ! » (Ps 69, 2) Et ce verset ayant été aussi répété trois fois par tous, il recevra la bénédiction et entrera en fonction.`,
+
+// CHAPITRE 36 — LES FRÈRES MALADES
+
+172: `Avant tout et par-dessus tout, on prendra soin des malades, et on les servira comme s’ils étaient le Christ en personne ; car c’est lui-même qui a dit : « J’ai été malade et vous m’avez visité » (Mt 25, 36), et encore : « Ce que vous avez fait à l’un de ces petits, c’est à moi que vous l’avez fait. » (Mt 25, 40)`,
+
+173: `Les malades considéreront de leur côté que c’est pour l’honneur de DIEU qu’on les sert, et ils ne mécontenteront pas par des exigences superflues leurs frères qui les servent. Et pourtant, il faudrait les supporter avec patience, parce qu’on en retire une plus large récompense. L’Abbé veillera donc avec le plus grand soin à ce qu’ils n’aient à souffrir d’aucune négligence.`,
+
+174: `On affectera aux frères malades un logement à part, et pour les servir, un frère craignant DIEU, diligent et soigneux.`,
+
+175: `On offrira aux malades l’usage des bains toutes les fois qu’il sera expédient ; mais à ceux qui sont en bonne santé, aux jeunes surtout, on l’accordera plus rarement.`,
+
+176: `On accordera même l’usage de la viande aux malades qui sont tout à fait infirmes, afin qu’ils puissent refaire leurs forces ; mais aussitôt qu’ils seront mieux portants, ils reprendront l’abstinence accoutumée.`,
+
+177: `L’Abbé veillera avec la plus grande sollicitude à ce que les cellériers et les servants ne négligent pas les malades ; car il est responsable de toutes les fautes dans lesquelles tomberaient ses disciples.`,
+
+// CHAPITRE 37 — LES VIEILLARDS ET LES ENFANTS
+
+178: `Bien que l’homme par nature soit porté à la compassion envers les vieillards et les enfants, l’autorité de la Règle doit néanmoins intervenir en leur faveur. On aura donc toujours égard à leur faiblesse, et on ne les astreindra pas à la rigueur de la Règle pour ce qui est de la nourriture ; mais on usera envers eux d’une tendre condescendance, et ils pourront devancer les heures régulières des repas.`,
+
+// CHAPITRE 38 — LE LECTEUR DE SEMAINE
+
+179: `La lecture ne doit jamais manquer à la table des frères. Il ne faut pas que le premier venu s’empare du livre et le lise ; mais un lecteur entrera en fonction le dimanche pour une semaine entière. Après la Messe et la Communion, il commencera par se recommander aux prières de tous, afin que DIEU détourne de lui toute exaltation d’esprit. Et il dira ce verset que tous répéteront trois fois après lui dans l’oratoire : « Seigneur, ouvre mes lèvres, et ma bouche annoncera ta louange. » (Ps 50, 17) Et après avoir ainsi reçu la bénédiction, il entrera en fonction.`,
+
+180: `Qu’on observe à table un silence absolu et qu’on n’y entende ni chuchotement ni parole, hormis la voix du lecteur. Que les frères se servent mutuellement ce qui est nécessaire en nourriture et boisson ; afin que personne n’ait besoin de rien demander. Si toutefois il leur manque quelque chose, ils le demanderont par un signe quelconque, plutôt que par la parole. Que personne ne se permette de poser alors des questions sur la lecture, ou sur tout autre sujet, afin de ne pas causer de trouble, à moins que le supérieur ne veuille dire quelque chose en peu de mots pour l’édification.`,
+
+181: `Le frère en charge de la semaine prendra le mixte (boisson faite de vin mêlé d'eau, suivant l'usage romain, et servant probablement d’ablution au lecteur) avant de commencer la lecture, par respect pour la sainte Communion et afin d’éviter que le jeûne ne lui soit pénible à supporter. Il prendra ensuite son repas avec les serviteurs de semaine de la cuisine.`,
+
+182: `Les frères ne liront ni ne chanteront à tour de rang, mais ceux-là seulement qui sont capables d’édifier les auditeurs.`,
+
+// CHAPITRE 39 — LA MESURE DE LA NOURRITURE
+
+183: `Nous croyons que deux mets cuits doivent suffire à toutes les tables pour le repas quotidien, tant de la sixième que de la neuvième heure, eu égard aux infirmités diverses. Ainsi, celui qui ne pourrait pas manger d’un plat pourra se refaire avec l’autre. Deux mets cuits devront donc suffire aux frères, et s’il y a moyen d’avoir des fruits ou des légumes frais, on les ajoutera en troisième plat.`,
+
+184: `Une livre de pain (peut-être un kilo, sachant que le pain constituait l’essentiel de la nourriture des moines), à bon poids, suffira pour chaque jour, soit qu’on fasse un seul repas, soit qu’il y ait dîner et souper. Si l’on doit souper, le cellérier mettra en réserve un tiers de cette même livre pour y être servi.`,
+
+185: `Si l’on a un travail plus considérable, il dépendra de la volonté et du pouvoir de l’Abbé d’ajouter quelque chose, au cas où il le juge opportun et en évitant tout excès, afin que le moine ne soit jamais surpris par l’indigestion. Rien n’est aussi contraire à tout chrétien que l’excès de table, selon cette parole de notre Seigneur : « Veillez à ce que vos cœurs ne s’appesantissent pas sous l’excès. » (Luc 21, 34)`,
+
+186: `Quant aux plus jeunes enfants, on ne leur servira pas la même quantité de nourriture, mais une moindre qu’aux plus grands, gardant en tout la modération.`,
+
+187: `Tous absolument s’abstiendront de la viande des quadrupèdes, excepté les malades très affaiblis.`,
+
+// CHAPITRE 40 — LA MESURE DE LA BOISSON
+
+188: `« Chacun a reçu de DIEU son don propre : l’un celui-ci, l’autre celui-là. » (1 Co 7, 7) Ce n’est donc pas sans quelque scrupule que nous fixons aux autres la mesure de leur aliment. Néanmoins, ayant égard au tempérament de ceux qui sont faibles, nous croyons qu’une hémine de vin suffit à chacun pour la journée (elle équivalait probablement à un quart de litre). Que ceux auxquels DIEU donne la force de s’en abstenir sachent qu’ils en recevront une récompense particulière.`,
+
+189: `Si la situation du lieu, ou le travail, ou les chaleurs de l’été demandent davantage, le supérieur en décidera ; mais il veillera en tout à ne pas laisser aller jusqu’à la satiété ou à l’ivresse.`,
+
+190: `Nous lisons, il est vrai, que le vin ne convient aucunement aux moines ; mais comme on ne peut en persuader les moines de notre temps, convenons du moins de n’en pas boire jusqu’à satiété, mais avec modération, car « le vin fait apostasier même les sages. » (Si 19, 2)`,
+
+191: `Si les conditions du lieu ne permettent pas de se procurer cette mesure de vin, mais beaucoup moins, ou même rien du tout, les habitants de l’endroit béniront DIEU et se garderont de murmurer ; car c’est là l’avertissement que nous donnons avant tout, qu’on s’abstienne des murmures.`,
+
+// CHAPITRE 41 — À QUELLE HEURE LES FRÈRES DOIVENT PRENDRE LEUR REPAS
+
+192: `Depuis la sainte Pâque jusqu’à la Pentecôte, les frères dîneront à Sexte et souperont le soir (la sixième heure, ou heure de Sexte, finit invariablement à midi). Durant tout l’été, à partir de la Pentecôte, ils jeûneront le mercredi et le vendredi jusqu’à None, s’ils n’ont pas de travaux dans les champs, ou si la chaleur excessive de l’été ne les incommode pas. Les autres jours, ils dîneront à Sexte.`,
+
+193: `Cette heure de Sexte pour le dîner devra être maintenue, si l’on a des travaux à la campagne ou si les chaleurs de l’été sont trop fortes : le soin d’en décider appartiendra à l’Abbé. C’est à lui de régler et disposer toute chose de telle sorte que les âmes se sauvent et que les frères fassent leur tâche sans motif légitime de murmure.`,
+
+194: `Depuis la mi-septembre jusqu’au commencement du Carême, ils prendront toujours leur repas à None.`,
+
+195: `Pendant le Carême jusqu’à Pâques, ils mangeront après les Vêpres. On célébrera toutefois ces Vêpres assez tôt pour qu’on n’ait pas besoin d’allumer une lampe pour le repas, mais que tout puisse se terminer encore à la lumière du jour.`,
+
+196: `Et de même en tout temps, on réglera l’heure soit du souper, soit du dîner, pour que tout se fasse dans la clarté.`,
+
+// CHAPITRE 42 — QUE PERSONNE NE PARLE APRÈS COMPLIES
+
+197: `Les moines doivent en tout temps s’appliquer au silence, mais principalement durant les heures de la nuit. C’est pourquoi, en toute saison, soit que l’on jeûne, soit que l’on dîne — si c’est une période où il y a un dîner —, aussitôt après le souper, ils iront s’asseoir tous ensemble, et l’un d’eux lira les Conférences ou les Vies des Pères (les Conférences rapportent le séjour en Égypte de JEAN CASSIEN et les Vies sont des biographies célèbres de moines, dues à divers auteurs), ou du moins quelque chose qui puisse édifier les auditeurs. On ne lira toutefois pas l’Heptateuque (les sept premiers livres de la Bible : les cinq livres de la Loi ou Torah, auxquels sont ajoutés les livres de Josué et des Juges), ni le Livre des Rois, parce qu’il ne serait pas bon pour les esprits faibles d’entendre, à cette heure-là, cette partie de l’Écriture. On la lira à d’autres heures.`,
+
+198: `Si c’est un jour de jeûne, une fois les Vêpres dites, les frères se rendront promptement, après un court intervalle, à la lecture des Conférences, comme nous venons de le dire. On lira quatre ou cinq feuillets, ou autant que le temps le permettra, tandis que tous accourent au rassemblement pendant la durée de cette lecture, y compris celui qui serait encore occupé à la tâche qui lui a été assignée.`,
+
+199: `Tous ainsi assemblés, on récitera les Complies, et depuis la sortie de cet office, il ne sera plus permis de dire quoi que ce soit à personne. Si quelqu’un enfreint cette règle du silence, il sera soumis à une punition très sévère : excepté en cas de la réception des hôtes ou si l’Abbé à un ordre à donner. Même alors, la chose se devra faire en toute gravité, retenue et bienséance.`,
+
+// CHAPITRE 43 — CEUX QUI ARRIVENT EN RETARD À L'ŒUVRE DE DIEU OU À LA TABLE
+
+200: `À l’heure de l’office divin, dès le signal entendu, on laissera là tout ce qu’on a en mains, et on accourra en toute hâte, avec gravité néanmoins, afin de ne pas alimenter la dissipation. Que rien donc ne soit préféré à l’Œuvre de DIEU.`,
+
+201: `Si quelqu’un arrive aux Vigiles nocturnes après le Gloria du psaume nonante-quatre — qui pour ce motif devra se dire sur un rythme très lent et comme en traînant —, il ne prendra pas son rang au chœur, mais se tiendra le dernier de tous, ou à la place à part que l’Abbé aura attribuée aux négligents de cette sorte, afin d’être vu de lui et de toute la communauté. Il y restera jusqu’à ce que, l’Œuvre de DIEU terminée, il fasse pénitence par une satisfaction publique.`,
+
+202: `Si nous avons jugé bon de les placer ainsi au dernier rang ou à l’écart, c’est afin que la honte qu’ils éprouveront d’être exposés aux regards de tous serve à les corriger. Car s’ils restaient en dehors de l’oratoire, tel irait peut-être se recoucher et dormir, ou s’asseoir dehors et se livrer à des bavardages, offrant une occasion à l’esprit malin. Il vaut donc mieux qu’ils entrent ; ainsi ils ne perdront pas tout, et pourront du reste se corriger.`,
+
+203: `Aux Heures du jour, celui qui arrivera à l’Œuvre de DIEU après le verset et le Gloria du premier psaume qui suit ce verset, se tiendra à la dernière place, suivant la règle établie. Il ne se permettra pas de se joindre au chœur des frères pour la psalmodie avant d’avoir donné satisfaction, à moins que l’Abbé ne lui en donne la permission, avec son pardon. Même dans ce cas, il devra encore en donner satisfaction.`,
+
+204: `À la table, celui qui n’arrivera pas avant le verset, de façon que tous le disent ensemble avec la prière et se mettent à table au même moment : si c’est par négligence ou par sa faute qu’il n’est pas arrivé à temps, il sera repris pour cela jusqu’à deux fois. Si par la suite il ne s’amende pas, on ne permettra pas qu’il participe à la table commune, mais séparé de la compagnie de tous, il prendra seul son repas et sera privé de sa portion de vin, jusqu’à ce qu’il ait donné satisfaction et se soit corrigé. On traitera de la même manière celui qui ne sera pas présent au verset que l’on dit après le repas.`,
+
+205: `Nul ne se permettra de manger ou de boire quoi que ce soit, avant ou après l’heure fixée. Mais si le supérieur offre quelque chose à un frère, et que celui-ci refuse de l’accepter, lorsqu’il en viendra à désirer ce qu’il avait d’abord refusé, on ne le lui accordera pas, ni toute autre chose, jusqu’à ce qu’il ait donné une satisfaction convenable.`,
+
+// CHAPITRE 44 — CEUX QUI ONT ÉTÉ EXCOMMUNIÉS : COMMENT ILS DOIVENT SATISFAIRE
+
+206: `Celui qui, pour des fautes graves, aura été excommunié de l’oratoire et de la table se tiendra prosterné devant la porte de l’oratoire, à l’heure où l’on y célébrera l’Œuvre de DIEU. Il ne dira rien, se contentant de demeurer étendu, la face contre terre, aux pieds de tous ceux qui sortent de l’oratoire. Et il continuera de faire ainsi, jusqu’à ce que l’Abbé juge qu’il a satisfait. Alors, sur l’ordre de l’Abbé, il viendra se jeter à ses pieds et à ceux de tous les frères, afin qu’ils prient pour lui.`,
+
+207: `Et alors, si l’Abbé l’ordonne, il sera reçu au chœur et au rang que l’Abbé aura déterminé. Cependant, il ne pourra, sans un nouvel ordre de l’Abbé, ni entonner les psaumes dans l’oratoire, ni réciter de lecture ou quoi que ce soit. Et à toutes les Heures, au moment où se termine l’Œuvre de DIEU, il se prosternera à terre à la place où il se trouve, et donnera ainsi satisfaction, jusqu’à ce que l’Abbé lui ordonne de cesser désormais cette sorte de satisfaction.`,
+
+208: `Ceux qui, pour des fautes légères, sont seulement excommuniés de la table, donneront satisfaction dans l’oratoire aussi longtemps que l’Abbé l’aura ordonné. Ils continueront de faire ainsi, jusqu’à ce que l’Abbé leur donne sa bénédiction et leur dise : « Cela suffit. »`,
+
+// CHAPITRE 45 — CEUX QUI SE TROMPENT À L'ORATOIRE
+
+209: `Lorsque quelqu’un se trompe dans la récitation d’un psaume, d’un répons, d’une antienne ou d’une lecture, s’il ne s’en humilie pas sur place et devant tout le monde, en donnant satisfaction, il sera soumis à une correction plus sévère ; cela pour n’avoir pas voulu corriger par un acte d’humilité la faute qu’il a commise par sa négligence.`,
+
+210: `Les enfants, pour ces sortes de fautes, seront frappés de coups de bâton.`,
+
+// CHAPITRE 46 — CEUX QUI FONT DES FAUTES EN AUTRE CHOSE
+
+211: `Lorsque quelqu’un, dans un travail à la cuisine, au cellier, dans un atelier, à la boulangerie, au jardin, dans l’exercice d’un métier, en quelque lieu que ce soit, fait une faute, brise ou perd quelque chose, ou commet un délit quelconque, s’il ne vient pas aussitôt de lui-même en donner satisfaction et s’en accuser devant l’Abbé et la communauté, et qu’on vienne à le connaître par un autre, il sera soumis à une correction plus sévère.`,
+
+212: `Mais s’il s’agit d’un péché secret de l’âme, il s’en ouvrira seulement à l’Abbé ou aux anciens dotés d’esprit, qui savent guérir leurs propres blessures et celles d’autrui sans les découvrir ni les divulguer.`,
+
+// CHAPITRE 47 — LE SIGNAL POUR INDIQUER L'HEURE DE L'ŒUVRE DE DIEU
+
+213: `La charge d’annoncer l’heure de l’Œuvre de DIEU, tant de jour que de nuit, incombera à l’Abbé (avec les moyens de l’époque, il n’était pas facile de compter les heures, d’autant que leur longueur variait d’un jour à l’autre). Il s’en chargera lui-même, ou la confiera à un frère si ponctuel que tout s’accomplisse aux heures régulières.`,
+
+214: `Ceux qui en auront reçu l’ordre entonneront, à leur rang après l’Abbé, les psaumes et les antiennes. Personne n’aura la présomption de chanter ou de lire s’il ne peut remplir cette fonction de manière à édifier ceux qui l’écoutent, mais le fera avec humilité, gravité et crainte, et après en avoir reçu l’ordre de l’Abbé.`,
+
+// CHAPITRE 48 — LE TRAVAIL MANUEL DE CHAQUE JOUR
+
+215: `L’oisiveté est ennemie de l’âme. Les frères doivent donc consacrer certaines heures au travail des mains et d’autres à la lecture des choses divines. C’est pourquoi nous croyons devoir régler comme il suit ce double partage de la journée (reprenant la tradition biblique, la journée est découpée en douze heures de durée variable, de l'aube au crépuscule – où la première heure correspond de nos jours à six heures du matin).`,
+
+216: `De Pâques à la mi-septembre, les frères sortiront dès le matin pour s’employer aux travaux nécessaires, depuis la première heure jusque vers la quatrième. À partir de la quatrième heure jusque vers la sixième, ils vaqueront à la lecture.`,
+
+217: `Après la sixième heure, leur dîner fini, ils se reposeront sur leurs lits dans un silence complet. Si quelqu’un veut lire, qu’il lise tout bas de façon à ne pas incommoder les autres (les anciens avaient coutume de lire, même en privé, à haute voix). None sera un peu avancée au milieu de la huitième heure ; puis ils retourneront au travail jusqu’aux Vêpres.`,
+
+218: `Si la nécessité ou la pauvreté exigent que les frères s’occupent eux-mêmes des récoltes, qu’ils ne s’en affligent pas ; car c’est alors qu’ils sont véritablement moines, vivant du travail de leurs mains, comme nos Pères et les Apôtres. Que tout se fasse cependant avec mesure, par égard pour les faibles.`,
+
+219: `De la mi-septembre au commencement du Carême, ils vaqueront à la lecture jusqu’à la fin de la deuxième heure. La deuxième heure passée, on dira Tierce ; après quoi tous s’occuperont au travail qui leur aura été confié. Au premier coup de None, chacun quittera son ouvrage, et ils se tiendront prêts pour le moment où l’on sonnera le second coup. Après le repas, ils vaqueront à leurs lectures ou à l’étude des psaumes.`,
+
+220: `Durant le Carême, ils feront leurs lectures depuis le matin jusqu’à la fin de la troisième heure, et ils s’occuperont ensuite au travail qui leur aura été confié, jusqu’à la fin de la dixième heure. En ces jours de Carême, chacun recevra un livre de la bibliothèque (ce mot bibliotheca indique, au sens premier, qu’il s’agissait d’un livre tiré de la Bible), qu’il lira dans l’ordre et en entier. Ces livres seront distribués au début du Carême.`,
+
+221: `Qu’on ait soin avant tout de désigner un ou deux anciens, qui circuleront dans le monastère aux heures où les frères vaquent à la lecture, afin de voir s’il ne se rencontre pas par hasard un frère porté à l’ennui qui, au lieu de s’appliquer à la lecture, se livre à l’oisiveté ou au bavardage et qui ainsi, non seulement se nuit à lui-même, mais encore dissipe les autres. Si un frère — pourvu que non ! — est surpris en cette faute, on le reprendra jusqu’à deux fois. S’il ne s’amende pas, qu’on le soumette à la correction régulière, de manière à inspirer de la crainte aux autres.`,
+
+222: `Un frère ne se joindra pas à un autre frère aux heures indues.`,
+
+223: `Le dimanche, tous vaqueront à la lecture, excepté ceux qui sont désignés pour les divers services. Si toutefois quelqu’un était si négligent et paresseux qu’il ne voulût ou ne pût ni méditer, ni lire, on lui assignera un ouvrage qu’il puisse faire, afin qu’il ne soit pas oisif.`,
+
+224: `Quant aux frères infirmes ou délicats, on leur assignera une occupation ou un métier qui les garde de l’oisiveté, sans les accabler ni les porter à s’esquiver. Leur faiblesse devra être prise en considération par l’Abbé.`,
+
+// CHAPITRE 49 — L'OBSERVANCE DU CARÊME
+
+225: `La vie d’un moine devrait être, en tout temps, conforme à l’observance du Carême. Néanmoins, comme cette perfection est le fait d’un petit nombre, nous recommandons aux frères de vivre en toute pureté ces jours du Carême, et d’effacer en ces saints jours toutes les négligences des autres temps. Nous le ferons dignement, si nous nous préservons de toute sorte de vices, si nous nous appliquons à la prière avec larmes, à la lecture, à la componction du cœur et à l’abstinence.`,
+
+226: `Donc, en ces jours, ajoutons quelque chose à la tâche ordinaire de notre service : oraisons particulières, abstinence de nourriture et de boisson. Ainsi, chacun offrira de sa propre volonté à DIEU, dans la joie du Saint-Esprit, quelque chose au-dessus de la mesure qui lui est prescrite, c’est-à-dire qu’il retranchera à son corps sur la nourriture, la boisson, le sommeil, la conversation et la plaisanterie, et qu’il attendra la sainte Pâque avec la joie du désir spirituel.`,
+
+227: `Néanmoins, chacun soumettra à son Abbé ce qu’il veut offrir, et n’agira qu’avec sa prière et son agrément ; car ce qui se fait sans la permission du père spirituel sera mis au compte de la présomption et de la vaine gloire, et non du mérite. Que tout se fasse donc avec l’assentiment de l’Abbé.`,
+
+// CHAPITRE 50 — LES FRÈRES QUI TRAVAILLENT LOIN DE L'ORATOIRE, OU QUI SONT EN VOYAGE
+
+228: `Les frères qui travaillent au loin et ne peuvent revenir à l’oratoire à l’Heure voulue — l’Abbé l’ayant jugé tel — accompliront l’Œuvre de DIEU sur place et à genoux, avec la crainte due à la Divinité.`,
+
+229: `De même, ceux qui sont conduits à voyager ne laisseront pas passer les Heures prescrites, mais ils les diront en particulier, comme ils pourront, et ne négligeront pas de s’acquitter du devoir de leur service.`,
+  
+
   
 };
 
