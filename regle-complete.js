@@ -37,6 +37,7 @@ const regleComplete = {
   
   13: `En effet, à mesure que l’on avance dans la vie religieuse et dans la foi, le cœur se dilate et l’on se met à courir dans la voie des commandements de Dieu avec une ineffable douceur d’amour. Ainsi donc, ne nous écartant jamais de son enseignement, et persévérant en sa doctrine dans le monastère jusqu’à la mort, participons par la patience aux souffrances du Christ, afin de mériter d’avoir part également à son règne. Amen.`,
 
+ 
   // CHAPITRE 1 — LES DIVERSES ESPÈCES DE MOINES
 
   14: `Il est manifeste qu’il y a quatre espèces de moines. La première est celle des Cénobites, c’est-à-dire de ceux qui vivent dans un monastère, et combattent sous une Règle et un Abbé.`,
@@ -47,7 +48,7 @@ const regleComplete = {
 
   17: `La quatrième espèce de moines est celle des Gyrovagues. Ils passent toute leur vie à courir de pays en pays, restant trois ou quatre jours comme hôtes dans les demeures des uns et des autres ; sans cesse errants, jamais stables, esclaves de leurs passions et des plaisirs de la bouche, enfin, pires en tout que les Sarabaïtes.`,
 
-  18: `Leur manière de vivre à tous est des plus misérables, mieux vaut se taire que d’en parler. Laissons-les donc et occupons-nous, avec l’aide du Seigneur, à régler ce qui concerne la plus forte espèce de moines, celle des Cénobites.`
+  18: `Leur manière de vivre à tous est des plus misérables, mieux vaut se taire que d’en parler. Laissons-les donc et occupons-nous, avec l’aide du Seigneur, à régler ce qui concerne la plus forte espèce de moines, celle des Cénobites.`,
 
 
   // CHAPITRE 2 — LES QUALITÉS QUE DOIT AVOIR L'ABBÉ
