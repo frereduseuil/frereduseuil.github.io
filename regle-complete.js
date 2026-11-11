@@ -228,11 +228,157 @@ const regleComplete = {
 
 99: `Une fois gravis tous ces degrés d’humilité, le moine parviendra bientôt à cet amour de DIEU, qui — parfait — bannit la crainte (1 Jn 4, 18), et fait que tout ce qu’il n’observait auparavant qu’avec frayeur, il commence alors à le garder sans peine, comme naturellement et par habitude. Il n’agira plus par crainte de l’enfer, mais par amour du Christ, par l’habitude même du bien et par l’attrait des vertus. Voilà ce que le Seigneur daignera faire paraître dans son ouvrier, purifié de ses vices et de ses péchés par l’Esprit-Saint.`,  
 
+// CHAPITRE 8 — LES OFFICES DIVINS DURANT LA NUIT
 
+100: `Durant l’hiver, c’est-à-dire depuis le premier novembre jusqu’à Pâques, on se lèvera à la huitième heure de la nuit — comme on le considère raisonnable (dans le système romain, les heures variaient en longueur selon la saison ; en hiver, cette huitième heure de la nuit pouvait commencer entre deux et trois heures). Ainsi les frères se seront reposés un peu plus de la moitié de la nuit, et la digestion sera terminée quand ils se lèveront. Ce qui reste de temps après les Vigiles sera employé à l’étude du psautier ou des lectures, par ceux du moins qui en auront besoin.`,
 
+101: `Depuis Pâques jusqu’au premier novembre, on réglera l’horaire de telle sorte que les Vigiles — après un très court intervalle durant lequel les frères pourront sortir pour les besoins naturels — soient immédiatement suivies des Laudes, qui doivent se célébrer au point du jour.`,
 
+// CHAPITRE 9 — COMBIEN DIRE DE PSAUMES AUX HEURES DE LA NUIT
 
+102: `Au temps d’hiver dont il vient d’être parlé, on dira d’abord par trois fois le verset : « Seigneur, ouvre mes lèvres et ma bouche annoncera ta louange » (Ps 50, 17). À quoi on ajoutera le psaume trois (Ps 3) et le Gloria (« Gloire au Père… » : formule d’acclamation qui termine le chant ou la récitation d’un psaume). Il sera suivi du psaume nonante-quatre (Ps 94) avec antienne (ancêtre du refrain, souvent brève et de préférence chantée, accompagnant un psaume), ou tout au moins chanté d’une façon plus lente. Puis viendra l’hymne et six psaumes avec antiennes. Quand ils seront achevés, et le verset dit, l’Abbé donnera la bénédiction. Et tous assis sur les bancs, les frères liront à tour de rôle dans le livre placé sur le pupitre trois lectures, après chacune desquelles on chantera un répons. Deux de ces répons se diront sans Gloria ; mais après la troisième lecture, celui qui chante dira le Gloria. Au moment où le chantre le commence, tous se lèveront de leurs sièges par honneur et révérence pour la sainte Trinité.`,
 
+103: `On lira aux Vigiles les livres qui sont d’autorité divine, tant de l’Ancien que du Nouveau Testament, et de plus les exposés qu’en ont faits les plus renommés des Pères orthodoxes et catholiques.`,
+
+104: `Après ces trois lectures avec leurs répons, suivront six autres psaumes qui seront chantés avec Alléluia. Ensuite viendra une lecture tirée de l’Apôtre, à réciter par cœur, puis le verset et la prière litanique, c’est-à-dire Kyrie eleison (« Seigneur, prends pitié » : invocation liturgique d’origine grecque). Ainsi se termineront les Vigiles de la nuit.`,
+
+// CHAPITRE 10 — COMMENT CÉLÉBRER LA LOUANGE DIVINE DURANT LES NUITS D'ÉTÉ
+
+105: `Depuis Pâques jusqu’au premier novembre, on observera entièrement, pour la psalmodie, la mesure fixée précédemment. Toutefois, on ne lira pas de lecture dans le livre, à cause de la brièveté des nuits ; mais à la place des trois lectures ordinaires, on en dira seulement une de l’Ancien Testament. Elle sera récitée par cœur, et suivie d’un répons bref. Tout le reste s’accomplira comme il a été dit. On ne chantera jamais moins de douze psaumes aux Vigiles de la nuit, sans compter les psaumes trois et nonante-quatre (Ps 3 ; Ps 94).`,
+
+// CHAPITRE 11 — COMMENT CÉLÉBRER LES VIGILES LE DIMANCHE
+
+106: `Le dimanche, on se lèvera pour les Vigiles plus tôt qu’à l’ordinaire. Dans ces Vigiles, voici la mesure que l’on observera. Après avoir chanté, comme nous l’avons disposé, six psaumes et le verset, tous assis avec ordre et à leur rang sur les bancs, on lira dans le livre, de la manière qu’il a été dit, quatre lectures avec leurs répons. C’est seulement au quatrième répons que le chantre dira le Gloria, et dès qu’il le commencera, tous se lèveront aussitôt avec respect.`,
+
+107: `Après ces lectures, suivront dans l’ordre du psautier six autres psaumes avec leurs antiennes, comme les précédents, puis le verset. On lira ensuite quatre autres lectures avec leurs répons, dans le même ordre que précédemment. Ces lectures seront suivies de trois cantiques tirés des Prophètes, selon que l’Abbé les aura établis. Ces cantiques seront chantés avec Alléluia. Le verset une fois dit, et l’Abbé ayant donné la bénédiction, on lira quatre autres lectures du Nouveau Testament, dans le même ordre.`,
+
+108: `Après le quatrième répons, l’Abbé entonnera l’hymne Te Deum laudamus (hymne composée au début du 5e S., devenue très populaire dans l’Église). Celle-ci terminée, l’Abbé lira la lecture de l’Évangile, tandis que tous se tiendront debout avec respect et crainte. À la fin, tous répondront Amen. Et aussitôt, l’Abbé entonnera l’hymne Te decet laus (cette courte hymne est d’origine grecque), puis, la bénédiction donnée, on commencera les Laudes.`,
+
+109: `Cet ordre pour les Vigiles du dimanche sera suivi en toute saison, soit en été, soit en hiver, à moins que — pourvu que non ! — les frères ne se lèvent trop tard, et qu’il ne faille diminuer en quelque chose les lectures ou les répons. Que l’on mette toutefois le plus grand soin pour que ce désordre n’arrive jamais. S’il avait lieu, celui qui l’aura occasionné par sa négligence en donnera une satisfaction convenable à DIEU dans l’oratoire.`,  
+
+// CHAPITRE 12 — COMMENT CÉLÉBRER L'OFFICE SOLENNEL DES LAUDES
+
+110: `Le dimanche, aux Laudes, on dira d’abord sans antienne et d’un trait le psaume soixante-six ; ensuite le cinquante avec Alléluia, puis le cent-dix-sept et le soixante-deux ; ensuite, le cantique des Bénédictions (ce cantique est tiré du livre de Daniel) (Dn 2, 57-88) et les psaumes de Laudes (Ps 148 ; Ps 149 ; Ps 150), une lecture de l’Apocalypse par cœur, puis le répons, l’hymne, le verset, le cantique de l’Évangile (c’est-à-dire le cantique de Zacharie) (Lc 1, 68-79), la litanie et l’office est achevé.`,
+
+// CHAPITRE 13 — COMMENT CÉLÉBRER LES LAUDES AUX JOURS ORDINAIRES
+
+111: `Les jours ordinaires, l’office des Laudes se fera comme suit. On dira d’abord le psaume soixante-six sans antienne, comme le dimanche et en traînant un peu, afin que tous arrivent pour le psaume cinquante, lequel se dira avec antienne. Après ce psaume, on en dira deux autres, selon l’usage, à savoir : le lundi, le cinquième et le trente-cinquième ; le mardi, le quarante-deuxième et le cinquante-sixième ; le mercredi, le soixante-troisième et le soixante-quatrième ; le jeudi, le quatre-vingt-septième et le quatre-vingt-neuvième ; le vendredi, le nonante-cinquième et le nonante-et-unième ; le samedi, le cent quarante-deuxième avec le cantique du Deutéronome, que l’on divisera en deux Gloria. Les autres jours, on dira un cantique tiré des Prophètes, chacun à son jour, suivant l’ordre de la psalmodie dans l’Église romaine. Viendront ensuite les psaumes de Laudes, puis la lecture de l’Apôtre à réciter par cœur, le répons, l’hymne, le verset, le cantique de l’Évangile, la litanie, et l’office est achevé.`,
+
+112: `L’office du matin comme celui du soir ne doivent jamais se conclure sans que le supérieur dise, en tout dernier lieu et de manière à être entendu de tous, l’Oraison dominicale, à cause des épines de scandales qui ont coutume de se produire. Qu’ainsi, les frères, d’un commun accord, engagés par les paroles de cette prière : « Pardonne-nous, comme nous pardonnons » (Mt 6, 12), soient à même de se purifier de cette sorte de faute. Aux autres offices, on ne dira à haute voix que la dernière partie de cette Oraison, afin que tous s’unissent pour répondre : « Mais délivre-nous du mal. » (Mt 6, 13)`,
+
+// CHAPITRE 14 — COMMENT CÉLÉBRER LES VIGILES AUX FÊTES DES SAINTS
+
+113: `Aux fêtes des saints et à toutes les solennités, on fera l’office comme le dimanche ; excepté qu’on dira les psaumes, antiennes et lectures propres au jour même. Pour le reste, on gardera la mesure prescrite.`,
+
+// CHAPITRE 15 — QUAND DIRE L'ALLÉLUIA
+
+114: `Depuis la sainte Pâques jusqu’à la Pentecôte, on dira sans interruption l’Alléluia, tant aux psaumes qu’aux répons. Depuis la Pentecôte jusqu’au commencement du Carême, on le dira toutes les nuits aux six derniers psaumes des Nocturnes seulement. Tous les dimanches en dehors du Carême, on dira avec Alléluia les Cantiques, Laudes, Prime, Tierce, Sexte et None, tandis que les Vêpres se chanteront avec antienne. Quant aux répons, ils ne se diront jamais avec Alléluia, si ce n’est de Pâques à la Pentecôte.`,
+
+// CHAPITRE 16 — COMMENT CÉLÉBRER LES OFFICES DIVINS DURANT LE JOUR
+
+115: `Le Prophète a dit : « Sept fois le jour j’ai chanté tes louanges. » (Ps 118, 164) Nous remplirons aussi nous-mêmes ce nombre sacré de sept, si aux Laudes, Prime, Tierce, Sexte, None, Vêpres et Complies, nous nous acquittons des devoirs de notre service. Car c’est à ces heures du jour que s’applique la parole : « J’ai célébré tes louanges sept fois le jour », comme c’est au sujet des Vigiles de la nuit que le même Prophète a dit : « Au milieu de la nuit, je me levais pour te louer. » (Ps 118, 62) Offrons donc à ces Heures-là nos louanges à notre Créateur des jugements de sa justice : c’est-à-dire aux Laudes, Prime, Tierce, Sexte, None, Vêpres, Complies ; et la nuit, levons-nous pour le louer.`,
+
+// CHAPITRE 17 — COMBIEN DIRE DE PSAUMES À CES MÊMES HEURES
+
+116: `Nous avons réglé précédemment l’ordre de la psalmodie pour les Vigiles et les Laudes : voyons maintenant ce qui concerne les Heures qui suivent.`,
+
+117: `À Prime, on dira trois psaumes séparément, et non sous un seul Gloria. L’hymne de cette Heure se dira après le verset « DIEU, viens à mon aide » (Ps 69, 2), avant de commencer ces psaumes. Ceux-ci achevés, on récitera une lecture, le verset, Kyrie eleison et le renvoi.`,
+
+118: `Les offices de Tierce, Sexte et None se célébreront selon le même ordre : à savoir, le verset, l’hymne de ces Heures, trois psaumes, une lecture, un verset, Kyrie eleison, puis le renvoi. Si la communauté est assez nombreuse, les psaumes se diront avec antiennes ; sinon on psalmodiera tout d’un trait.`,
+
+119: `À la réunion des Vêpres, l’office se composera de quatre psaumes avec antiennes. Après ces psaumes, on récitera une lecture ; puis un répons, l’hymne, le verset, le cantique de l’Évangile (Magnificat), la litanie et l’Oraison dominicale (Notre Père), qui constituera le renvoi.`,
+
+120: `À Complies, on récita trois psaumes d’un trait direct et sans antienne. Ensuite, l’hymne de cette Heure, une lecture, le verset, Kyrie eleison ; le renvoi se fera par la bénédiction.`,
+
+// CHAPITRE 18 — DANS QUEL ORDRE DIRE LES PSAUMES
+
+121: `On dira le verset : « DIEU, viens à mon aide ; Seigneur, à notre secours ! » (Ps 69, 2), et le Gloria, puis l’hymne de chaque Heure (il s’agit des petites Heures du jour).`,
+
+122: `Ensuite, à Prime, le dimanche, on dira quatre sections du psaume cent dix-huit. À chacune des autres Heures, c’est-à-dire à Tierce, Sexte et None, on dira trois autres sections du même psaume.`,
+
+123: `À Prime, le lundi, on dira trois psaumes, à savoir : le premier, le deuxième et le sixième ; et de même chaque jour jusqu’au dimanche, on dira trois psaumes par ordre jusqu’au dix-neuvième, de façon cependant que les psaumes neuf et dix-sept soient divisés en deux. Ainsi fait, les Vigiles du dimanche commenceront toujours par le vingtième.`,
+
+124: `À Tierce, Sexte et None, le lundi, les neuf sections qui restent du psaume cent dix-huit se diront trois par trois à ces mêmes Heures. Le psaume cent dix-huit sera ainsi distribué entre deux jours, à savoir le dimanche et le lundi.`,
+
+125: `Le mardi, on chantera trois par trois à Tierce, à Sexte et à None, les psaumes allant du cent dix-neuvième jusqu’au cent vingt-septième, c’est-à-dire neuf psaumes. Ces psaumes seront ainsi répétés à ces mêmes Heures jusqu’au dimanche. Pour le reste, on gardera chaque jour l’uniformité dans la disposition que nous avons établie quant aux hymnes, aux lectures et aux versets ; et le dimanche on reprendra toujours au psaume cent dix-huit.`,
+
+126: `Aux Vêpres, on chantera tous les jours quatre psaumes. Ces psaumes seront pris à partir du cent neuvième jusqu’au cent quarante-septième ; excepté ceux qui sont réservés pour d’autres Heures, à savoir depuis le cent dix-septième jusqu’au cent vingt-septième, plus le cent trente-troisième et le cent quarante-deuxième. Tous les autres se diront aux Vêpres. Et comme il s’en trouve trois de moins dans le nombre susdit, on divisera en deux les plus longs, à savoir : le cent trente-huit, le cent quarante-trois et le cent quarante-quatre. Quant au cent seizième, on le joindra au cent quinzième, à cause de sa brièveté.`,
+
+127: `L’ordre des psaumes de Vêpres ainsi réglé, le reste — c’est-à-dire les lectures, répons, hymne, verset et cantique — se dira comme nous l’avons indiqué plus haut.`,
+
+128: `À Complies, on répétera chaque jour les mêmes psaumes, à savoir les psaumes quatre, nonante et cent trente-trois.`,
+
+129: `L’ordre de la psalmodie pour la journée ainsi réglé, tous les autres psaumes qui restent seront uniformément distribués entre les sept Vigiles de la semaine, afin que les plus longs soient divisés en deux, et qu’il y en ait douze pour chaque nuit.`,
+
+130: `Nous donnons toutefois cet avertissement que si quelqu’un ne goûte pas cette distribution des psaumes, il demeure libre de les disposer autrement, s’il le juge préférable. Cependant, qu’on fasse en sorte, chaque semaine, de réciter intégralement le Psautier de cent cinquante psaumes, et qu’on le reprenne par le commencement aux Vigiles du dimanche. En effet, des moines qui, durant le cours d’une semaine diraient moins que le Psautier avec les cantiques ordinaires feraient preuve de trop de lâcheté dans le service de leur dévotion. Nos saints Pères, lisons-nous, remplissaient chaque jour vaillamment cette tâche ; puissions-nous, dans notre tiédeur, l’accomplir du moins en une semaine entière !`,
+
+// CHAPITRE 19 — L'ATTITUDE DURANT LA PSALMODIE
+
+131: `Nous croyons que la divine présence est partout, et qu’en tout lieu les yeux du Seigneur considèrent les bons et les méchants. Soyons-en donc plus fermement persuadés lorsque nous assistons à l’office divin. Souvenons-nous sans cesse de ce que dit le Prophète : « Servez le Seigneur dans la crainte. » (Ps 2, 11) Et encore : « Psalmodiez avec sagesse. » (Ps 46, 8) Et : « Je te chanterai en présence des anges. » (Ps 137, 1) Considérons donc comment nous devons nous tenir en présence de sa Divinité et de ses anges, et livrons-nous à la psalmodie de telle manière que notre esprit soit d’accord avec notre voix.`,
+
+// CHAPITRE 20 — LA RÉVÉRENCE DANS LA PRIÈRE
+
+132: `Si, lorsque nous avons une requête à présenter aux puissants de ce monde, nous n’osons le faire qu’avec humilité et respect, combien plus devons-nous offrir nos supplications en toute humilité et avec une pureté pleine de dévotion au Seigneur DIEU de l’univers ! Sachons bien que ce n’est pas en multipliant les paroles que nous serons exaucés, mais par la pureté du cœur et les larmes de la componction. La prière doit donc être brève et pure, à moins que, par une inspiration de la grâce divine, nous ne nous sentions portés à la prolonger (il s’agit ici d’une oraison personnelle, distincte de la prière liturgique). Néanmoins, en communauté, la prière sera très courte ; et sur le signal du supérieur, tous se lèveront en même temps.`,  
+
+// CHAPITRE 21 — LES DOYENS DU MONASTÈRE
+
+133: `Si la communauté est nombreuse, on choisira en son sein des frères de bonne réputation et de sainte vie, et on les établira doyens. Ils veilleront en tout sur leurs décanies (un groupe d’une dizaine de moines), conformément aux préceptes de DIEU et aux ordres de leur Abbé (Ac 6, 3). On choisira pour doyens ceux d’entre eux avec lesquels l’Abbé puisse en toute sûreté partager son fardeau. Ils ne seront pas élus d’après l’ordre d’ancienneté, mais d’après le mérite de leur vie et la sagesse de leur doctrine.`,
+
+134: `Si, par hasard, l’un de ces doyens mérite répréhension pour s’être enflé d’orgueil, on le réprimandera une première, une seconde et une troisième fois. S’il ne veut pas s’amender, qu’on le destitue, et qu’à sa place on en mette un autre qui en soit digne. Et nous établissons qu’on agisse de même à l’égard du prieur.`,
+
+// CHAPITRE 22 — COMMENT DORMIRONT LES MOINES
+
+135: `Ils dormiront chacun dans un lit à part. La literie qu’ils recevront sera conforme au caractère de leur profession et aux dispositions prises par leur Abbé. Si faire se peut, ils dormiront tous dans un même lieu ; mais si le trop grand nombre ne le permet pas, ils reposeront par dix ou vingt, avec des anciens qui veilleront sur eux. Une lumière éclairera le dortoir sans interruption jusqu’au matin.`,
+
+136: `Ils dormiront vêtus, ceints d’une ceinture ou d’une corde ; mais ils n’auront pas alors leurs couteaux au côté, afin de ne pas se blesser en dormant.`,
+
+137: `Que les moines soient toujours prêts, et qu’au signal donné ils se lèvent sans retard, empressés à se devancer les uns les autres à l’Œuvre de DIEU, mais cependant en toute gravité et modestie.`,
+
+138: `Les plus jeunes frères n’auront pas leurs lits placés les uns près des autres, mais répartis entre ceux des anciens.`,
+
+139: `En se levant pour l’Œuvre de DIEU, ils s’encourageront doucement les uns les autres, afin qu’il ne reste pas d’excuse aux dormeurs.`,
+
+// CHAPITRE 23 — L'EXCOMMUNICATION POUR LES FAUTES
+
+140: `S’il se rencontre un frère opiniâtre, ou désobéissant, ou orgueilleux, qui murmure ou qui contrevienne à quelque point de la sainte Règle et aux ordres de ses anciens, en témoignant pour eux du mépris, ceux-ci l’avertiront en particulier une première et une seconde fois, selon le précepte de notre Seigneur (Mt 18, 15). S’il ne s’amende pas, qu’il soit réprimandé publiquement devant tous.`,
+
+141: `Si par ce moyen non plus il ne se corrige pas, qu’il soit soumis à l’excommunication, pourvu toutefois qu’il comprenne la gravité de cette peine. Mais s’il n’y a rien de bon à espérer de lui, qu’on lui inflige une punition corporelle.`,
+
+// CHAPITRE 24 — QUELLE DOIT ÊTRE LA MESURE DE L'EXCOMMUNICATION
+
+142: `La mesure de l’excommunication ou de la punition doit être proportionnée à la gravité de la faute, et cette appréciation des fautes dépendra du jugement de l’Abbé.`,
+
+143: `Si un frère est coupable de fautes légères, sa peine consistera seulement à être privé de la participation à la table commune. Or, voici comment sera traité qui sera exclu de la participation à la table : à l’oratoire, il n’entonnera ni psaume ni antienne et ne récitera pas de lecture, jusqu’à ce qu’il en ait donné satisfaction. Il prendra son repas seul, après le repas des frères ; si, par exemple, les frères dînent à la sixième heure, il dînera lui à la neuvième ; si les frères prennent leur repas à la neuvième, il prendra le sien le soir, et cela jusqu’à ce qu’il ait obtenu son pardon par une satisfaction convenable.`,
+
+// CHAPITRE 25 — LES FAUTES GRAVES
+
+144: `Le frère coupable d’une faute grave sera exclu tout à la fois de la table et de l’oratoire. Aucun frère n’aura avec lui ni rapport ni entretien. Il sera seul au travail qui lui aura été assigné, demeurant dans le deuil de la pénitence, et se rappelant cette terrible sentence de l’Apôtre, déclarant qu’un tel homme « a été livré à la mort la chair, afin que l’esprit soit sauvé au jour du Seigneur. » (1 Co 5, 5)`,
+
+145: `Il prendra seul son repas, suivant la mesure et à l’heure que l’Abbé aura jugées convenables. Personne ne le bénira en passant, et la nourriture qu’on lui donne ne sera pas non plus bénie.`,
+
+// CHAPITRE 26 — CEUX QUI SE JOIGNENT SANS PERMISSION AUX EXCOMMUNIÉS
+
+146: `Si un frère, sans la permission de l’Abbé, ose se joindre, en quelque manière que ce soit, à un frère excommunié, ou lui parler, ou lui confier quelque chose, il subira la même peine de l’excommunication.`,
+
+// CHAPITRE 27 — QUELLE SOLLICITUDE L'ABBÉ DOIT AVOIR À L'ÉGARD DES EXCOMMUNIÉS
+
+147: `L’Abbé doit prendre soin en toute sollicitude des frères qui ont failli ; car « ce ne sont pas les bien portants qui ont besoin du médecin, mais les malades. » (Mt 9, 12) Il doit donc, comme un sage médecin, user de tous les moyens. Il enverra des Sympectes (l’origine du mot senpecta est obscure, mais pourrait dériver d'un terme grec évoquant un compagnon de fortune), c’est-à-dire des frères anciens et sages qui, comme en secret, réconfortent ce frère chancelant et l’engagent à donner une humble satisfaction. Qu’ils l’empêchent, par la consolation qu’ils lui procurent, de se laisser absorber par l’excès de la tristesse ; mais, comme dit l’Apôtre : « Il faut que la charité redouble à son égard » (2 Co 2, 7-8), et que tous prient pour lui.`,
+
+148: `L’Abbé doit donc user en ses soins de toute sorte d’adresse et d’habileté pour ne perdre aucune des brebis qui lui sont confiées. Qu’il sache qu’il a reçu la charge de conduire des âmes faibles et non d’exercer sur des âmes saines un pouvoir tyrannique. Qu’il redoute la menace du Prophète, par lequel DIEU dit : « Vous preniez pour vous les brebis qui vous paraissaient les plus grasses, et celles qui étaient chétives, vous les rejetiez. » (Ez 34, 3-4) Qu’il imite plutôt l’exemple de tendresse du bon Pasteur qui, laissant sur les montagnes ses nonante-neuf brebis, s’en alla à la recherche d’une seule qui s’était égarée ; et il compatit tellement à sa faiblesse qu’il daigna la charger sur ses épaules sacrées et la rapporter ainsi au troupeau (Lc 15, 4-5).`,
+
+// CHAPITRE 28 — CEUX QUI, MALGRÉ DES CORRECTIONS RÉPÉTÉES, N'AURONT PAS VOULU S'AMENDER
+
+149: `Si un frère a été souvent repris pour une faute quelconque, si l’on a été jusqu’à l’excommunier et qu’il ne se soit pas amendé, il faudra lui infliger une correction plus rude, c’est-à-dire le punir de coups de bâton. Si, par ce moyen, il ne se corrige pas encore, ou si par hasard — pourvu que non ! — il s’enfle d’orgueil jusqu’à vouloir défendre sa conduite, l’Abbé agira alors comme fait un sage médecin : employer les cataplasmes, l’onguent des exhortations, la médication des divines Écritures, et en dernier lieu la brûlure de l’excommunication ou la meurtrissure des coups. S’il voit que toute son habileté est sans résultat, il aura recours à quelque chose de plus efficace, sa prière et celle de tous les frères pour lui, afin que le Seigneur, qui peut tout, rende la santé à ce frère malade. Mais si ce moyen même n’opérait pas la guérison, que l’Abbé use alors du fer qui retranche, suivant la parole de l’Apôtre : « Ôtez le mal du milieu de vous. » (1 Co 5, 13) Et encore : « Si l’infidèle s’en va, qu’il s’en aille » (1 Co 5, 17), de peur qu’une seule brebis malade ne répande la contagion dans le troupeau tout entier.`,
+
+// CHAPITRE 29 — SI L'ON DOIT RECEVOIR DE NOUVEAU LES FRÈRES QUI ONT QUITTÉ LE MONASTÈRE
+
+150: `Si un frère sort par sa propre faute du monastère, et qu’il veuille y rentrer, il promettra d’abord de se corriger entièrement du vice qui a été la cause de sa sortie. Alors, on le recevra au dernier rang, afin d’éprouver par là son humilité. S’il sortait de nouveau, il pourra être reçu jusqu’à trois fois. Après quoi, il saura désormais que toute voie de retour lui est refusée.`,
+
+// CHAPITRE 30 — COMMENT CORRIGER LES JEUNES
+
+151: `Chaque âge et chaque degré d’intelligence demandent une règle de conduite particulière. Aussi, lorsque les enfants ou les plus jeunes frères, ou ceux qui sont incapables de comprendre la portée de la peine de l’excommunication, tomberont dans une faute, on leur infligera des jeûnes prolongés, ou on les punira par de rudes coups de bâton, afin qu’ils guérissent.`,
+  
+  
 };
 
 
