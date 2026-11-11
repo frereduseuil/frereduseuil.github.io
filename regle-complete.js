@@ -679,6 +679,150 @@ const regleComplete = {
 271: `S’il vient à être question dans le monastère de charge à remplir ou d’affaire à traiter, il considérera comme sienne la place que lui a valu son entrée au monastère, et non celle qu’on lui a concédée par respect pour son sacerdoce.`,
 
 272: `Si un clerc, poussé par le même désir, veut se joindre au monastère, on le placera dans un rang moyen, à condition toutefois qu’il promette, lui aussi, d’observer la Règle et de garder la stabilité.`,
+
+// CHAPITRE 61 — COMMENT RECEVOIR LES MOINES ÉTRANGERS
+
+273: `Si un moine étranger, venu de contrées lointaines, se présente au monastère, s’il veut y séjourner comme hôte, et se contente de la vie qu’on y mène, on le recevra aussi longtemps qu’il le désire, pourvu qu’il ne trouble pas le monastère par ses exigences, mais s’accommode simplement de ce qu’il trouve.`,
+
+274: `Si ce moine trouvait à reprendre ou à remontrer quelque chose avec raison et dans l’humilité de la charité, l’Abbé examinera avec prudence si ce ne serait pas pour cela même que le Seigneur l’a envoyé.`,
+
+275: `Si, par la suite, il veut fixer sa stabilité, on ne s’opposera pas à son dessein, d’autant plus qu’on a pu se rendre compte de sa manière de vivre durant son séjour à l’hôtellerie.`,
+
+276: `Mais si, pendant son séjour comme hôte, on s’est aperçu qu’il est exigeant ou vicieux, non seulement on ne devra pas l’adjoindre au corps du monastère ; mais on lui dira honnêtement de se retirer, de peur que sa misère ne fasse du tort aux autres.`,
+
+277: `Si, au contraire, sa conduite ne lui mérite pas d’être congédié, non seulement, s’il le demande, il faut l’admettre dans la communauté, mais il faut lui conseiller de s’y fixer, afin que les autres soient instruits par son exemple, et parce qu’en tout lieu on sert un seul Seigneur, on combat sous un seul Roi. Si même l’Abbé l’en juge digne, il pourra le placer à un rang un peu plus élevé que celui de son entrée.`,
+
+278: `Et ce n’est pas seulement à l’égard d’un moine qu’on agira ainsi, mais aussi des prêtres et des clercs dont il a été question ; l’Abbé pourra les placer à un rang supérieur à celui de leur entrée, s’il reconnaît que leur vie le mérite.`,
+
+279: `Mais que l’Abbé se garde bien de recevoir à demeure un moine d’un autre monastère connu, sans le consentement de son Abbé ou sans lettres de recommandation ; car il est écrit : « Ne fais pas à autrui ce que tu ne veux pas qu’on te fasse à toi-même. » (Tb 4, 15 ; Mt 7, 12)`,
+
+// CHAPITRE 62 — LES PRÊTRES DU MONASTÈRE
+
+280: `Si l’Abbé désire faire ordonner un prêtre ou un diacre pour son monastère, il choisira parmi les siens quelqu’un qui soit digne des fonctions sacerdotales (Si 45, 15-17). Celui qui aura été ordonné se gardera de l’exaltation et l’orgueil, n’entreprendra rien sans ordre de l’Abbé, se sachant dès lors bien plus assujetti à la discipline régulière. Il ne prendra pas prétexte de son sacerdoce pour oublier l’obéissance à la Règle et sa discipline, mais se bonifiera de plus en plus en DIEU.`,
+
+281: `Quant au rang, il gardera toujours celui de son entrée au monastère, sauf lorsqu’il officie à l’autel, et si le choix de la communauté et la volonté de l’Abbé lui assignent une place plus élevée, à cause du mérite de sa vie. Même dans ce cas, il saura qu’il lui faut suivre la règle établie pour les doyens et les autres officiers. S’il refusait de s’y soumettre, qu’il soit considéré non comme prêtre, mais comme rebelle. Et si, après avoir été souvent réprimandé, il ne se corrige pas, on aura recours au témoignage de l’évêque. S’il ne s’amende pas encore par ce moyen, ses fautes devenant manifestes, on le chassera du monastère, au cas toutefois où son obstination soit telle qu’il ait refusé de se soumettre et d’obéir à la Règle.`,
+
+// CHAPITRE 63 — LE RANG À GARDER DANS LA COMMUNAUTÉ
+
+282: `Les frères garderont leur rang dans le monastère selon la date de leur entrée en religion (c.-à-d. le temps de leur conversion monastique), ou selon le mérite de leur vie et la décision de l’Abbé. Celui-ci néanmoins ne troublera pas le troupeau qui lui est confié, ni ne prendra de décision injuste, comme s’il exerçait un pouvoir arbitraire ; mais il songera sans cesse au compte qu’il devra rendre à DIEU de toutes ses décisions et de tous ses actes.`,
+
+283: `C’est donc selon le rang qu’il aura établi, ou celui qui revient aux frères d’après leur ancienneté, qu’ils iront au baiser de paix et à la communion, entonneront les psaumes et se tiendront au chœur. Nulle part il ne sera tenu compte ou préjudice de l’âge dans l’ordre à garder, car Samuel et Daniel, encore enfants, ont jugé des anciens (1 S 3 ; Dn 13).`,
+
+284: `Donc, à l’exception de ceux que, comme nous l’avons dit, l’Abbé aura promus plus haut pour des motifs supérieurs, ou qu’il aura dégradés pour des raisons fondées, tous les autres tiendront le rang de leur entrée en religion : en sorte que, par exemple, celui qui sera venu au monastère à la seconde heure du jour, quel que soit son âge ou sa dignité, se reconnaîtra puîné (c.-à-d. cadet) de celui qui est arrivé à la première heure. Quant aux enfants, ils seront gardés dans la discipline en tout et par tous.`,
+
+285: `Les plus jeunes honoreront donc leurs aînés, et les anciens auront de l’affection pour leurs cadets. En se désignant mutuellement, il ne sera permis à personne d’appeler quelqu’un par son seul nom, mais les anciens donneront aux plus jeunes le nom de Frères, et les plus jeunes à leurs anciens celui de Nonni (cette appellation, aujourd’hui désuète, est d’origine égyptienne) — terme qui exprime la révérence à un père.`,
+
+286: `L’Abbé étant regardé comme tenant la place du Christ, on l’appellera Seigneur (lit. Dominus : équivalent du français « Monsieur », et attribué aux religieux sous sa forme diminutive « Dom ») et Abbé, non par prétention personnelle, mais par honneur et amour du Christ. Qu’il y réfléchisse donc et se rende digne d’un tel honneur.`,
+
+287: `Où que les frères se rencontrent, le plus jeune demandera la bénédiction à l’ancien. Si un ancien vient à passer, le plus jeune se lèvera, lui fera place pour s’asseoir, et ne se permettra pas de se rasseoir sans que son ancien ne lui en fasse signe, afin d’accomplir ce qui est écrit : « Prévenez-vous d’honneur les uns les autres. » (Rm 12, 10)`,
+
+288: `Les petits enfants et les adolescents garderont avec ordre et discipline leur rang à l’oratoire et au réfectoire. Mais hors de là et en tout lieu, ils seront surveillés et maintenus dans la discipline, jusqu’à ce qu’ils aient atteint un âge raisonnable.`,
+
+// CHAPITRE 64 — L'INSTITUTION DE L'ABBÉ
+
+289: `Dans l’institution de l’Abbé, on tiendra pour règle constante d’établir celui qui aura été élu d’un commun accord, selon la crainte de DIEU, par toute la communauté, ou seulement par une partie de la communauté, même faible, mais au jugement plus sain. Pour l’établir, on aura égard au mérite de la vie et à la sagesse de la doctrine, lors même qu’il occuperait le dernier rang dans la communauté.`,
+
+290: `Si, par malheur, il arrivait que la communauté tout entière élût à l’unanimité une personne complice de ses dérèglements, lorsque ces désordres parviendront à la connaissance de l’évêque au diocèse duquel appartient ce lieu, ou paraîtront clairs aux Abbés et aux chrétiens du voisinage, ils empêcheront l’accord des méchants de prévaloir. Ils pourvoieront eux-mêmes la maison de DIEU d’un intendant vraiment digne, sachant qu’ils en recevront une bonne récompense, s’ils le font avec une intention pure et par zèle de DIEU ; comme au contraire ils commettraient un péché s’ils négligeaient d’intervenir.`,
+
+291: `L’Abbé, une fois établi, pensera sans cesse au fardeau qu’il a reçu, et à celui auquel il devra rendre compte de son administration. Qu’il sache bien qu’il lui faut plutôt songer à être utile qu’à être le maître. Il doit donc être docte dans la loi divine, afin de savoir où puiser des choses anciennes et des choses nouvelles. Qu’il soit chaste, sobre, miséricordieux ; qu’il fasse toujours prévaloir la miséricorde sur la justice, afin d’obtenir pour lui-même un traitement semblable. Qu’il haïsse les vices, mais qu’il aime les frères.`,
+
+292: `Dans la correction même, qu’il agisse avec prudence et sans excès, de crainte qu’en voulant trop racler la rouille le vase ne se brise. Qu’il ait constamment devant les yeux sa propre fragilité et qu’il se souvienne qu’il ne faut pas briser le roseau fléchi (Is 42, 3). Nous n’entendons pas dire par là qu’il puisse laisser les vices se développer, mais qu’il les retranche avec prudence et charité, et selon qu’il le jugera expédient à l’égard de chacun, ainsi que nous l’avons déjà dit : qu’il s’efforce à se faire aimer plutôt qu’à se faire craindre.`,
+
+293: `Qu’il ne soit ni turbulent, ni inquiet ; qu’il ne soit ni excessif, ni opiniâtre ; qu’il ne soit ni jaloux, ni trop soupçonneux ; autrement, il n’aura jamais de repos.`,
+
+294: `Qu’il soit prévoyant et circonspect dans ses commandements ; et, qu’il s’agisse d’œuvrer aux choses de DIEU comme à celles du monde, qu’il use de discernement et de modération, se rappelant la discrétion du saint patriarche Jacob, qui disait : « Si je fatigue mes troupeaux en les faisant trop marcher, ils périront tous en un jour. » (Gn 33, 13)`,
+
+295: `Imitant cet exemple et autres semblables sur la discrétion, cette mère des vertus, qu’il tempère tellement toutes choses que les forts désirent faire davantage et que les faibles ne se dérobent pas.`,
+
+296: `Et surtout que l’Abbé conserve en tous points la présente Règle, afin qu’après avoir bien administré, il entende du Seigneur la parole adressée au bon serviteur qui avait distribué en temps opportun le froment à ses compagnons : « Amen, je vous le déclare, il l’établira sur tous ses biens. » (Mt 24, 47)`,
+
+// CHAPITRE 65 — LE PRIEUR DU MONASTÈRE
+
+297: `Il arrive assez souvent que l’établissement du prieur occasionne de graves scandales dans les monastères. C’est ce qui arrive lorsque quelques-uns, enflés d’un méchant esprit d’orgueil, et s’imaginant être de seconds Abbés, s’arrogent un pouvoir tyrannique, entretiennent des scandales et causent des dissensions dans la communauté. Cela se produit surtout dans ces lieux où le prieur est établi par le même évêque ou par les mêmes Abbés qui ont institué l’Abbé.`,
+
+298: `On voit aisément combien cela est absurde, puisque, dès le début de son établissement, on lui fournit matière à s’enorgueillir, lui suggérant qu’il est soustrait au pouvoir de son Abbé. « Toi aussi, se dira-t-il, tu as été établi par ceux-là mêmes qui ont institué l’Abbé. »`,
+
+299: `De là surgissent des jalousies, des conflits, des détractions, des rivalités, des dissensions, des désordres : car, lorsque l’Abbé et le prieur sont ainsi divisés de sentiment, il est impossible que leurs âmes ne se trouvent pas en péril d’une telle discorde. De même, ceux qui sont sous leur conduite, prenant parti pour l’un ou pour l’autre, vont à leur perte. De ce péril sont responsables au premier chef ceux qui se sont faits les auteurs d’un pareil dérèglement.`,
+
+300: `C’est pourquoi nous avons constaté qu’il est avantageux, pour conserver la paix et la charité, que l’Abbé soit l’unique arbitre de la façon de gouverner son monastère. Et si faire se peut, comme nous l’avons déjà établi, que tout le service du monastère soit assuré par des doyens, selon que l’Abbé l’aura disposé : la charge étant ainsi partagée entre plusieurs, un seul n’aura pas à s’enorgueillir.`,
+
+301: `Que si, cependant, le lieu le requiert, ou si la communauté le demande pour de bonnes raisons et avec humilité, et que l’Abbé juge à propos, il choisira qui il voudra après avoir pris conseil des frères craignant DIEU, et l’établira lui-même pour prieur.`,
+
+302: `Ce prieur néanmoins devra exécuter avec révérence ce qui lui aura été enjoint par son Abbé, sans rien faire qui soit contraire à sa volonté ou à ses ordres. Car, plus il est élevé au-dessus des autres, plus il doit soigneusement observer les préceptes de la Règle.`,
+
+303: `Que si ce prieur venait à être reconnu vicieux, enflé d’orgueil, ou méprisant envers la sainte Règle, on l’en reprendra jusqu’à quatre fois. S’il ne s’amende pas, on lui fera subir la correction de la discipline régulière. Si par ces moyens il ne se corrigeait pas encore, on le déposera de son rang de prieur et on mettra en sa place un autre qui en soit digne. Que si, par la suite, il ne se montrait pas tranquille et obéissant dans la communauté, on le chasserait du monastère.`,
+
+304: `Que l’Abbé toutefois songe qu’il doit rendre compte à DIEU de toutes ses décisions, de crainte que la flamme de l’envie ou de la jalousie ne vienne à brûler son âme.`,
+
+// CHAPITRE 66 — LES PORTIERS DU MONASTÈRE
+
+305: `On placera à la porte du monastère un sage vieillard qui sache recevoir et rendre une réponse, et d’une maturité qui le préserve de l’oisiveté.`,
+
+306: `Le portier doit avoir son logement près de la porte, afin que ceux qui surviennent trouvent toujours quelqu’un pour leur répondre. Et aussitôt qu’on aura frappé ou qu’un pauvre aura appelé, il répondra « Deo gratias », ou « Benedicite ». Puis, avec toute la mansuétude qu’inspire la crainte de DIEU, il répondra en hâte avec toute la ferveur de la charité.`,
+
+307: `Si le portier a besoin d’aide, on lui adjoindra un frère plus jeune.`,
+
+308: `Le monastère doit, autant que possible, être disposé de sorte que l’on y trouve tout le nécessaire : de l’eau, un moulin, un jardin et des ateliers pour que l’on puisse y exercer les divers métiers à l’intérieur même de la clôture. De la sorte les moines n’auront aucune nécessité de courir au dehors, ce qui n’est pas du tout avantageux pour leurs âmes.`,
+
+309: `Nous voulons que cette Règle soit lue souvent en communauté, afin qu’aucun frères ne s’excuse sous prétexte d’ignorance.`,
+
+// CHAPITRE 67 — LES FRÈRES QUE L'ON ENVOIE EN VOYAGE
+
+310: `Les frères qui doivent aller en voyage se recommanderont à la prière de tous les frères et de l’Abbé. Après la dernière oraison de l’Œuvre de DIEU, on fera toujours mémoire de tous les absents.`,
+
+311: `À leur retour de voyage et le jour même de leur arrivée, les frères se prosterneront à terre dans l’oratoire à toutes les Heures canoniales, quand s’achève l’Œuvre de DIEU. Ils demanderont la prière de tous, à cause des fautes qu’ils auraient pu commettre en voyage, en voyant quelque chose de mal, ou en entendant de vains discours.`,
+
+312: `Que personne ne se permette de rapporter à un autre ce qu’il aurait vu ou entendu hors du monastère, car cela produit de grands dégâts. Celui qui oserait le faire sera soumis à la correction régulière. De même celui qui aurait osé sortir de l’enceinte du monastère, ou aller n’importe où, ou faire n’importe quoi, même de peu d’importance, sans l’autorisation de l’Abbé.`,
+
+// CHAPITRE 68 — SI L'ON ENJOINT À UN FRÈRE DES CHOSES IMPOSSIBLES
+
+313: `S’il l’on enjoint à un frère des choses difficiles ou impossibles, il recevra en toute mansuétude et obéissance le commandement qui lui est fait.`,
+
+314: `Cependant, s’il voit que le poids du fardeau excède tout à fait la mesure de ses forces, il fera connaître avec patience et au moment opportun, à son supérieur, les raisons de son impuissance, ne témoignant ni orgueil, ni résistance, ni contradiction.`,
+
+315: `Que si, sa suggestion entendue, le supérieur maintient l’ordre commandé, l’inférieur saura que la chose lui est avantageuse, et il obéira dans la charité, confiant que DIEU lui viendra en aide.`,
+
+// CHAPITRE 69 — QUE NUL DANS LE MONASTÈRE NE SE PERMETTE D'EN DÉFENDRE UN AUTRE
+
+316: `Il faut prendre garde que personne dans le monastère ne se permette, en aucune circonstance, de prendre la défense d’un autre moine et de lui servir de protecteur, et cela, quel que soit le lien de parenté qui les unisse. Les moines ne se le permettront d’aucune manière, car il peut en résulter une très grave occasion de scandale. Si quelqu’un transgresse cette défense, on le punira très sévèrement.`,
+
+// CHAPITRE 70 — QUE NUL NE SE PERMETTE DE FRAPPER À TOUT PROPOS
+
+317: `Il faut éviter dans le monastère tout sujet de présomption ; pour cela, nous statuons qu’il ne sera permis à personne d’excommunier, ni de frapper l’un de ses frères, à moins qu’il n’en ait reçu pouvoir de l’Abbé.`,
+
+318: `Ceux qui commettront des fautes seront repris devant tout le monde, afin que les autres en éprouvent de la crainte (1 Tm 5, 20). Les enfants, jusqu’à l’âge de quinze ans, seront maintenus dans la discipline et sous la garde de tous ; mais cela avec mesure et intelligence. Si quelqu’un se permettait quoi que ce soit, sans l’ordre de l’Abbé, contre ceux qui sont plus âgés, ou de s’emporter contre les enfants sans discrétion, il sera soumis à la discipline régulière ; car il est écrit : « Ce que tu ne veux pas qu’on te fasse, ne le fais pas à autrui. » (Tb 4, 16 ; Mt 7, 12)`,
+
+// CHAPITRE 71 — QUE LES FRÈRES S'OBÉISSENT MUTUELLEMENT
+
+319: `Ce n’est pas seulement à l’Abbé que tous doivent rendre le bien de l’obéissance : il faut encore que les frères s’obéissent les uns aux autres, sachant que c’est par cette voie de l’obéissance qu’ils iront à DIEU.`,
+
+320: `Plaçant avant tout les ordres de l’Abbé et des responsables qu’il a établis — ordres auxquels nous ne permettons pas de préférer ceux des particuliers — tous les jeunes obéiront pour le reste à leurs anciens, en toute charité et empressement.`,
+
+321: `S’il se rencontre quelqu’un qui ait l’esprit de contestation, il sera châtié.`,
+
+322: `Lorsqu’un frère est repris par l’Abbé ou par supérieur quelconque, quand ce serait pour une cause même légère, en n’importe quelle manière, s’il s’aperçoit que l’esprit de ce supérieur est irrité contre lui, ou ému même légèrement, aussitôt et sans délai il se prosternera par terre à ses pieds pour faire satisfaction et demeurera ainsi jusqu’à ce que la bénédiction lui ait fait connaître que l’émotion est calmée. Si quelqu’un, par mépris, refuse d’en agir ainsi, il subira une punition corporelle, et s’il demeure opiniâtre, on le chassera du monastère.`,
+
+// CHAPITRE 72 — LE BON ZÈLE QUE DOIVENT AVOIR LES MOINES
+
+323: `Comme il y a un zèle mauvais et amer, qui sépare de DIEU et conduit à l’enfer : de même il y a un bon zèle qui sépare des vices, et conduit à DIEU et à la vie éternelle. Les moines s’exerceront donc à ce zèle avec un très fervent amour :`,
+
+324: `Ils se préviendront d’honneur les uns les autres (Rm 12, 10) ; se supporteront avec une extrême patience dans leurs infirmités, tant physiques que morales, et s’obéiront à l’envi.`,
+
+325: `Nul ne recherchera ce qu’il juge lui être utile, mais plutôt ce qui l’est aux autres.`,
+
+326: `Ils s’accorderont une chaste charité fraternelle ; craindront DIEU avec amour, et aimeront leur Abbé d’une charité humble et sincère.`,
+
+327: `Ils ne préféreront absolument rien au Christ, lequel daigne nous conduire tous ensemble à la vie éternelle !`,
+
+// CHAPITRE 73 — TOUTE LA PRATIQUE DE LA JUSTICE N'EST PAS CONTENUE DANS CETTE RÈGLE
+
+328: `Nous avons écrit cette Règle, afin qu’en l’observant dans les monastères nous fassions preuve d’une certaine honnêteté de mœurs, ou du moins d’un commencement de vie religieuse. Pour celui qui aspire à la vie parfaite, il y a les enseignements des saints Pères, dont l’observation conduit l’homme au sommet de la perfection. Quelle est en effet la page, quelle est la parole d’autorité divine dans le Premier et le Nouveau Testament, qui ne soit une règle toute droite pour la conduite de notre vie ? Ou encore, quel est le livre des saints Pères catholiques qui ne nous enseigne le droit chemin pour parvenir à notre Créateur ? En outre, les Conférences des Pères, leurs Institutions et leur Vies (il s’agit des traités de Jean Cassien, et des vies des Pères du désert), comme aussi la Règle de notre père saint BASILE, que sont-elles pour les moines qui vivent et obéissent comme il faut, sinon des instruments de vertus ?`,
+
+329: `Pour nous autres relâchés, médiocres et négligents, il y a là de quoi rougir de confusion.`,
+
+330: `Qui que tu sois donc, qui te hâtes vers la patrie céleste, accomplis, avec l’aide du Christ, cette ébauche de Règle écrite pour des débutants. C'est alors aux sommets de doctrine et de vertu évoqués plus haut que, sous la protection de DIEU, tu parviendras. Amen.`,
+  
+  
   
 };
 
