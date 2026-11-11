@@ -1076,23 +1076,23 @@ document.getElementById("afficher-paragraphe")
     reference.textContent =
       "Paragraphe " + numero;
 
-    if (!entree) {
+    
+   if (!entree) {
+  regle.innerHTML = regleComplete[numero]
+    ? `<p>${regleComplete[numero]}</p>`
+    : '<p class="placeholder">Texte indisponible.</p>';
 
-      regle.innerHTML =
-        '<p class="placeholder">Le texte de ce passage sera intégré progressivement.</p>';
+  commentaire.innerHTML =
+    '<p class="placeholder">Commentaire à venir.</p>';
 
-      commentaire.innerHTML =
-        '<p class="placeholder">Commentaire à venir.</p>';
+  meditation.innerHTML =
+    '<p class="placeholder">Méditation à venir.</p>';
 
-      meditation.innerHTML =
-        '<p class="placeholder">Méditation à venir.</p>';
+  pratique.innerHTML =
+    '<p class="placeholder">Application à venir.</p>';
 
-      pratique.innerHTML =
-        '<p class="placeholder">Application à venir.</p>';
-
-      return;
-    }
-
+  return;
+}
     // Extraire uniquement le paragraphe demandé.
     const expression = new RegExp(
       '<p\\b[^>]*>\\s*<strong>\\s*' +
