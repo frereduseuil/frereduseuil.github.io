@@ -856,10 +856,13 @@ console.log("Entrée calendrier :", entreeCalendrier);
   const meditation = document.getElementById("meditation");
   const pratique = document.getElementById("pratique");
 
-  if (lecture) {
-    reference.textContent = lecture.reference;
-    regle.innerHTML = lecture.texte ||
-      '<p class="placeholder">Texte à intégrer prochainement.</p>';
+  if (lecture || entreeCalendrier) {
+  reference.textContent = lecture?.reference ||
+    "Paragraphes " + entreeCalendrier.paragraphes;
+
+  regle.innerHTML = texteCalendrier ||
+    lecture?.texte ||
+    '<p class="placeholder">Texte indisponible.</p>';
 
     commentaire.innerHTML = lecture.commentaire ||
       '<p class="placeholder">Commentaire à venir.</p>';
