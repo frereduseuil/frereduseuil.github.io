@@ -73,7 +73,7 @@ const regleComplete = {
 
   28: `Avant tout, qu’il se garde de négliger ou de compter pour peu de chose le salut des âmes qui lui sont confiées, sans donner plus de soins aux choses passagères, terrestres et dépassées. Qu’il considère toujours que ce sont des âmes qu’il a reçues à conduire et dont il devra rendre compte. Qu’il ne prétexte pas l’insuffisance des ressources du monastère, se souvenant qu’il est écrit : Cherchez d’abord le règne de Dieu et sa justice, et le reste vous sera donné par surcroît (Mt 6, 33) ; et encore : Rien ne manque à ceux qui le craignent (Ps 33, 10).`,
 
-  29: `Qu’il sache donc bien que celui qui a reçu des âmes à conduire doit se préparer à en rendre compte. Quel que soit le nombre des frères confiés à ses soins, qu’il tienne pour certain qu’au jour du jugement il aura à répondre au Seigneur de leurs âmes à tous, en plus, sans nul doute, de la sienne propre. Ainsi, continuellement dans la crainte de l’examen qui attend le pasteur au sujet de ses brebis, ce compte qu’il doit rendre d’autrui le rendra attentif au sien, et en corrigeant autrui par ses instructions, il se corrigera lui-même de ses propres défauts.`
+  29: `Qu’il sache donc bien que celui qui a reçu des âmes à conduire doit se préparer à en rendre compte. Quel que soit le nombre des frères confiés à ses soins, qu’il tienne pour certain qu’au jour du jugement il aura à répondre au Seigneur de leurs âmes à tous, en plus, sans nul doute, de la sienne propre. Ainsi, continuellement dans la crainte de l’examen qui attend le pasteur au sujet de ses brebis, ce compte qu’il doit rendre d’autrui le rendra attentif au sien, et en corrigeant autrui par ses instructions, il se corrigera lui-même de ses propres défauts.`,
 
 
  
