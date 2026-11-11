@@ -827,7 +827,24 @@ const cleLecture = entreeCalendrier
   : cle;
 
 const lecture = lectures[cleLecture];
-console.log("Lecture du jour :", lecture?.reference);
+const texteCalendrier = entreeCalendrier
+  ? (() => {
+      const bornes = entreeCalendrier.paragraphes.split("-").map(Number);
+      const debut = bornes[0];
+      const fin = bornes[1] || debut;
+
+      let texte = "";
+
+      for (let n = debut; n <= fin; n++) {
+        if (regleComplete[n]) {
+          texte += `<p>${regleComplete[n]}</p>`;
+        }
+      }
+
+      return texte;
+    })()
+  : "";
+  console.log("Lecture du jour :", lecture?.reference);
 console.log("Entrée calendrier :", entreeCalendrier);
   document.getElementById("cycle").textContent =
     determinerCycle(date);
