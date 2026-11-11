@@ -973,6 +973,49 @@ for (let i = 1; i <= 73; i++) {
 
 }
 
+  
+/* ==================================
+   AFFICHER LES PARAGRAPHES DU CHAPITRE
+================================== */
+
+const choixParagraphe =
+  document.getElementById("choix-paragraphe");
+
+choixChapitre.addEventListener("change", function () {
+
+  choixParagraphe.innerHTML =
+    '<option value="">Sélectionner un paragraphe</option>';
+
+  const numeroChapitre = Number(choixChapitre.value);
+
+  if (choixChapitre.value === "") {
+    choixParagraphe.disabled = true;
+    return;
+  }
+
+  const debut = numeroChapitre === 0
+    ? 1
+    : debutChapitres[numeroChapitre];
+
+  const fin = numeroChapitre === 73
+    ? 330
+    : debutChapitres[numeroChapitre + 1] - 1;
+
+  for (let i = debut; i <= fin; i++) {
+
+    const option = document.createElement("option");
+
+    option.value = String(i);
+    option.textContent = "Paragraphe " + i;
+
+    choixParagraphe.appendChild(option);
+
+  }
+
+  choixParagraphe.disabled = false;
+
+});
+
 afficher();
 
 </script>
