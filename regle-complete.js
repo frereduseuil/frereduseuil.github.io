@@ -120,7 +120,7 @@ const regleComplete = {
 
   48: `Aimer ses ennemis (Mt 5, 44 ; Lc 6, 35).`,
 
-  49: `Ne pas répondre par la malédiction à ceux qui nous maudissent, mais plutôt les bénir (Lc 6, 28 ; 1 Co 4, 12 ; 1 P 3, 9).\,`
+  49: `Ne pas répondre par la malédiction à ceux qui nous maudissent, mais plutôt les bénir (Lc 6, 28 ; 1 Co 4, 12 ; 1 P 3, 9).`,
 
 50: `Soutenir la persécution pour la justice (Mt 5, 10 ; 1 P 3, 14).`,
 
@@ -162,7 +162,7 @@ const regleComplete = {
 
 69: `Voilà quels sont les instruments de l’art spirituel. Si nous en faisons un usage constant, le jour et la nuit, alors quand au jour du jugement nous les remettrons, notre récompense sera celle que le Seigneur a promis : « Ce que l’œil n’a pas vu, ni l’oreille n’a entendu, ce que Dieu a préparé pour ceux qui l’aiment. » (1 Co 2, 9)`,
 
-70: `Or, l’atelier où nous devons travailler diligemment à l’aide de ces instruments, c’est l’enceinte du monastère avec la stabilité dans la communauté.\,`
+70: `Or, l’atelier où nous devons travailler diligemment à l’aide de ces instruments, c’est l’enceinte du monastère avec la stabilité dans la communauté.`,
 
 // CHAPITRE 5 — L'OBÉISSANCE
 
@@ -174,7 +174,7 @@ const regleComplete = {
 
 74: `Mais cette obéissance ne sera agréable à DIEU et douce aux hommes que si ce qui est commandé est exécuté sans trouble, sans retard, sans tiédeur, sans murmure ni aucune parole de résistance. Car l’obéissance qu’on rend aux supérieurs se rapporte à DIEU lui-même ; puisqu’il a dit : « Qui vous écoute m’écoute. » (Lc 10, 16) Et il faut que les disciples obéissent de bon cœur, car « DIEU aime celui qui donne joyeusement. » (2 Co 9, 7)`,
 
-75: `Si, au contraire, le disciple obéit de mauvais gré, s’il murmure non seulement des lèvres mais encore dans son cœur, quand bien même il exécuterait l’ordre reçu, son acte ne sera pas agréé de DIEU, qui voit dans son cœur le murmure. Bien loin d’en obtenir une grâce, il encourra la punition de qui murmure, à moins qu’il ne répare sa faute et ne donne satisfaction.\,`  
+75: `Si, au contraire, le disciple obéit de mauvais gré, s’il murmure non seulement des lèvres mais encore dans son cœur, quand bien même il exécuterait l’ordre reçu, son acte ne sera pas agréé de DIEU, qui voit dans son cœur le murmure. Bien loin d’en obtenir une grâce, il encourra la punition de qui murmure, à moins qu’il ne répare sa faute et ne donne satisfaction.`,  
   
 // CHAPITRE 6 — LE SILENCE
 
