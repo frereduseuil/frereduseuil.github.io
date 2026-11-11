@@ -176,6 +176,56 @@ const regleComplete = {
 
 75: `Sans aucun doute, ceux-là imitent cette parole du Seigneur : « Je ne suis pas venu faire ma volonté, mais la volonté de celui qui m’a envoyé » (Jn 6, 38).`
 
+  // CHAPITRE 6 — DU SILENCE
+
+76: `Faisons ce que dit le Prophète : « J’ai dit : j’observerai mes voies, afin de ne pas pécher par ma langue. J’ai placé une garde à ma bouche : je suis devenu muet, je me suis tu et humilié, même s’il s’agissait de parler de choses bonnes. » (Ps 38, 2-3) Le Prophète nous montre là que s’il faut parfois s’abstenir de bons discours pour la pratique du silence, à combien plus forte raison la peine qui suit le péché doit-elle nous faire éviter les paroles mauvaises.`,
+
+77: `On ne devra donc, en raison de l’importance du silence, n’accorder que rarement aux disciples — fussent-ils parfaits — la permission de parler, même à propos de choses bonnes, saintes et édifiantes. Car il est écrit : « En parlant beaucoup, tu ne saurais éviter le péché » (Pr 10, 19) ; et ailleurs : « La mort et la vie sont au pouvoir de la langue. » (Pr 18, 21) C’est au Maître, en effet, qu’il convient de parler et d’instruire ; le rôle du disciple est de se taire et d’écouter.`,
+
+78: `C’est pourquoi, si l’on a quelque chose à demander au supérieur, on le fera avec toute l’humilité et la soumission qu’inspire le respect. Quant aux bouffonneries, aux paroles vaines et qui ne sont bonnes qu’à provoquer le rire, nous les condamnons à tout jamais et en tout lieu, et nous ne permettons pas au disciple d’ouvrir la bouche pour de tels propos.`
+
+// CHAPITRE 7 — DE L'HUMILITÉ (première partie — texte corrigé)
+
+79: `La divine Écriture, mes frères, nous crie : « Quiconque s’élève sera humilié, et qui s’humilie sera exalté ! » (Mt 23, 12 ; Lc 14, 11 ; 18, 14) En parlant ainsi, elle nous montre que tout élèvement est une espèce d’orgueil, contre quoi le Prophète indique qu’il se garde, lorsqu’il dit : « Seigneur, mon cœur ne s’est pas exalté, mes yeux non plus ne se sont pas portés trop haut ; je n’ai pas poursuivi les grandeurs, ni recherché des merveilles au-dessus de moi. » (Ps 130, 1) Mais quoi alors ? « Si je n’ai pas eu d’humbles sentiments, si j’ai permis à mon âme de s’élever, tu me traiteras comme l’enfant qu’on arrache du sein de sa mère. » (Ps 130, 2)`,
+
+80: `Si donc, mes frères, nous voulons atteindre le sommet de la plus haute humilité, et parvenir promptement à cette élévation céleste où l’on monte par l’humilité de la vie présente, il nous faut, par les degrés ascendants de nos œuvres, dresser cette échelle qui apparut en songe à Jacob, et par laquelle il voyait des anges descendre et monter. Cette descente et cette montée ne signifient pas pour nous autre chose — sans aucun doute — sinon que l’on descend par l’élèvement et que l’on monte par l’humilité.`,
+
+81: `Cette échelle ainsi dressée, c’est notre vie en ce monde, que le Seigneur élève jusqu’au ciel, si notre cœur s’humilie. Les côtés de cette échelle sont, selon nous, notre corps et notre âme ; sur ces montants, la vocation divine a inséré divers échelons d’humilité et de progrès spirituel qu’il nous faut gravir.`,
+
+82: `Donc, le premier degré d’humilité est de se mettre constamment devant les yeux la crainte de Dieu, de se garder entièrement de l’oubli et de se souvenir sans cesse de tout ce que Dieu a commandé. On repassera toujours dans son esprit, d’une part, l’enfer où brûlent, pour leurs péchés, ceux qui méprisent Dieu, et d’autre part, la vie éternelle préparée à ceux qui le craignent.`,
+
+83: `Ainsi, on se préservera à toute heure des péchés et des vices, soit de la pensée, soit de la langue, des mains, des pieds et de la volonté propre, mais aussi des désirs de la chair. L’homme doit être persuadé que Dieu le considère du haut du ciel à toute heure ; qu’en tout lieu ses actes ont pour témoin le regard de la Divinité, et que les anges en font rapport à tout moment.`,
+
+84: `C’est ce que le Prophète nous fait entendre par ces paroles, où il nous montre Dieu toujours présent à nos pensées : « Dieu scrute les reins et les cœurs » (Ps 7, 10) ; et aussi : « Le Seigneur connaît les pensées des hommes » (Ps 93, 11) ; et encore : « Tu as compris de loin mes pensées » (Ps 138, 3) ; et : « La pensée de l’homme te sera découverte. » (Ps 75, 11) Et pour exercer la vigilance à l’égard de ses pensées perverses, le frère qui veut être utile aux yeux de Dieu dira sans cesse en son cœur : « Je serai sans tache devant lui, si je me garde de mon iniquité. » (Ps 17, 24)`
+
+// CHAPITRE 7 — DE L'HUMILITÉ (suite)
+
+85: `Pour ce qui est de la volonté propre, l’Écriture nous défend de la faire lorsqu’elle nous dit : « Détourne-toi de tes volontés. » (Si 18, 30) Et de plus, dans l’Oraison dominicale, nous demandons à Dieu que sa volonté soit faite en nous (Mt 6, 10).`,
+
+86: `C’est donc avec raison que nous sommes avertis de ne pas faire notre volonté, puisque par là nous évitons le danger que la sainte Écriture nous signale, quand elle dit : « Il est des voies qui semblent droites aux hommes, et qui, à la fin, aboutissent au fond de l’enfer. » (Pr 16, 25) Par là aussi nous nous préservons de ce qui est dit des négligents : « Ils se sont corrompus et ils se sont rendus abominables en suivant leurs passions. » (Ps 13, 1)`,
+
+87: `Quant aux désirs de la chair, croyons que Dieu nous est toujours présent, suivant ce que dit le Prophète au Seigneur : « Tous mes désirs sont devant toi. » (Ps 37, 10) Il faut donc se garder du désir mauvais, parce que la mort est postée à l’entrée même du plaisir ; de là vient que l’Écriture nous donne ce commandement : « Ne suis pas tes convoitises. » (Si 18, 30)`
+
+// CHAPITRE 7 — DE L'HUMILITÉ (suite)
+
+88: `Si donc les yeux du Seigneur considèrent les bons et les méchants (Pr 15, 3), si, du haut du ciel, le Seigneur regarde constamment les enfants des hommes, afin de voir « s’il en est un qui ait l’intelligence et qui cherche Dieu » (Ps 13, 2) ; si enfin les anges commis à notre garde rapportent jour et nuit au Seigneur le détail de nos œuvres, il nous faut, mes frères, demeurer à toute heure vigilants.`,
+
+89: `Craignons, comme dit le Prophète dans le psaume, que Dieu ne nous surprenne au moment où — déclinant vers le mal — nous nous rendrions inutiles (Ps 13, 3). Dès lors, s’il use d’indulgence en ce temps-ci, parce qu’il est bon et qu’il attend que nous changions en mieux, qu’il n’ait à nous dire plus tard : « Tu as fait cela, et je me suis tu. » (Ps 49, 21)`,
+
+90: `Le second degré d’humilité est de ne pas aimer sa volonté propre, et de ne pas se complaire dans l’accomplissement de ses désirs ; mais bien plutôt de conformer sa conduite à cette parole du Seigneur, où il est dit : « Je ne suis pas venu faire ma volonté, mais la volonté de celui qui m’a envoyé. » (Jn 6, 38) L’Écriture dit encore : « Le plaisir encourt la peine ; mais la nécessité procure la couronne. » Cette sentence n’est pas tirée de l’Écriture, mais d’Actes de martyrs romains.`,
+
+91: `Le troisième degré d’humilité est de se soumettre pour l’amour de Dieu en toute obéissance aux supérieurs ; à l’imitation du Seigneur, dont l’Apôtre dit : « Il s’est fait obéissant jusqu’à la mort. » (Ph 2, 8)`
+
+// CHAPITRE 7 — DE L'HUMILITÉ (suite)
+
+92: `Le quatrième degré d’humilité est d’embrasser la patience dans l’exercice de cette obéissance, au milieu des difficultés, des contrariétés, et même de toutes sortes d’injustices.`,
+
+93: `Dans le silence de la conscience, on supporte ainsi tout sans se lasser ni reculer, selon ce que dit l’Écriture : « Qui aura persévéré jusqu’à la fin, celui-là sera sauvé » (Mt 10, 22) ; et encore : « Prends courage, et espère le Seigneur. » (Ps 26, 14) Et pour nous montrer que le serviteur fidèle doit tout supporter pour le Seigneur, même les plus grandes contrariétés, l’Écriture dit au nom de ceux qui souffrent : « C’est pour toi que nous sommes tout le jour livrés à la mort, et traités comme des brebis d’abattoir. » (Ps 43, 23 ; Rm 8, 36) Sûrs dans leur espérance de la récompense divine, ils ajoutent avec joie ces paroles : « Mais en toutes ces épreuves nous remportons la victoire, grâce à celui qui nous a aimés. » (Rm 8, 37)`,
+
+94: `L’Écriture dit encore à un autre endroit : « Tu nous as éprouvés, ô Dieu, et nous as fait passer par le feu comme l’argent qu’on examine dans le creuset ; tu nous as fait tomber dans le filet et as amassé les tribulations sur nos épaules. » (Ps 65, 10-11) Et pour nous apprendre que nous devons être sous un supérieur, elle ajoute : « Tu as imposé des hommes sur nos têtes. » (Ps 65, 12)`
+
+
+
 
 };
 
