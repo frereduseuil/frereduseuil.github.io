@@ -827,7 +827,8 @@ const cleLecture = entreeCalendrier
   : cle;
 
 const lecture = lectures[cleLecture];
-
+console.log("Lecture du jour :", lecture?.reference);
+console.log("Entrée calendrier :", entreeCalendrier);
   document.getElementById("cycle").textContent =
     determinerCycle(date);
 
