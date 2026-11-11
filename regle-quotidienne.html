@@ -925,26 +925,56 @@ document.getElementById("afficher-date").addEventListener("click", () => {
 });
 
 
+
 /* ==================================
    PREPARER LA RECHERCHE
 ================================== */
 
 const choixChapitre = document.getElementById("choix-chapitre");
 
+// Premier paragraphe du Prologue,
+// puis premier paragraphe de chaque chapitre.
+const debutChapitres = [
+  1, 14, 19, 30, 35, 71, 76, 79, 100, 102,
+  105, 106, 110, 111, 113, 114, 115, 116, 121,
+  131, 132, 133, 135, 140, 142, 144, 146, 147,
+  149, 150, 151, 152, 161, 163, 165, 167, 172,
+  178, 179, 183, 188, 192, 197, 200, 206, 209,
+  211, 213, 215, 225, 228, 230, 231, 233, 245,
+  247, 254, 255, 258, 266, 269, 273, 280, 282,
+  289, 297, 305, 310, 313, 316, 317, 319, 323,
+  328
+];
+
+// Ajouter le Prologue.
+const optionPrologue = document.createElement("option");
+
+optionPrologue.value = "0";
+optionPrologue.textContent = "Prologue — §§ 1 à 13";
+
+choixChapitre.appendChild(optionPrologue);
+
+// Ajouter les 73 chapitres avec leurs paragraphes.
 for (let i = 1; i <= 73; i++) {
+
+  const debut = debutChapitres[i];
+
+  const fin = i < 73
+    ? debutChapitres[i + 1] - 1
+    : 330;
 
   const option = document.createElement("option");
 
   option.value = String(i);
-  option.textContent = "Chapitre " + i;
+  option.textContent =
+    "Chapitre " + i + " — §§ " + debut + " à " + fin;
 
   choixChapitre.appendChild(option);
 
 }
 
+afficher();
 
-  
-afficher ();
 </script>
 
 
