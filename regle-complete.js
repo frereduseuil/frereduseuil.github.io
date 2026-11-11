@@ -224,10 +224,43 @@ const regleComplete = {
 
 94: `L’Écriture dit encore à un autre endroit : « Tu nous as éprouvés, ô Dieu, et nous as fait passer par le feu comme l’argent qu’on examine dans le creuset ; tu nous as fait tomber dans le filet et as amassé les tribulations sur nos épaules. » (Ps 65, 10-11) Et pour nous apprendre que nous devons être sous un supérieur, elle ajoute : « Tu as imposé des hommes sur nos têtes. » (Ps 65, 12)`
 
+95: `Ainsi, par la patience et la pratique du précepte du Seigneur au milieu des adversités et des injures, s’ils sont frappés sur une joue, ils présentent l’autre ; si on leur enlève leur tunique, ils abandonnent aussi leur manteau ; si on les contraint de faire un mille, ils en font deux (Mt 5, 39-41) ; avec l’Apôtre Paul, ils supportent les faux frères (2 Co 11, 26), et ils bénissent ceux qui les maudissent (1 Co 4, 12).`,
 
+// CHAPITRE 7 — DE L'HUMILITÉ (cinquième degré)
 
+96: `Le cinquième degré d’humilité est de ne rien cacher à son Abbé, mais de lui avouer humblement toutes les pensées mauvaises qui se présentent à l’âme, et les fautes que l’on aurait commises en secret.`,
 
-};
+97: `L’Écriture nous y exhorte, lorsqu’elle dit : « Révèle ta voie au Seigneur et espère en lui. » (Ps 36, 5) Elle dit encore : « Confessez-vous au Seigneur, car il est bon, et sa miséricorde est à jamais. » (Ps 105, 1 ; Ps 117, 1) Et de même le Prophète : « Je t’ai fait connaître mon péché, et je n’ai pas caché mes injustices. J’ai dit : Je déclarerai contre moi mes injustices au Seigneur, et tu as pardonné l’impiété de mon cœur. » (Ps 31, 5)`
+
+// CHAPITRE 7 — DE L'HUMILITÉ (sixième degré)
+
+98: `Le sixième degré d’humilité est qu’un moine trouve son contentement en toute tâche vile et basse, et qu’en tout ce qui lui est confié, il se considère comme un ouvrier mauvais et indigne, se disant avec le Prophète : « Je suis réduit à rien et je ne sais rien ; je suis devenu devant toi comme une bête de somme ; mais je suis toujours avec toi. » (Ps 72, 22-23)`
+
+99: `Le septième degré d’humilité est non seulement de se proclamer des lèvres le dernier et le plus vil de tous, mais aussi de le croire dans le sentiment intime de son cœur, s’humiliant et disant avec le Prophète : « Pour moi, je suis un ver et non un homme ; je suis l’opprobre des hommes et le rebut du peuple » (Ps 21, 7). « Après avoir été élevé, j’ai été humilié et couvert de confusion » (Ps 87, 16). Et encore : « Il m’a été bon que tu m’aies humilié, afin que j’apprenne tes commandements » (Ps 118, 71).`,  
+
+// CHAPITRE 7 — DE L'HUMILITÉ (huitième degré)
+
+100: `Le huitième degré d’humilité est qu’un moine ne fasse rien que ce qui est prescrit par la règle commune du monastère et les exemples de ses anciens.`  
+
+// CHAPITRE 7 — DE L'HUMILITÉ (neuvième degré)
+
+101: `Le neuvième degré d’humilité est que le moine interdise à sa langue de parler, demeurant en silence, sans rien dire, jusqu’à ce qu’on l’interroge. L’Écriture nous montre en effet « qu’en parlant beaucoup on ne saurait éviter le péché » (Pr 10, 19), et que « le bavard ne marchera pas droit sur la terre » (Ps 139, 12).`,  
+
+// CHAPITRE 7 — DE L'HUMILITÉ (dixième degré)
+
+102: `Le dixième degré d’humilité est de ne pas être prompt et facile au rire, car il est écrit : « Le fou élève la voix quand il rit. » (Si 21, 20)`
+
+// CHAPITRE 7 — DE L'HUMILITÉ (onzième degré)
+
+103: `Le onzième degré d’humilité est que lorsqu’un moine parle, il s’exprime doucement et sans rire, humblement et avec gravité, disant en peu de mots des choses raisonnables, évitant les éclats de voix, selon qu’il est écrit : « On reconnaît le sage à la sobriété de son langage. »`,
+  
+// CHAPITRE 7 — DE L'HUMILITÉ (douzième degré)
+
+104: `Le douzième degré d’humilité est qu’un moine non seulement garde l’humilité dans son cœur, mais encore la manifeste constamment dans son attitude extérieure à ceux qui le voient. C’est-à-dire qu’à l’office divin, à l’oratoire, dans le monastère, au jardin, en chemin, dans les champs, partout où il se trouve, assis, marchant ou debout, il ait toujours la tête inclinée, les yeux baissés, se jugeant à toute heure coupable de ses péchés, s’imaginant déjà comparaître au redoutable jugement de Dieu, et disant sans cesse en son cœur ce que disait le publicain de l’Évangile, les yeux fixés vers la terre : « Seigneur, je ne suis pas digne, moi pécheur, de lever les yeux vers le ciel. » (Lc 18, 13) Et encore avec le Prophète : « Je suis courbé et humilié de toutes parts. » (Ps 37, 7)`,
+  
+  
+  
+  };
 
 
 
