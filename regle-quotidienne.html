@@ -211,7 +211,17 @@ footer a {
   .modes-consultation {
     grid-template-columns: 1fr;
   }
+
+  .source-regle {
+  margin-top: 18px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(180, 154, 104, 0.35);
+  font-size: 0.75rem;
+  color: #777;
+  font-style: italic;
 }
+}
+
 
 </style>
 </head>
@@ -1097,6 +1107,12 @@ document.getElementById("afficher-paragraphe")
     regle.innerHTML = passage
       ? passage[0]
       : '<p class="placeholder">Le texte de ce paragraphe sera intégré progressivement.</p>';
+    if (passage) {
+  regle.insertAdjacentHTML(
+    "beforeend",
+    '<p class="source-regle">Traduction de Germain Morin (1944), révisée en 2023 par Philibert Schmitz — source : <a href="https://la.regle.org/" target="_blank" rel="noopener">la.regle.org</a>.</p>'
+  );
+}
 
     commentaire.innerHTML = entree.commentaire ||
       '<p class="placeholder">Commentaire à venir.</p>';
