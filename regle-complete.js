@@ -574,7 +574,111 @@ const regleComplete = {
 
 229: `De même, ceux qui sont conduits à voyager ne laisseront pas passer les Heures prescrites, mais ils les diront en particulier, comme ils pourront, et ne négligeront pas de s’acquitter du devoir de leur service.`,
   
+// CHAPITRE 51 — LES FRÈRES QUI VONT EN DES LIEUX PAS TRÈS ÉLOIGNÉS
 
+230: `Le frère qui sort pour une affaire quelconque et espère rentrer le jour même au monastère ne se permettra pas de manger au dehors, même s’il est invité instamment par qui que ce soit — à moins que l’Abbé ne l’ait peut-être autorisé. S’il agit autrement, qu’il soit excommunié.`,
+
+// CHAPITRE 52 — L'ORATOIRE DU MONASTÈRE
+
+231: `L’oratoire sera ce que signifie son nom. On n’y fera et on n’y déposera rien d’étranger à sa destination. L’Œuvre de DIEU terminée, tous les frères sortiront dans un profond silence, et maintiendront leur révérence envers DIEU ; afin qu’un frère qui veut y prier en particulier n’en soit pas empêché par l’importunité d’autrui.`,
+
+232: `De même, si à un autre moment quelqu’un veut prier avec plus de recueillement, qu’il entre simplement et qu’il prie, non pas avec des éclats de voix, mais avec larmes et ferveur du cœur. À qui ne se conduit pas ainsi, on ne permettra donc pas de demeurer dans l’oratoire après l’Œuvre de DIEU, comme il a été dit, de peur que d’autres n’en soient importunés.`,
+
+// CHAPITRE 53 — LA RÉCEPTION DES HÔTES
+
+233: `Tous les hôtes qui arrivent seront reçus comme le Christ, car lui-même dira un jour : « J’ai demandé l’hospitalité et vous m’avez reçu. » (Mt 25, 35) À tous on témoignera l’honneur qui leur est dû, surtout aux proches dans la foi (l’expression domesticis fidei désigne ceux qui font tout particulièrement partie de la maison — domus — de l’Église, par exemple les clercs et les moines) (Ga 6, 10) et aux pèlerins.`,
+
+234: `Aussitôt donc qu’un hôte aura été annoncé, le supérieur et les frères se hâteront à sa rencontre avec toutes les marques de la charité. On priera d’abord ensemble, et ensuite on se donnera mutuellement la paix. Ce baiser de paix ne se donnera qu’après la prière, pour se garder de diaboliques illusions (allusion à certains récits rapportés dans les Vies des moines d’Orient).`,
+
+235: `Dans la manière de saluer, on témoignera à tous les hôtes une profonde humilité : devant ceux qui arriveront ou partiront, on inclinera la tête, ou on se prosternera, le corps par terre, adorant en eux le Christ même qu’on reçoit.`,
+
+236: `Les hôtes ainsi accueillis seront conduits à la prière : après quoi le supérieur, ou un autre désigné par lui, s’assiéra en leur compagnie. On lira en présence de l’hôte la divine Écriture (lit. loi divine) pour son édification. Ensuite on le traitera avec toute l’humanité possible.`,
+
+237: `Le supérieur rompra le jeûne à cause de l’hôte, à moins que ce ne soit un des jours de jeûnes principaux qu’on ne puisse enfreindre. Quant aux frères, ils observeront leurs jeûnes comme de coutume.`,
+
+238: `L’Abbé versera de l’eau sur les mains des hôtes ; lui même, avec la communauté entière, lavera les pieds à tous les hôtes. Après quoi, ils diront ce verset : « Nous recevons, ô DIEU, ta miséricorde au milieu de ton temple. » (Ps 47, 10)`,
+
+239: `On montrera une sollicitude et un soin tout particulier dans l’accueil des pauvres et des pèlerins, parce que c’est surtout en leurs personnes qu’on reçoit le Christ. Pour les riches, en effet, la crainte qu’ils inspirent porte d’elle-même à les honorer.`,
+
+240: `La cuisine de l’Abbé et des hôtes sera à part, afin que les frères ne soient pas troublés par les hôtes qui arrivent à des heures incertaines, et ne manquent jamais au monastère.`,
+
+241: `Chaque année, deux frères capables de bien remplir leur office entreront au service de cette cuisine. On leur donnera, au besoin, des aides afin qu’ils servent sans murmure. Et quand, au contraire, ils n’auront pas assez d’occupation, ils iront à l’ouvrage qu’on leur commandera.`,
+
+242: `Et cette disposition vaut non seulement pour eux, mais encore pour tous les offices du monastère : quand les frères auront besoin d’aides, on leur en donnera ; et lorsqu’ils manqueront d’occupation, qu’ils obéissent en faisant ce qui leur sera commandé.`,
+
+243: `Quant au logement des hôtes, on en confiera la charge à un frère dont l’âme soit remplie de la crainte de DIEU. Il y aura des lits garnis en nombre suffisant, et on fera en sorte que la maison de DIEU soit sagement administrée par des gens sages.`,
+
+244: `On n’abordera pas les hôtes, ni ne leur parlera sans permission. Si on les rencontre ou les aperçoit, on les saluera humblement, comme il a été dit, et après avoir demandé une bénédiction, on passera outre en disant ne pas avoir la permission de s’entretenir avec un hôte.`,
+
+// CHAPITRE 54 — SI UN MOINE PEUT RECEVOIR DES LETTRES OU AUTRE CHOSE
+
+245: `Il n’est pas permis à un moine, sans l’autorisation de l’Abbé, de recevoir ni de ses parents, ni de qui que ce soit, pas même de ses confrères, des lettres, des dons (lit. eulogies : aliments bénits, médailles, reliques ou images qu’on s’offrait, surtout après l’Eucharistie, en témoignage de communion à une même foi), ou de petits cadeaux, et pas plus d’en donner.`,
+
+246: `Si ses parents lui envoient quelque chose, il ne se permettra pas de le recevoir avant que l’Abbé en ait été informé. Si l’Abbé permet qu’on reçoive l’objet, il dépendra de lui de choisir à qui le donner ; et le frère à qui il était envoyé ne s’en attristera pas, de peur de donner prise au diable (Éph 4, 27 ; 1 Tm 5, 14). Celui qui oserait en agir autrement sera soumis à la discipline régulière.`,
+
+// CHAPITRE 55 — LES VÊTEMENTS ET LES CHAUSSURES DES FRÈRES
+
+247: `On donnera aux frères des vêtements en rapport avec les conditions et la température des lieux qu’ils habitent, puisqu’il leur en faut d’avantage dans les régions froides et moins dans les pays chauds. L’Abbé doit prendre ceci en considération. Nous estimons toutefois que, dans les endroits tempérés, une coule et une tunique suffisent pour chaque moine, avec un scapulaire pour le travail (il s’agit très probablement des même vêtements que portaient les paysans d’alors : la coule était un manteau à large capuchon — cucullus —, la tunique une robe portée communément à Rome et serrée à la taille par une ceinture, tandis que le scapulaire consistait en une longue bande de tissus croisée sur la tunique pour la maintenir près du corps durant le travail manuel). La coule sera velue en l’hiver, légère ou usagée en été. On donnera aussi, pour couvrir les pieds, des sandales et des souliers (ces sandales, sortes de bas faits d’étoffe assez résistante, enveloppaient les pieds et étaient tenues par des lacets enroulés autour des jambes).`,
+
+248: `Les moines ne se mettront en peine ni de la couleur ni de la grossièreté de ces divers objets (la couleur noire, distinctive aujourd’hui des moines bénédictins, était considérée à l’époque comme une marque de luxe), mais se contenteront de ce qu’on pourra trouver dans le pays qu’ils habitent, ou se procurer à vil prix.`,
+
+249: `Quant à la mesure des habits, l’Abbé veillera à ce qu’ils ne soient pas trop courts mais à la taille de chacun. Quand on en recevra de neufs, on rendra toujours en même temps les vieux qui seront déposés au vestiaire pour les pauvres. Il suffit, en effet, à un moine d’avoir deux tuniques et deux coules, pour en changer la nuit et pour les faire laver. Tout ce qui serait en plus est superflu et doit être retranché. Les frères rendront également les chaussures et tout ce qui est usé, lorsqu’ils recevront du neuf.`,
+
+250: `On donnera du vestiaire des caleçons à ceux qui doivent aller en voyage ; ils les restitueront à leur retour, après les avoir lavés. Les coules et les tuniques seront un peu meilleures que celles qu’ils portent d’habitude. Avant de se mettre en route, ils les recevront du vestiaire et les restitueront au retour.`,
+
+251: `Comme garniture des lits, il suffira d’une paillasse, d’un drap (lit. saie : manteau militaire en usage chez les Romains et dont on se servait pour couvrir la paillasse), d’une couverture et d’un oreiller. L’Abbé fera souvent la visite de ces lits, de crainte qu’il ne s’y trouve un objet qu’on se serait approprié. Et celui chez qui l’on découvrirait quelque chose qu’il n’ait reçu de l’Abbé, sera soumis à une très rigoureuse correction.`,
+
+252: `Et pour que ce vice de la propriété soit coupé jusqu’à la racine, l’Abbé donnera tout ce qui est nécessaire, à savoir : une coule, une tunique, des sandales, des souliers, une ceinture, un couteau, un stylet, une aiguille, un mouchoir, des tablettes — afin d’ôter toute excuse tirée de la nécessité (il n’est pas fait mention d’un rasoir, car les moines anciens considéraient le fait de se couper la barbe comme une injure à l’œuvre du Créateur).`,
+
+253: `Cependant, l’Abbé doit toujours prendre en considération cette sentence des Actes des Apôtres : « On donnait à chacun selon ses besoins. » (Ac 4, 35) L’Abbé aura donc égard aux besoins des faibles et non à la mauvaise volonté des envieux. Il se souviendra, en toutes ses décisions, que DIEU lui en tiendra compte.`,
+
+// CHAPITRE 56 — LA TABLE DE L'ABBÉ
+
+254: `L’Abbé prendra toujours ses repas avec les hôtes et les pèlerins. Lorsque les hôtes seront moins nombreux, il pourra appeler à sa table ceux des frères qu’il voudra. Il laissera néanmoins toujours avec les frères un ou deux anciens, pour le maintien de la discipline.`,
+
+// CHAPITRE 57 — LES ARTISANS DU MONASTÈRE
+
+255: `S’il y a des artisans dans le monastère, ceux-ci exerceront leur métier en toute humilité, si l’Abbé le permet. Si l’un d’eux venait à s’enorgueillir de ce qu’il sait faire, parce qu’il semble procurer un avantage au monastère, on lui retirera l’exercice de son métier et il ne s’en occupera plus, à moins qu’il ne s’humilie et que l’Abbé ne le lui commande.`,
+
+256: `Si l’on doit vendre des ouvrages de ces artisans, ceux par les mains desquels ces objets doivent passer se garderont bien de commettre aucune fraude. Ils se souviendront toujours d’Ananie et de Saphire (ce couple, après avoir vendu une propriété pour en faire don à l’Église, décida de conserver — en la dissimulant — une partie de l’argent ; ce qui leur fit perdre la vie en face des Apôtres) (Ac 5, 1-11), de peur que la mort que ceux-ci subirent dans leur corps ne les éprouve dans leur âme, eux et tous ceux qui frauderaient avec les biens du monastère.`,
+
+257: `On veillera à ce que le mal de l’avarice ne se glisse pas dans les prix. Au contraire, on vendra toujours un peu moins cher que les séculiers, afin qu’en tout DIEU soit glorifié (1 P 4, 11).`,
+
+// CHAPITRE 58 — LA MANIÈRE DE RECEVOIR LES FRÈRES
+
+258: `Lorsque quelqu’un se présente pour embrasser la vie religieuse, on ne doit pas facilement lui accorder l’entrée ; mais on fera ce que dit l’Apôtre : « Éprouvez les esprits pour voir s’ils sont de DIEU. » (1 Jn 4, 1) Si un nouveau venu persévère à frapper à la porte, et si après quatre ou cinq jours on reconnaît qu’il est patient à supporter les rebuffades et les difficultés mises à son admission, et qu’il persiste dans sa demande, on consentira à le faire entrer et à le loger quelques jours à l’hôtellerie. Ensuite, il passera au logement des novices, où ceux-ci méditent, mangent et dorment (c’est le noviciat : bâtiment ou quartier du monastère dédié à la formation des jeunes moines).`,
+
+259: `On désignera pour lui un ancien qui soit apte à gagner les âmes et qui le surveillera avec le plus grand soin (ce moine « doté d’esprit » porte communément le nom de maître des novices). Il examinera avec sollicitude s’il cherche vraiment DIEU, s’il est attentif à l’Œuvre de DIEU, à l’obéissance et aux humiliations. On lui fera connaître toutes les choses dures et âpres par lesquelles on va à DIEU.`,
+
+260: `S’il promet de persévérer dans sa stabilité, après deux mois, on lui lira cette Règle en entier (lit. par ordre), puis on lui dira : « Voici la loi sous laquelle tu veux combattre. Si tu peux l’observer, entre ; mais si tu ne le peux pas, tu es libre de te retirer. » S’il persiste, on le reconduira au noviciat, et l’on continuera de l’éprouver en toute patience.`,
+
+261: `Au bout de six mois, on lui lira encore la Règle, afin qu’il sache bien à quoi il s’engage. S’il persévère, après quatre autres mois, on lui lira à nouveau cette même Règle. Et si après mûre délibération, il promet de la garder en tous points et d’observer tout ce qui y est commandé, alors il sera reçu dans la communauté ; mais qu’il sache aussi qu’en vertu de la loi portée par la Règle il ne lui sera plus permis de quitter le monastère à partir de ce jour, ni de secouer le joug de cette Règle, qu’après une aussi longue délibération il était à même de refuser ou d’accepter.`,
+
+262: `Avant d’être reçu, il promettra devant tous, dans l’oratoire, stabilité, vie religieuse et obéissance, en présence de DIEU et de ses Saints (ce sont les vœux monastiques : la stabilité se rapporte à une communauté et à un lieu, qui lie pour la vie — sauf cas exceptionnel — un moine à un monastère particulier ; et la vie religieuse désigne une conversion aux mœurs du moine et à son mode de vie particulier) ; afin que si un jour il faisait autrement, il serait condamné par Celui dont il se serait joué.`,
+
+263: `Il fera de cette promesse une charte au nom des Saints dont les reliques sont en ce lieu (cette demande écrite — ou pétition — est présentée par le moine à la communauté lors d’une cérémonie de profession monastique), et de l’Abbé présent. Il écrira cette charte de sa propre main ; ou s’il est illettré, un autre prié par lui l’écrira. Le novice lui-même la signera, puis il la placera de sa propre main sur l’autel. Lorsqu’il l’y aura déposée, il entonnera aussitôt ce verset : Reçois-moi, Seigneur, selon ta parole, et je vivrai ; et ne me confonds pas dans mon attente (Ps 118, 116). Toute la communauté répétera trois fois ce verset, en y ajoutant le Gloria. Le frère novice se prosternera ensuite aux pieds de chacun des frères, leur demandant de prier pour lui. À dater de ce jour, on le tiendra pour membre de la communauté.`,
+
+264: `S’il possède quelques biens, il devra préalablement ou les distribuer aux pauvres, ou les conférer par une donation solennelle au monastère, sans rien se réserver du tout ; car il sait, dès cet instant, ne plus même pouvoir disposer de son propre corps.`,
+
+265: `On le dépouillera donc immédiatement, dans l’oratoire, des habits personnels dont il était vêtu, et on le revêtira d’habits appartenant au monastère (il n’y avait donc de changement d’habit qu’à la profession ; de là vient que celui-ci fut longtemps considéré comme le symbole même de cet engagement : l’habit fait le moine). Les vêtements qu’il aura quittés seront déposés au vestiaire, pour y être conservés, afin que, si un jour, à l’instigation du diable, il se décidait — pourvu que non ! — à sortir du monastère, on puisse alors lui ôter les habits du monastère, et le chasser. On ne lui rendra pas néanmoins sa charte que l’Abbé a prise jadis sur l’autel, mais on la gardera dans le monastère.`,
+
+// CHAPITRE 59 — LES FILS DE NOBLES OU DE PAUVRES QUI SONT OFFERTS
+
+266: `Lorsque quelqu’un de noble veut offrir son fils à DIEU dans le monastère, si l’enfant est en bas âge, ses parents feront eux-mêmes la demande écrite dont nous avons parlé. Ils envelopperont cette charte et la main de l’enfant, avec l’oblation (l’offrande du pain et du vin faite lors de l’Eucharistie), dans la nappe de l’autel, et ils l’offriront ainsi.`,
+
+267: `Quant à leurs biens, ils promettront sous serment, dans la charte qu’ils présentent, de ne jamais rien lui en donner, et de ne lui fournir aucun moyen d’y avoir part, ni par eux-mêmes, ni par une personne interposée, ni d’aucune autre manière ; ou bien, s’ils ne veulent pas agir ainsi, et qu’ils veuillent cependant offrir quelque chose en aumône au monastère pour leur mérite, ils en feront don à la communauté, s’en réservant l’usufruit s’il leur plaît. Par ce moyen, on fermera toute issue, si bien qu’il ne restera plus à l’enfant rien à en attendre, ce qui ne servirait — pourvu que non ! — qu’à le tromper et à le perdre, ainsi que nous l’avons appris par expérience.`,
+
+268: `Ceux qui sont plus pauvres agiront de la même manière. Quant à ceux qui n’ont rien du tout, ils feront simplement leur charte et offriront leur fils, avec l’oblation, en présence de témoins.`,
+
+// CHAPITRE 60 — LES PRÊTRES QUI VOUDRAIENT SE FIXER DANS LE MONASTÈRE
+
+269: `Si un prêtre demande à être reçu dans le monastère, on ne l’acceptera pas trop vite. Toutefois, s’il persiste absolument dans sa demande, il faut qu’il sache qu’il sera tenu à toute la discipline de la Règle, et qu’on n’en relâchera rien en sa faveur, afin qu’on puisse lui dire, comme il est écrit : « Mon ami, dans quel dessein es-tu venu ? » (Mt 26, 50)`,
+
+270: `On lui accordera néanmoins de prendre rang après l’Abbé, de donner les bénédictions et de célébrer la Messe, si toutefois l’Abbé l’y autorise (il y avait alors très peu de moines ordonnés, et l’Abbé lui-même n’était généralement pas prêtre). Sinon, il ne doit se prévaloir de rien, sachant qu’il est soumis à la discipline régulière et qu’il se doit de donner plutôt à tous des exemples d’humilité.`,
+
+271: `S’il vient à être question dans le monastère de charge à remplir ou d’affaire à traiter, il considérera comme sienne la place que lui a valu son entrée au monastère, et non celle qu’on lui a concédée par respect pour son sacerdoce.`,
+
+272: `Si un clerc, poussé par le même désir, veut se joindre au monastère, on le placera dans un rang moyen, à condition toutefois qu’il promette, lui aussi, d’observer la Règle et de garder la stabilité.`,
   
 };
 
