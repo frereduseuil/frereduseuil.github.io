@@ -864,13 +864,13 @@ console.log("Entrée calendrier :", entreeCalendrier);
     lecture?.texte ||
     '<p class="placeholder">Texte indisponible.</p>';
 
-    commentaire.innerHTML = lecture.commentaire ||
+    commentaire.innerHTML = lecture?.commentaire ||
       '<p class="placeholder">Commentaire à venir.</p>';
 
-    meditation.innerHTML = lecture.meditation ||
+    meditation.innerHTML = lecture?.meditation ||
       '<p class="placeholder">Méditation à venir.</p>';
 
-    pratique.innerHTML = lecture.pratique ||
+    pratique.innerHTML = lecture?.pratique ||
       '<p class="placeholder">Application à venir.</p>';
 
   } else {
