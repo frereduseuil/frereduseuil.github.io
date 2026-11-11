@@ -34,6 +34,20 @@ const regleComplete = {
 
   12: `Nous allons donc constituer une école où l’on apprenne le service du Seigneur. Dans cette institution, nous espérons ne rien établir de rude ni de trop pénible. Si pourtant, guidé par un motif d’équité, nous allons jusqu’à imposer un peu de rigueur, pour corriger les vices et conserver la charité, garde-toi de fuir aussitôt — pris de terreur — la voie du salut, dont l’entrée, au début, est nécessairement étroite.`,
 
-  13: `En effet, à mesure que l’on avance dans la vie religieuse et dans la foi, le cœur se dilate et l’on se met à courir dans la voie des commandements de Dieu avec une ineffable douceur d’amour. Ainsi donc, ne nous écartant jamais de son enseignement, et persévérant en sa doctrine dans le monastère jusqu’à la mort, participons par la patience aux souffrances du Christ, afin de mériter d’avoir part également à son règne. Amen.`
+  
+  13: `En effet, à mesure que l’on avance dans la vie religieuse et dans la foi, le cœur se dilate et l’on se met à courir dans la voie des commandements de Dieu avec une ineffable douceur d’amour. Ainsi donc, ne nous écartant jamais de son enseignement, et persévérant en sa doctrine dans le monastère jusqu’à la mort, participons par la patience aux souffrances du Christ, afin de mériter d’avoir part également à son règne. Amen.`,
+
+  // CHAPITRE 1 — LES DIVERSES ESPÈCES DE MOINES
+
+  14: `Il est manifeste qu’il y a quatre espèces de moines. La première est celle des Cénobites, c’est-à-dire de ceux qui vivent dans un monastère, et combattent sous une Règle et un Abbé.`,
+
+  15: `La deuxième espèce est celle des Anachorètes ou Ermites. Ceux-ci n’en sont plus, dans la vie religieuse, à la ferveur du début : l’épreuve prolongée du monastère, jointe aux leçons et au soutien d’un grand nombre, leur a appris à lutter contre le diable. Bien exercés, ils sortent des rangs de leurs frères pour se livrer au combat singulier du désert, et assurés de pouvoir désormais se passer de l’assistance d’autrui, ils sont en état, avec l’aide de Dieu, de soutenir par leur seule main et leur seul bras la lutte contre les vices de la chair et des pensées.`,
+
+  16: `La troisième espèce de moines, vraiment détestable, est celle des Sarabaïtes (le mot est emprunté à Jean Cassien, qui l’aura trouvé en usage chez les moines d’Égypte, en partant de sa probable racine copte sarakôte : errant ou vagabond). Ils ne sont astreints à aucune règle, l’expérience seule est leur maîtresse, mais au lieu d’en être purifiés comme l’or dans la fournaise, ils en sont plutôt amollis comme le plomb. Ils témoignent par leurs œuvres de leur foi mondaine et mentent à Dieu par leur tonsure (au 6e siècle, celle-ci consistait à porter les cheveux courts, ni rasés comme ceux des prêtres égyptiens, ni trop longs comme chez les barbares). On les voit se renfermer sans pasteur deux ou trois ensemble, ou même seuls, dans leur propre bergerie et non dans celle du Seigneur. Ils n’ont d’autre loi que la satisfaction de leurs désirs ; tout ce qu’ils pensent ou préfèrent, ils le tiennent pour saint, et ce dont ils ne veulent pas, ils le regardent comme illicite.`,
+
+  17: `La quatrième espèce de moines est celle des Gyrovagues. Ils passent toute leur vie à courir de pays en pays, restant trois ou quatre jours comme hôtes dans les demeures des uns et des autres ; sans cesse errants, jamais stables, esclaves de leurs passions et des plaisirs de la bouche, enfin, pires en tout que les Sarabaïtes.`,
+
+  18: `Leur manière de vivre à tous est des plus misérables, mieux vaut se taire que d’en parler. Laissons-les donc et occupons-nous, avec l’aide du Seigneur, à régler ce qui concerne la plus forte espèce de moines, celle des Cénobites.`
 
 };
+
