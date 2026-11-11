@@ -49,5 +49,45 @@ const regleComplete = {
 
   18: `Leur manière de vivre à tous est des plus misérables, mieux vaut se taire que d’en parler. Laissons-les donc et occupons-nous, avec l’aide du Seigneur, à régler ce qui concerne la plus forte espèce de moines, celle des Cénobites.`
 
+
+  // CHAPITRE 2 — LES QUALITÉS QUE DOIT AVOIR L'ABBÉ
+
+  19: `L’Abbé jugé digne d’être à la tête d’un monastère doit se rappeler sans cesse comment on l’appelle, et porter par ses actes le nom de supérieur.`,
+
+  20: `En effet, il est considéré comme tenant dans le monastère la place du Christ, puisqu’il est appelé d’un nom employé pour désigner le Seigneur, selon ces paroles de l’Apôtre : Vous avez reçu un Esprit qui fait de vous des fils adoptifs ; et c’est en lui que nous crions : Abba !, c’est-à-dire Père (Rm 8, 15 ; Ga 4, 6).`,
+
+  21: `C’est pourquoi l’Abbé ne doit rien enseigner, rien établir ou commander qui ne soit conforme aux préceptes du Seigneur ; mais ses ordres et son enseignement doivent se répandre dans les esprits de ses disciples comme un levain de justice divine.`,
+
+  22: `L’Abbé doit se souvenir constamment qu’au redoutable jugement de Dieu il devra rendre compte de ces deux points : son enseignement et l’obéissance de ses disciples. Et qu’il sache bien qu’il sera imputé au pasteur, comme faute, tout ce que le Père de famille pourra trouver de mécompte dans ses brebis. Dans le cas où il s’agirait d’un troupeau turbulent et indocile, du moment qu’il lui aura consacré toute sa sollicitude de pasteur, s’appliquant à guérir leurs maladies spirituelles ; alors — mais alors seulement — il sera absous au jugement du Seigneur et pourra lui dire avec le prophète : Je n’ai pas caché ta justice dans mon cœur, j’ai annoncé ta vérité et ton salut (Ps 39, 11) ; mais ils n’en ont fait aucun cas et ils m’ont méprisé (Is 1, 2 ; Ez 20, 17). Et alors les brebis qui ont résisté à ses soins auront pour punition la mort même, qui aura finalement raison d’elles.`,
+
+  23: `Lorsque quelqu’un accepte le nom d’Abbé, il doit conduire ses disciples par un double enseignement : montrer tout ce qui est bon et saint par ses actes plus encore que par ses paroles. Ainsi, à ses disciples capables de le comprendre, il enseignera en paroles les commandements du Seigneur, et à ceux qui ont le cœur dur et aux simples, il fera connaître par ses actes les préceptes divins. Tout ce qu’il aura dénoncé à ses disciples comme illicite, il devra leur faire voir par sa conduite qu’il ne faut pas le faire, de peur qu’après avoir prêché aux autres, il ne soit lui-même réprouvé (1 Co 9, 27), et que Dieu ne lui dise un jour à cause de ses péchés : Pourquoi proclames-tu mes lois et déclares-tu mon alliance par ta bouche, toi qui haïssais la discipline et qui rejetais derrière toi mes paroles ? (Ps 49, 16-17) ; et encore : Toi qui voyais la paille dans l’œil de ton frère, tu n’as pas vu la poutre dans le tien (Mt 7, 3).`,
+
+  24: `Que l’Abbé ne fasse de distinction en faveur de personne dans le monastère. Que l’un ne soit pas plus aimé que l’autre, si ce n’est celui qu’il aura trouvé meilleur dans les bonnes œuvres et l’obéissance. Que l’homme libre ne soit pas préféré à celui qui sera venu de l’esclavage, à moins qu’il n’y ait à cela un autre motif raisonnable. Que si, pour un juste motif, il semble à l’Abbé qu’il doive faire cette distinction, qu’il en use ainsi à l’égard de chacun, sans considérer le rang social ; sinon, que chacun garde sa place. Car tous, l’esclave comme l’homme libre, nous sommes un dans le Christ (Ga 3, 28 ; Ep 6, 8), et nous livrons le même combat au service d’un seul Seigneur. En effet, auprès de Dieu il n’y a de partialité envers personne (Rm 2, 11 ; Col 3, 25). La seule chose qui nous distingue à ses yeux, c’est le fait d’être préférables aux autres dans les bonnes œuvres et dans l’humilité. Que l’Abbé ait donc une égale charité pour tous ; qu’il n’y ait pour tous qu’une même discipline, appliquée selon les mérites de chacun.`,
+
+  25: `Dans sa manière d’enseigner, l’Abbé doit toujours observer la forme donnée par l’Apôtre en ces termes : Reprends, supplie, menace (2 Tm 4, 2), c’est-à-dire qu’il doit varier sa manière d’agir selon les moments et les circonstances, joignant les douceurs aux menaces, montrant tantôt la sévérité d’un maître, et tantôt la tendresse d’un père. Ainsi, il lui faudra reprendre plus durement ceux qui sont indisciplinés et turbulents, tandis qu’il lui suffira d’exhorter à faire de nouveaux progrès ceux qui sont obéissants, doux et patients. Quant à ceux qui sont négligents ou dédaigneux, nous l’avertissons de les réprimander et de les corriger.`,
+
+  26: `Qu’il ne ferme pas les yeux sur les fautes des délinquants ; mais qu’il s’applique, autant qu’il le pourra, à les retrancher jusqu’à la racine, dès qu’elles commencent à paraître, se souvenant du danger auquel s’exposa Héli, le grand-prêtre de Silo : celui-ci avait négligé de corriger ses deux fils débauchés, et mourut de chagrin en apprenant leur mort brutale et la capture de l’Arche par les Philistins (1 S 2, 12-17.22-25 ; 1 S 4, 1.12-18). Ceux qui ont l’âme plus délicate et qui savent comprendre les choses, il suffira qu’il les reprenne par des paroles au moyen d’un ou deux avertissements ; mais ceux qui sont mauvais et durs de cœur, arrogants et désobéissants, il les réprimera par des coups de bâton et autres punitions corporelles, dès qu’ils commencent à mal faire, sachant qu’il est écrit : L’insensé ne se corrige pas par des paroles (Pr 29, 19) ; et encore : Frappe du bâton ton fils, et tu délivreras son âme de la mort (Pr 23, 14).`,
+
+  27: `L’Abbé doit sans cesse se souvenir de ce qu’il est, se souvenir du nom qu’il porte, et savoir qu’il est plus exigé de celui à qui il est confié davantage. Qu’il sache aussi combien est difficile et ardue la charge qu’il a reçue de conduire les âmes, et de s’accommoder aux exigences de tels caractères : pour un des douceurs, pour un autre des réprimandes, pour un autre encore de la persuasion. Il doit donc se conformer et s’adapter à tous selon les dispositions et l’intelligence de chacun, afin que non seulement il préserve de tout dommage le troupeau qui lui est confié, mais qu’il se réjouisse de l’accroissement de son bon troupeau.`,
+
+  28: `Avant tout, qu’il se garde de négliger ou de compter pour peu de chose le salut des âmes qui lui sont confiées, sans donner plus de soins aux choses passagères, terrestres et dépassées. Qu’il considère toujours que ce sont des âmes qu’il a reçues à conduire et dont il devra rendre compte. Qu’il ne prétexte pas l’insuffisance des ressources du monastère, se souvenant qu’il est écrit : Cherchez d’abord le règne de Dieu et sa justice, et le reste vous sera donné par surcroît (Mt 6, 33) ; et encore : Rien ne manque à ceux qui le craignent (Ps 33, 10).`,
+
+  29: `Qu’il sache donc bien que celui qui a reçu des âmes à conduire doit se préparer à en rendre compte. Quel que soit le nombre des frères confiés à ses soins, qu’il tienne pour certain qu’au jour du jugement il aura à répondre au Seigneur de leurs âmes à tous, en plus, sans nul doute, de la sienne propre. Ainsi, continuellement dans la crainte de l’examen qui attend le pasteur au sujet de ses brebis, ce compte qu’il doit rendre d’autrui le rendra attentif au sien, et en corrigeant autrui par ses instructions, il se corrigera lui-même de ses propres défauts.`
+
+
+  // CHAPITRE 3 — LA CONVOCATION DES FRÈRES EN CONSEIL
+
+  30: `Toutes les fois qu’il y aura dans le monastère quelque affaire importante à traiter, que l’Abbé convoque toute la communauté et expose lui-même de quoi il s’agit.`,
+
+  31: `Après avoir entendu le conseil des frères, qu’il réfléchisse en lui-même, et qu’il fasse ce qu’il aura jugé le plus utile. Si nous avons prescrit de consulter tous les frères, c’est que souvent le Seigneur révèle à un plus jeune ce qui est le meilleur.`,
+
+  32: `Les frères donneront leur conseil avec toute l’humilité et la soumission qui conviennent, et ils n’auront pas la présomption de défendre avec arrogance leur propre avis. La décision dépendra plutôt de l’Abbé : ce qu’il aura jugé le plus utile, tous lui obéiront. Mais de même qu’il convient aux disciples d’obéir au maître, de même il appartient à celui-ci de tout régler avec prévoyance et justice.`,
+
+  33: `Que tous suivent donc la Règle comme maîtresse en toutes choses, et que personne ne s’en écarte témérairement. Que nul ne suive dans le monastère la volonté de son propre cœur ; et que personne n’ait la présomption de contester avec son Abbé, ni même hors du monastère. Si quelqu’un se permet une telle audace, qu’il soit soumis à la discipline régulière.`,
+
+  34: `Toutefois, que l’Abbé fasse tout avec crainte de Dieu et dans le respect de la Règle, sachant qu’il devra certainement rendre compte de toutes ses décisions à Dieu, le juge très équitable. Si des affaires moins importantes du monastère doivent être traitées, qu’il prenne seulement le conseil des anciens, selon ce qui est écrit : Fais tout avec conseil, et après l’avoir fait, tu ne t’en repentiras pas (Si 32, 24).`
+
 };
+
+
 
