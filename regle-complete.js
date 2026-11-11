@@ -77,17 +77,19 @@ const regleComplete = {
 
   // CHAPITRE 3 — LA CONVOCATION DES FRÈRES EN CONSEIL
 
-  30: `Toutes les fois qu’il y aura dans le monastère quelque affaire importante à traiter, que l’Abbé convoque toute la communauté et expose lui-même de quoi il s’agit.`,
+ 
+  // CHAPITRE 3 — L'APPEL DES FRÈRES EN CONSEIL
 
-  31: `Après avoir entendu le conseil des frères, qu’il réfléchisse en lui-même, et qu’il fasse ce qu’il aura jugé le plus utile. Si nous avons prescrit de consulter tous les frères, c’est que souvent le Seigneur révèle à un plus jeune ce qui est le meilleur.`,
+  30: `Toutes les fois qu’il y aura dans le monastère des affaires importantes à traiter, l’Abbé convoquera toute la communauté, puis il exposera lui-même ce dont il s’agit. Après qu’il aura entendu l’avis des frères, il examinera la chose en privé et fera ensuite ce qu’il aura jugé le plus utile. Si nous avons dit que tous doivent être appelés au conseil, c’est que souvent le Seigneur révèle à un plus jeune ce qu’il y a de mieux à faire.`,
 
-  32: `Les frères donneront leur conseil avec toute l’humilité et la soumission qui conviennent, et ils n’auront pas la présomption de défendre avec arrogance leur propre avis. La décision dépendra plutôt de l’Abbé : ce qu’il aura jugé le plus utile, tous lui obéiront. Mais de même qu’il convient aux disciples d’obéir au maître, de même il appartient à celui-ci de tout régler avec prévoyance et justice.`,
+  31: `Les frères donneront leur avis en toute humilité et soumission. Ainsi, ils n’auront pas la présomption de soutenir avec arrogance leur manière de voir ; il dépendra de l’Abbé de décider selon ce qu’il jugera meilleur, et tous se soumettront à sa décision. Mais de même qu’il convient aux disciples d’obéir au maître, il faut aussi que le maître dispose tout avec prévoyance et équité.`,
 
-  33: `Que tous suivent donc la Règle comme maîtresse en toutes choses, et que personne ne s’en écarte témérairement. Que nul ne suive dans le monastère la volonté de son propre cœur ; et que personne n’ait la présomption de contester avec son Abbé, ni même hors du monastère. Si quelqu’un se permet une telle audace, qu’il soit soumis à la discipline régulière.`,
+  32: `Que tous suivent donc en tout cette maîtresse qu’est la Règle, et que personne n’ait la témérité de s’en écarter. Que nul dans le monastère ne suive la volonté de son propre cœur ; que personne non plus n’ait la présomption de contester son Abbé effrontément ou hors du monastère. Si quelqu’un ose se le permettre, qu’il soit soumis à la discipline régulière.`,
 
-  34: `Toutefois, que l’Abbé fasse tout avec crainte de Dieu et dans le respect de la Règle, sachant qu’il devra certainement rendre compte de toutes ses décisions à Dieu, le juge très équitable. Si des affaires moins importantes du monastère doivent être traitées, qu’il prenne seulement le conseil des anciens, selon ce qui est écrit : Fais tout avec conseil, et après l’avoir fait, tu ne t’en repentiras pas (Si 32, 24).`
+  33: `Néanmoins, l’Abbé doit faire toutes choses dans la crainte de Dieu et conformément à la Règle, sachant que, sans aucun doute, il devra rendre compte de toutes ses décisions à Dieu, ce juge souverainement équitable.`,
 
-};
+  34: `Quant aux affaires moins importantes, d’usage dans le monastère, l’Abbé prendra conseil des anciens seulement, selon qu’il est écrit : « Fais tout avec conseil, et après l’avoir fait, tu n’auras pas de regret » (Si 32, 24).`
 
+    };
 
 
