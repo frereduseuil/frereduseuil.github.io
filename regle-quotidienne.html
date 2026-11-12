@@ -906,9 +906,18 @@ const texteCalendrier = entreeCalendrier
   reference.textContent = lecture?.reference ||
     "Paragraphes " + entreeCalendrier.paragraphes;
 
-  regle.innerHTML = texteCalendrier ||
-    lecture?.texte ||
-    '<p class="placeholder">Texte indisponible.</p>';
+  
+regle.innerHTML = texteCalendrier ||
+  lecture?.texte ||
+  '<p class="placeholder">Texte indisponible.</p>';
+
+if (texteCalendrier || lecture?.texte) {
+  regle.insertAdjacentHTML(
+    "beforeend",
+    '<p class="source-regle">Traduction de Germain Morin, révisée par Philibert Schmitz — Source : <a href="https://la.regle.org/" target="_blank" rel="noopener noreferrer">la.regle.org</a>.</p>'
+  );
+}
+
 
     commentaire.innerHTML = lecture?.commentaire ||
       '<p class="placeholder">Commentaire à venir.</p>';
