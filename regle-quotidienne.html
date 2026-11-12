@@ -1159,14 +1159,21 @@ document.getElementById("afficher-paragraphe")
     ? `<p>${regleComplete[numero]}</p>`
     : '<p class="placeholder">Texte indisponible.</p>';
 
-  commentaire.innerHTML =
-    '<p class="placeholder">Commentaire à venir.</p>';
+  
+  const contenu = window.COMMENTAIRES_REGLE?.[numero];
 
-  meditation.innerHTML =
-    '<p class="placeholder">Méditation à venir.</p>';
+  commentaire.innerHTML = contenu?.comprendre
+    ? `<p>${contenu.comprendre}</p>`
+    : '<p class="placeholder">Commentaire à venir.</p>';
 
-  pratique.innerHTML =
-    '<p class="placeholder">Application à venir.</p>';
+  meditation.innerHTML = contenu?.mediter
+    ? `<p>${contenu.mediter}</p>`
+    : '<p class="placeholder">Méditation à venir.</p>';
+
+  pratique.innerHTML = contenu?.vivre
+    ? `<p>${contenu.vivre}</p>`
+    : '<p class="placeholder">Application à venir.</p>';
+
 
   return;
 }
