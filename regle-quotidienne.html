@@ -920,14 +920,35 @@ if (texteCalendrier || lecture?.texte) {
 }
 
 
-    commentaire.innerHTML = lecture?.commentaire ||
-      '<p class="placeholder">Commentaire à venir.</p>';
+    
+const numeroParagraphe = entreeCalendrier
+  ? Number(entreeCalendrier.paragraphes.split("-")[0])
+  : null;
 
-    meditation.innerHTML = lecture?.meditation ||
-      '<p class="placeholder">Méditation à venir.</p>';
+const nouveauCommentaire =
+  window.COMMENTAIRES_REGLE?.[numeroParagraphe];
 
-    pratique.innerHTML = lecture?.pratique ||
-      '<p class="placeholder">Application à venir.</p>';
+const mettreEnParagraphes = (texte) =>
+  texte.trim()
+    .split(/\n\s*\n/)
+    .map(p => `<p>${p.trim()}</p>`)
+    .join("");
+
+commentaire.innerHTML = nouveauCommentaire?.comprendre
+  ? mettreEnParagraphes(nouveauCommentaire.comprendre)
+  : lecture?.commentaire ||
+    '<p class="placeholder">Commentaire à venir.</p>';
+
+meditation.innerHTML = nouveauCommentaire?.mediter
+  ? mettreEnParagraphes(nouveauCommentaire.mediter)
+  : lecture?.meditation ||
+    '<p class="placeholder">Méditation à venir.</p>';
+
+pratique.innerHTML = nouveauCommentaire?.vivre
+  ? mettreEnParagraphes(nouveauCommentaire.vivre)
+  : lecture?.pratique ||
+    '<p class="placeholder">Application à venir.</p>';
+
 
   } else {
     reference.textContent = entreeCalendrier
