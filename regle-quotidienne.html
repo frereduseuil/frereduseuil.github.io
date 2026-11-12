@@ -936,14 +936,38 @@ if (texteCalendrier || lecture?.texte) {
     regle.innerHTML =
       '<p class="placeholder">Cette lecture sera ajoutée progressivement.</p>';
 
-    commentaire.innerHTML =
-      '<p class="placeholder">Commentaire à venir.</p>';
+   
+    // Recherche des commentaires selon les paragraphes du jour
+    const numeros = entreeCalendrier
+      ? entreeCalendrier.paragraphes.split("-").map(Number)
+      : [];
 
-    meditation.innerHTML =
-      '<p class="placeholder">Méditation à venir.</p>';
+    const numeroDebut = numeros[0];
 
-    pratique.innerHTML =
-      '<p class="placeholder">Application à venir.</p>';
+    const contenu = window.COMMENTAIRES_REGLE?.[numeroDebut];
+
+    // Conserve les paragraphes et les espacements
+    const formaterTexte = (texte) =>
+      texte.trim()
+        .split(/\n\s*\n/)
+        .map(p => `<p>${p.trim()}</p>`)
+        .join("");
+
+    commentaire.innerHTML = contenu?.comprendre
+      ? formaterTexte(contenu.comprendre)
+      : lecture?.commentaire ||
+        '<p class="placeholder">Commentaire à venir.</p>';
+
+    meditation.innerHTML = contenu?.mediter
+      ? formaterTexte(contenu.mediter)
+      : lecture?.meditation ||
+        '<p class="placeholder">Méditation à venir.</p>';
+
+    pratique.innerHTML = contenu?.vivre
+      ? formaterTexte(contenu.vivre)
+      : lecture?.pratique ||
+        '<p class="placeholder">Application à venir.</p>';
+
   }
 }
 
