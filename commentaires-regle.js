@@ -133,12 +133,131 @@ En fin de journée, je pourrai revenir brièvement sur cette expérience : ai-je
 L'essentiel ne sera pas d'avoir parfaitement réussi, mais d'avoir commencé à agir avec responsabilité tout en laissant à Dieu la liberté de conduire ce que j'entreprends.`
   },
 
+  
   3: {
-    titre: "Sortir du sommeil spirituel",
-    comprendre: "",
-    mediter: "",
-    vivre: ""
+    titre: "S'éveiller à la voix de Dieu",
+
+    comprendre: `Saint Benoît commence par une exhortation qui pourrait sembler sévère : « Levons-nous donc enfin ». Le mot enfin mérite toute notre attention. Il suggère que l'homme a déjà été appelé, qu'il a peut-être entendu cet appel à plusieurs reprises, mais qu'il demeure encore immobile. Il connaît le bien, il désire peut-être sincèrement se tourner vers Dieu, et pourtant quelque chose le retient. Ce n'est pas nécessairement une opposition déclarée à la volonté divine. Il peut s'agir d'une forme d'assoupissement, d'une habitude de remettre à plus tard ce que l'on reconnaît pourtant comme essentiel.
+
+La citation de saint Paul, « L'heure est venue de sortir de votre sommeil », donne à cette exhortation sa profondeur spirituelle. Le sommeil dont il est question n'est évidemment pas celui du corps, indispensable à la vie humaine, mais celui d'une conscience qui s'est progressivement habituée à vivre sans prêter attention à la présence de Dieu. L'homme peut accomplir ses obligations, travailler, entretenir des relations, prendre des décisions et même pratiquer régulièrement sa religion, tout en demeurant intérieurement endormi. Il agit, mais sans toujours interroger le sens de ses actions. Il avance, mais sans se demander vers qui il marche.
+
+Cette forme de sommeil est particulièrement difficile à reconnaître parce qu'elle n'a rien de spectaculaire. Elle ne se manifeste pas nécessairement par de grandes fautes ou par un rejet explicite de la foi. Elle peut prendre la forme d'une existence entièrement occupée par ce qui est immédiat : les tâches à accomplir, les préoccupations matérielles, les habitudes, les distractions, les projets et les inquiétudes. Peu à peu, l'essentiel risque de devenir secondaire, non parce qu'il aurait été volontairement abandonné, mais parce qu'il ne trouve plus de place dans l'attention quotidienne.
+
+Saint Benoît ne demande pas d'abord au disciple de modifier toutes les circonstances de son existence. Il lui demande de s'éveiller. Cette distinction est fondamentale. Le réveil spirituel ne consiste pas nécessairement à changer de travail, de lieu ou de manière extérieure de vivre. Il consiste à retrouver une conscience vivante de Dieu au sein même de l'existence qui nous est donnée. Une personne peut demeurer engagée dans les mêmes responsabilités tout en les habitant autrement, parce que son regard et son cœur commencent à s'orienter vers Celui qui donne sens à sa vie.
+
+Benoît poursuit : « Les yeux ouverts à la lumière divine et les oreilles attentives ». Il associe ici deux facultés spirituelles : voir et entendre. Il ne suffit pas de recevoir des informations sur Dieu ou d'accumuler des connaissances religieuses. Il faut apprendre à reconnaître sa lumière et à accueillir sa parole. Les yeux ouverts désignent une disponibilité à la vérité, même lorsqu'elle dérange notre manière habituelle de comprendre les choses. Les oreilles attentives expriment une disposition à recevoir une parole qui ne vient pas de nous et que nous ne pouvons pas entièrement maîtriser.
+
+Cette double image rappelle que la conversion chrétienne engage toute la personne. Dieu ne s'adresse pas seulement à l'intelligence, comme s'il suffisait de comprendre correctement une doctrine pour être transformé. Il rejoint également la volonté, la mémoire, les désirs et les attachements. Sa lumière révèle progressivement ce qui, dans notre existence, demeure obscur ou désordonné. Sa parole nous appelle à répondre concrètement à ce que nous avons reconnu.
+
+Mais cette lumière n'est pas d'abord une accusation. Elle est un don. Saint Benoît ne nous invite pas à ouvrir les yeux pour nous condamner nous-mêmes, mais pour découvrir la réalité à la lumière de Dieu. Voir véritablement suppose parfois de reconnaître nos contradictions, nos faiblesses et nos illusions. Cependant, cette reconnaissance n'a de sens chrétien que si elle nous conduit à revenir vers Celui qui nous appelle.
+
+La citation du psaume 94 occupe ensuite une place centrale : « Aujourd'hui, si vous entendez sa voix, n'endurcissez vos cœurs ! » Le mot décisif est aujourd'hui. Il ne renvoie pas seulement à un moment particulier de l'histoire biblique. Dans la prière de l'Église, cette parole est constamment actualisée. Chaque jour devient le lieu possible d'une rencontre avec Dieu et d'une réponse à son appel.
+
+Nous avons souvent tendance à situer notre vie spirituelle dans un autre temps que celui que nous vivons réellement. Nous pensons que nous prierons davantage lorsque nos obligations diminueront, que nous deviendrons plus patients lorsque les circonstances seront moins difficiles, ou que nous nous engagerons plus profondément lorsque nous aurons acquis une stabilité intérieure suffisante. Nous imaginons un avenir dans lequel les conditions seront enfin favorables à la fidélité.
+
+Or, saint Benoît nous rappelle que l'appel de Dieu se présente aujourd'hui. Il ne nie pas l'importance de préparer l'avenir ni la nécessité de progresser avec patience. Il nous avertit simplement que la vie avec Dieu ne peut être continuellement reportée. Le seul temps dans lequel nous pouvons réellement aimer, écouter, nous convertir et répondre est celui qui nous est donné maintenant.
+
+Cette urgence n'est pas une invitation à la précipitation. Elle ne signifie pas qu'il faudrait tout accomplir immédiatement, ni qu'une journée imparfaite constituerait une occasion définitivement perdue. L'urgence évangélique est d'une autre nature : elle nous invite à ne pas remettre à plus tard l'ouverture du cœur. Il n'est pas toujours possible de transformer immédiatement une situation, mais il est possible, dès maintenant, de consentir à la présence de Dieu et de poser un premier acte de fidélité.
+
+L'exhortation « n'endurcissez vos cœurs » approfondit encore cet enseignement. L'endurcissement ne consiste pas seulement à refuser explicitement Dieu. Il peut naître d'une résistance répétée à ce que nous avons reconnu comme vrai. Chaque fois que nous justifions systématiquement notre impatience, que nous refusons de reconnaître une erreur ou que nous cherchons à faire taire une exigence de notre conscience, nous risquons de rendre notre cœur moins disponible.
+
+L'endurcissement peut également prendre une forme plus subtile : nous enfermer dans nos propres représentations de Dieu. Nous voulons parfois qu'il parle selon nos attentes, qu'il confirme nos décisions ou qu'il nous conduise par des chemins que nous avons déjà choisis. Lorsque sa parole nous invite à autre chose, nous pouvons être tentés de ne pas l'entendre. Le cœur demeure alors extérieurement religieux, mais intérieurement moins libre.
+
+Saint Benoît ajoute : « Qui a des oreilles entende ce que l'Esprit dit aux Églises ! » Cette citation de l'Apocalypse élargit la perspective. L'écoute de Dieu ne se réduit pas à une expérience intérieure individuelle. L'Esprit parle aux Églises, c'est-à-dire à des communautés concrètes, avec leurs fidélités, leurs faiblesses et leurs responsabilités. Le disciple ne peut donc faire de son ressenti personnel l'unique mesure de la volonté divine. Il apprend à écouter la Parole de Dieu dans l'Écriture, dans la vie de l'Église, dans l'enseignement reçu et dans les exigences objectives de la charité.
+
+Cette dimension est particulièrement importante pour celui qui recherche une vie spirituelle profonde. Le silence et l'intériorité sont nécessaires, mais ils ne doivent pas conduire à un isolement dans lequel toute pensée personnelle serait considérée comme une inspiration divine. L'écoute chrétienne demande du discernement, de l'humilité et la capacité de confronter ses intuitions à une parole qui nous dépasse.
+
+La citation suivante introduit une expression qui pourrait surprendre : « Je vous enseignerai la crainte du Seigneur. » Dans le langage biblique, cette crainte ne se réduit pas à la peur d'un Dieu menaçant. Elle désigne fondamentalement une attitude de respect, de révérence et de reconnaissance devant sa sainteté. Craindre Dieu, au sens spirituel le plus profond, c'est refuser de traiter sa présence comme une réalité secondaire ou insignifiante. C'est reconnaître que notre existence se déroule devant Celui qui nous a créés et nous appelle à partager sa vie.
+
+Cette crainte est donc compatible avec l'amour. Elle peut même en être une expression. Celui qui aime véritablement ne considère pas la relation comme quelque chose d'indifférent. Il prend au sérieux ce qui pourrait la blesser. De même, la crainte du Seigneur nous rappelle que notre réponse à Dieu engage notre liberté et notre responsabilité, sans nous enfermer dans une angoisse permanente.
+
+Enfin, saint Benoît conclut ce mouvement par une exhortation particulièrement énergique : « Courez, tant que vous avez la lumière de la vie, de peur que les ténèbres de la mort ne vous saisissent ! »
+
+Le verbe courir semble presque contredire la patience et la stabilité que nous associons spontanément à la tradition bénédictine. Pourtant, il révèle une dimension essentielle de cette spiritualité. La stabilité n'est pas l'immobilité. Elle est la fidélité à un chemin sur lequel il faut avancer. Le disciple ne doit pas confondre la paix intérieure avec une installation confortable dans ses habitudes.
+
+Courir signifie ici répondre avec empressement à l'appel de Dieu. Ce n'est pas multiplier fébrilement les activités, mais ne pas différer indéfiniment la conversion. L'élan demandé par Benoît est celui de l'amour qui reconnaît la valeur du bien vers lequel il se dirige.
+
+La mention des ténèbres de la mort rappelle enfin la dimension limitée de notre existence terrestre. Le temps dont nous disposons n'est pas infini. Cette réalité ne doit pas nourrir une obsession de la mort, mais nous aider à reconnaître la valeur du présent. Nous ne savons pas combien de jours nous seront encore donnés, mais nous savons que celui-ci peut être vécu dans la lumière.
+
+Pour celui qui demeure dans le monde, ce passage possède une force particulière. La vie familiale, le travail, les responsabilités matérielles et les contraintes du quotidien peuvent donner l'impression que la véritable vie spirituelle devra toujours attendre. Saint Benoît répond précisément à cette tentation. Il n'exige pas que toutes les obligations disparaissent avant que nous puissions nous tourner vers Dieu. Il nous demande d'ouvrir les yeux et les oreilles au milieu même de notre existence.
+
+Il est possible de vivre une journée chargée dans un état de dispersion intérieure. Mais il est également possible, au milieu de cette même journée, de revenir à l'essentiel par un acte d'attention, une parole retenue, un service accompli avec amour ou un bref moment de silence.
+
+Le réveil spirituel ne consiste donc pas à accomplir davantage de choses. Il consiste d'abord à ne plus traverser sa propre vie comme si Dieu en était absent.
+
+Ainsi, ce troisième paragraphe nous place devant une question décisive : si Dieu m'appelle aujourd'hui, qu'est-ce qui, dans mon cœur, continue de répondre « demain » ?`,
+
+    mediter: `Je reconnais dans ces paroles de saint Benoît un appel qui me concerne profondément. Je désire vivre en présence de Dieu, et pourtant je constate combien il m'est facile de traverser mes journées sans lui accorder une attention véritable.
+
+Je prie, je lis, je cherche à organiser ma vie selon mes engagements. Mais il m'arrive de considérer ces moments comme des activités particulières, séparées du reste de mon existence. Une fois la prière terminée, mes préoccupations reprennent rapidement leur place. Le travail, les obligations, les projets et les inquiétudes occupent mon esprit, et je peux passer plusieurs heures sans me souvenir consciemment de Celui à qui je voudrais appartenir.
+
+Je ne rejette pas Dieu. Je l'oublie.
+
+Cet oubli me semble parfois plus difficile à combattre qu'une opposition clairement identifiée. Il s'installe discrètement dans les habitudes. Je m'occupe de ce qui doit être fait, je réponds aux sollicitations, je prépare ce qui vient ensuite. Et lorsque je m'arrête enfin, je découvre que j'ai vécu une grande partie de la journée comme si tout dépendait uniquement de moi.
+
+Saint Benoît me dit : « Levons-nous donc enfin. »
+
+Je comprends que cette parole ne m'invite pas d'abord à ajouter de nouvelles obligations à celles que je porte déjà. Elle me demande de m'éveiller intérieurement. Je peux continuer à accomplir mon travail, à servir ma famille et à répondre à mes responsabilités, mais je suis appelé à ne plus les vivre dans l'oubli de Dieu.
+
+Pourtant, je remarque combien j'ai tendance à reporter cette conversion.
+
+Je me dis que je serai plus attentif lorsque je serai moins fatigué, que je trouverai davantage de silence lorsque mes journées seront moins remplies, que je pourrai approfondir ma prière lorsque j'aurai réglé certaines difficultés. Je construis ainsi l'image d'un avenir plus favorable, dans lequel il me sera enfin possible de vivre comme je le désire.
+
+Mais cet avenir n'existe pas encore.
+
+Le seul moment dans lequel je peux répondre à Dieu est celui que je vis maintenant.
+
+Cette pensée me rejoint particulièrement lorsque je considère ma volonté personnelle. Je voudrais souvent choisir les circonstances de ma fidélité. Je préférerais que Dieu m'appelle lorsque je suis disponible, calme et disposé à l'écouter. Mais il arrive que l'occasion d'aimer se présente précisément lorsque je suis contrarié, interrompu ou fatigué.
+
+C'est alors que je découvre combien mon cœur peut s'endurcir.
+
+Je ne refuse pas nécessairement le bien. Je commence par expliquer pourquoi il serait préférable de l'accomplir plus tard, autrement ou dans de meilleures conditions. Je trouve des raisons de préserver ma tranquillité, de défendre mon jugement ou de maintenir ce que j'avais prévu.
+
+Je comprends que l'endurcissement du cœur peut commencer par ces petites résistances auxquelles je finis par ne plus prêter attention.
+
+Je ne veux pourtant pas vivre dans la crainte permanente de manquer un appel de Dieu. Ce serait encore une manière de me replier sur moi-même et de transformer la vie spirituelle en surveillance anxieuse. Je voudrais plutôt devenir plus disponible, plus attentif, plus libre.
+
+Ouvrir les yeux à la lumière divine signifie peut-être accepter de voir les choses autrement que selon mes intérêts immédiats. Une interruption peut devenir une occasion de patience. Une contrariété peut révéler un attachement. Une rencontre peut m'inviter à sortir de mes préoccupations. Un moment de silence peut me rappeler que je ne suis pas seulement celui qui travaille, organise et décide, mais un homme appelé à demeurer devant Dieu.
+
+Je voudrais également apprendre à écouter sans chercher immédiatement à interpréter chaque événement comme un message particulier. Dieu m'a déjà parlé dans l'Écriture. Il m'a donné l'Évangile, la vie de l'Église et les exigences concrètes de la charité. Je n'ai pas besoin de rechercher sans cesse des signes extraordinaires pour commencer à lui répondre.
+
+Sa parole me rejoint aujourd'hui.
+
+« N'endurcissez vos cœurs. »
+
+Je voudrais recevoir cette exhortation sans peur et sans me décourager. Même si j'ai souvent différé ma réponse, même si je suis retombé dans mes habitudes, même si ma fidélité demeure imparfaite, aujourd'hui m'est encore donné.
+
+Je peux recommencer.
+
+Saint Benoît me dit également de courir tant que j'ai la lumière de la vie. Je comprends que cette course ne doit pas être une agitation supplémentaire. Je n'ai pas à me précipiter pour accumuler les pratiques ou à vouloir atteindre immédiatement une perfection que je ne possède pas.
+
+Je suis invité à ne pas rester immobile devant le bien que j'ai reconnu.
+
+Je peux poser aujourd'hui un acte de charité que j'aurais remis à demain. Je peux demander pardon sans attendre que mon amour-propre soit entièrement apaisé. Je peux retrouver quelques instants de silence au lieu de chercher immédiatement une distraction. Je peux accueillir une responsabilité présente sans souhaiter constamment être ailleurs.
+
+Je voudrais apprendre à vivre ainsi : sans attendre une autre vie, un autre emploi du temps ou une autre disposition intérieure pour commencer à aimer Dieu.
+
+La lumière m'est donnée aujourd'hui.
+
+Et c'est aujourd'hui que je suis appelé à marcher.`,
+
+    vivre: `Aujourd'hui, je choisirai un moment ordinaire de ma journée pour m'arrêter quelques instants et reprendre intérieurement cette parole :
+
+« Aujourd'hui, si vous entendez sa voix, n'endurcissez vos cœurs. »
+
+Je ne chercherai pas à provoquer une émotion particulière ni à obtenir une réponse sensible. Je prendrai simplement conscience que cette journée, avec ses responsabilités et ses limites, est le lieu où Dieu m'appelle à vivre.
+
+Je porterai ensuite mon attention sur une bonne action que j'ai tendance à remettre à plus tard. Il pourra s'agir d'une parole de réconciliation, d'un service à rendre, d'un moment d'écoute, d'une responsabilité négligée ou d'un temps de prière régulièrement différé.
+
+Si cette action est juste et possible aujourd'hui, je l'accomplirai sans attendre des conditions idéales.
+
+En fin de journée, je pourrai me demander : ai-je vécu uniquement dans l'enchaînement de mes occupations, ou ai-je trouvé au moins un moment pour ouvrir consciemment mon cœur à la présence de Dieu ?
+
+Je ne mesurerai pas cette journée à la quantité de choses accomplies. Je chercherai simplement à reconnaître si j'ai répondu, même modestement, à l'appel qui m'était adressé.
+
+Aujourd'hui est le temps qui m'est donné pour aimer. Je n'attendrai pas demain pour commencer.`
   },
+
 
   4: {
     titre: "Choisir la vie et rechercher la paix",
