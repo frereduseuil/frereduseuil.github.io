@@ -259,7 +259,6 @@ Aujourd'hui est le temps qui m'est donné pour aimer. Je n'attendrai pas demain 
   },
 
 
-  4
   4: {
     titre: "Quel est l'homme qui veut la vie ?",
 
