@@ -355,6 +355,60 @@ footer a {
     padding: 25px;
   }
 
+  
 }
 
-    }
+  
+/* Bandeau du parcours en cours */
+
+.parcours-en-cours {
+  background: #26382f;
+  color: #fffefa;
+  text-align: center;
+  padding: 28px 20px;
+  border-top: 1px solid #b49a68;
+  border-bottom: 1px solid #b49a68;
+}
+
+.parcours-en-cours-contenu {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.parcours-en-cours-label {
+  display: block;
+  color: #b49a68;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.parcours-en-cours h2 {
+  color: #fffefa;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 0 0 8px;
+}
+
+.parcours-en-cours p {
+  color: #f5f2eb;
+  font-size: 14px;
+  margin: 0 0 18px;
+}
+
+.parcours-en-cours a {
+  display: inline-block;
+  background: #b49a68;
+  color: #26382f;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.parcours-en-cours a:hover {
+  background: #d0b782;
+}
+
+}
