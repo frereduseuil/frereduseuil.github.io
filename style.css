@@ -289,12 +289,18 @@ footer a {
     gap: 15px;
   }
 
+ 
   .card {
     min-height: auto;
   }
 
+} /* Fin des styles pour les écrans de 650px maximum */
+
+
+/* Présentation de la bibliothèque */
 
 .bibliotheque-intro {
+
   max-width: 1050px;
   margin: 65px auto 20px;
   display: grid;
