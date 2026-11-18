@@ -81,6 +81,14 @@ if ('serviceWorker' in navigator) {
   <h2>Diagnostic des notifications</h2>
   <p>Vérifions si le Compagnon peut préparer les notifications sur cet appareil.</p>
   <button type="button" id="testPush">Vérifier les notifications</button>
+
+
+<button type="button" id="abonnerPush">
+  Enregistrer cet iPhone pour les notifications
+</button>
+
+<p id="statutAbonnement" class="notice" role="status"></p>
+
   
 <button type="button" id="autoriserPush">
   Autoriser les notifications
@@ -173,5 +181,75 @@ document.getElementById('testPush').addEventListener('click', async () => {
 });
 </script>
 
+
+<script>
+const vapidPublicKey =
+  'BCwQTlIYyW_jzINrTTZnhfuTxfETlV9iyA3ealZov-Cj4RcecT-4_tPB90U6nFtOlc67Ocavs0ZB4x1ol_m_68E';
+
+function convertirCleVapid(cle) {
+  const padding = '='.repeat((4 - cle.length % 4) % 4);
+  const base64 = (cle + padding)
+    .replace(/-/g, '+')
+    .replace(/_/g, '/');
+
+  const donnees = atob(base64);
+  return Uint8Array.from(donnees, c => c.charCodeAt(0));
+}
+
+document.getElementById('abonnerPush')
+  .addEventListener('click', async () => {
+
+    const statut = document.getElementById('statutAbonnement');
+
+    if (!('serviceWorker' in navigator) ||
+        !('PushManager' in window) ||
+        !('Notification' in window)) {
+      statut.textContent = 'Web Push indisponible.';
+      return;
+    }
+
+    if (Notification.permission !== 'granted') {
+      statut.textContent =
+        'Autorise d’abord les notifications.';
+      return;
+    }
+
+    statut.textContent = 'Enregistrement en cours…';
+
+    try {
+      const registration =
+        await navigator.serviceWorker.getRegistration(
+          './compagnon.html'
+        );
+
+      if (!registration || !registration.active) {
+        statut.textContent =
+          'Service worker non prêt.';
+        return;
+      }
+
+      let abonnement =
+        await registration.pushManager.getSubscription();
+
+      if (!abonnement) {
+        abonnement =
+          await registration.pushManager.subscribe({
+            userVisibleOnly: true,
+            applicationServerKey:
+              convertirCleVapid(vapidPublicKey)
+          });
+      }
+
+      statut.textContent =
+        'Abonnement Push créé sur cet iPhone.';
+
+    } catch (erreur) {
+      statut.textContent =
+        'Échec de l’abonnement : ' + erreur.message;
+    }
+  });
+</script>
+
+  
 </body>
 </html>
