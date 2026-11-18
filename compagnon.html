@@ -81,6 +81,44 @@ if ('serviceWorker' in navigator) {
   <h2>Diagnostic des notifications</h2>
   <p>Vérifions si le Compagnon peut préparer les notifications sur cet appareil.</p>
   <button type="button" id="testPush">Vérifier les notifications</button>
+  
+<button type="button" id="autoriserPush">
+  Autoriser les notifications
+</button>
+
+<p id="statutAutorisation" class="notice" role="status"></p>
+
+<script>
+document.getElementById('autoriserPush')
+  .addEventListener('click', async () => {
+
+    const statut = document.getElementById('statutAutorisation');
+
+    if (!('Notification' in window)) {
+      statut.textContent = 'Notifications non disponibles.';
+      return;
+    }
+
+    try {
+      const permission = await Notification.requestPermission();
+
+      if (permission === 'granted') {
+        statut.textContent =
+          'Notifications autorisées sur cet appareil.';
+      } else if (permission === 'denied') {
+        statut.textContent =
+          'Notifications refusées dans les réglages.';
+      } else {
+        statut.textContent =
+          'Autorisation non accordée pour le moment.';
+      }
+    } catch (erreur) {
+      statut.textContent =
+        'Impossible de demander l’autorisation : ' + erreur.message;
+    }
+  });
+</script>
+
   <p id="resultPush" style="font-size:15px;white-space:pre-line;" role="status"></p>
 </section>
 
