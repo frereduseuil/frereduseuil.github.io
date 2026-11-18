@@ -65,5 +65,15 @@ document.getElementById('resumeQuestion').addEventListener('click',displayQuesti
 document.getElementById('missedQuestion').addEventListener('click',()=>{if(getPending()===null)return;const r=repairs[Math.floor(Math.random()*repairs.length)];const out=document.getElementById('repairResult');out.textContent='Réparation proposée, libre et sans cumul : '+r+' Tu peux l’adapter ou ne pas la faire. La question reste disponible.';out.classList.remove('hidden')});document.getElementById('newMission').addEventListener('click',displayMission);
 document.getElementById('finishExamen').addEventListener('click',()=>{const result=document.getElementById('examenResult');result.textContent='Examen terminé. Accueille avec gratitude le bien reçu, et choisis librement un geste de réparation si nécessaire. Cette réflexion n’a pas été enregistrée.';result.classList.remove('hidden')});displayQuestion();displayMission();refreshCalendar();
 </script>
+<script>
+// Préparation Web Push : enregistrement du service worker, sans demande de permission.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./compagnon-sw.js', {scope: './compagnon.html'})
+      .then(() => console.info('Compagnon : service worker prêt.'))
+      .catch(err => console.warn('Compagnon : service worker indisponible.', err));
+  });
+}
+</script>
 </body>
 </html>
