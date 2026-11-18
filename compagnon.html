@@ -75,5 +75,65 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script>
+
+  
+<section id="diagnosticPush" style="max-width:760px;margin:20px auto;padding:20px;background:#fffefa;border:1px solid #b49a68;border-radius:12px;">
+  <h2>Diagnostic des notifications</h2>
+  <p>Vérifions si le Compagnon peut préparer les notifications sur cet appareil.</p>
+  <button type="button" id="testPush">Vérifier les notifications</button>
+  <p id="resultPush" style="font-size:15px;white-space:pre-line;" role="status"></p>
+</section>
+
+<script>
+document.getElementById('testPush').addEventListener('click', async () => {
+  const output = document.getElementById('resultPush');
+  output.textContent = 'Vérification en cours…';
+
+  const results = [];
+
+  results.push(
+    'Service Worker : ' +
+    ('serviceWorker' in navigator ? 'Compatible' : 'Non compatible')
+  );
+
+  results.push(
+    'Notifications : ' +
+    ('Notification' in window ? 'Compatible' : 'Non compatible')
+  );
+
+  if ('Notification' in window) {
+    results.push('Autorisation : ' + Notification.permission);
+  }
+
+  if ('serviceWorker' in navigator) {
+    try {
+      const registration =
+        await navigator.serviceWorker.getRegistration('./compagnon.html');
+
+      results.push(
+        'Enregistrement : ' +
+        (registration ? 'Trouvé' : 'Absent')
+      );
+
+      if (registration) {
+        results.push(
+          'Service actif : ' +
+          (registration.active ? 'Oui' : 'Pas encore')
+        );
+
+        results.push(
+          'Push Manager : ' +
+          ('pushManager' in registration ? 'Disponible' : 'Indisponible')
+        );
+      }
+    } catch (error) {
+      results.push('Erreur : ' + error.message);
+    }
+  }
+
+  output.textContent = results.join('\n');
+});
+</script>
+
 </body>
 </html>
