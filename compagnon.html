@@ -267,6 +267,59 @@ document.getElementById('abonnerPush')
   });
 </script>
 
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+import {
+  getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  signOut,
+  onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAU0Q4Nwm5eCBPXxl0lMXCVzLWQ-c6sPiM",
+  authDomain: "compagnon-du-seuil.firebaseapp.com",
+  projectId: "compagnon-du-seuil",
+  storageBucket: "compagnon-du-seuil.firebasestorage.app",
+  messagingSenderId: "996390746871",
+  appId: "1:996390746871:web:ce15950ad299a42c50b1f2"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+
+const statut = document.getElementById("statutConnexion");
+const connexion = document.getElementById("connexionGoogle");
+const deconnexion = document.getElementById("deconnexionGoogle");
+
+connexion.addEventListener("click", async () => {
+  try {
+    await signInWithPopup(auth, provider);
+  } catch (erreur) {
+    statut.textContent = "Connexion impossible : " + erreur.code;
+  }
+});
+
+deconnexion.addEventListener("click", async () => {
+  await signOut(auth);
+});
+
+onAuthStateChanged(auth, utilisateur => {
+  if (utilisateur) {
+    statut.textContent = "Connecté avec Google.";
+    connexion.classList.add("hidden");
+    deconnexion.classList.remove("hidden");
+  } else {
+    statut.textContent = "Connexion non établie.";
+    connexion.classList.remove("hidden");
+    deconnexion.classList.add("hidden");
+  }
+});
+</script>
+
   
 </body>
 </html>
