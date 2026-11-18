@@ -20,6 +20,23 @@ input[type=date],input[type=time],select{font:15px Arial,sans-serif;padding:10px
 <body>
 <header><small>FRÈRE DU SEUIL</small><h1>Le Compagnon du Seuil</h1><p>Veiller · Discerner · Se convertir · Demeurer dans la paix</p></header>
 <main>
+  <section class="panel" id="connexionCompagnon">
+  <div class="eyebrow">Espace personnel</div>
+  <h2>Mon Compagnon du Seuil</h2>
+
+  <p id="statutConnexion" class="notice">
+    Connexion non établie.
+  </p>
+
+  <button type="button" id="connexionGoogle">
+    Se connecter avec Google
+  </button>
+
+  <button type="button" id="deconnexionGoogle"
+          class="secondary hidden">
+    Se déconnecter
+  </button>
+</section>
 <p class="intro">Un instrument de vigilance librement accueilli, au service de la charité et de la fidélité.</p>
 <section class="panel"><div class="eyebrow">Vigilance imprévisible — essai</div><h2>Disponibilité</h2><p id="watchStatus" class="notice">La veille est arrêtée.</p><button id="startWatch" type="button">Je suis disponible : activer la veille</button><button id="stopWatch" class="secondary" type="button" disabled>Me rendre indisponible</button><p class="notice">Pendant cet essai, les interpellations surviennent à intervalles aléatoires de 20 à 75 minutes, uniquement lorsque cette page reste ouverte et visible. Aucune notification n’est envoyée si elle est fermée. Les questions déjà en attente ne sont pas remplacées. N’active pas la veille pendant la conduite.</p></section><section class="panel" aria-labelledby="calendarTitle"><div class="eyebrow">Disponibilité hybride</div><h2 id="calendarTitle">Calendrier des indisponibilités</h2><p class="notice">Inscris ici tes périodes de travail, de sommeil ou de vie familiale. Ces plages sont enregistrées uniquement sur cet appareil. Le bouton « Me rendre indisponible » reste prioritaire.</p><div class="calendar-grid"><label>Date<input id="slotDate" type="date"></label><label>Début<input id="slotStart" type="time" value="08:00"></label><label>Fin<input id="slotEnd" type="time" value="16:00"></label></div><label for="slotReason">Motif (facultatif)</label><select id="slotReason"><option value="Travail">Travail</option><option value="Sommeil">Sommeil</option><option value="Famille">Famille</option><option value="Autre">Autre</option></select><button type="button" id="addSlot">Ajouter cette période</button><p id="slotMessage" class="notice" role="status"></p><div id="slotsList"></div><p class="notice">Pour une période passant minuit, sélectionne la date de début et une heure de fin antérieure à l'heure de début. La fin sera placée au lendemain. Cette version ne se synchronise pas avec un calendrier externe.</p></section><section class="panel" aria-labelledby="qtitle"><div class="eyebrow">Interpellation du moment</div><h2 id="qtitle">Une question pour aujourd'hui</h2><p class="question" id="question"></p><form id="questionForm"><label><input type="radio" name="reponse" value="Oui"> Oui</label><label><input type="radio" name="reponse" value="Non"> Non</label><label><input type="radio" name="reponse" value="En partie"> En partie</label><label><input type="radio" name="reponse" value="Je ne peux pas répondre maintenant"> Je ne peux pas répondre maintenant</label><label for="detail">Quelques mots, si tu le souhaites (facultatif)</label><textarea id="detail" placeholder="Pour cette démonstration, évite les confidences intimes."></textarea><button type="submit">Valider ma réponse</button></form><div id="questionResult" class="result hidden" role="status"></div><button class="secondary hidden" id="nextQuestion" type="button">Recevoir une autre question</button><button class="secondary" id="resumeQuestion" type="button">Reprendre la question en attente</button><button class="secondary" id="missedQuestion" type="button">Signaler une question oubliée</button><div id="repairResult" class="result hidden" role="status"></div><p id="pendingStatus" class="notice"></p></section>
 <section class="panel"><div class="eyebrow">Un acte concret</div><h2>Mission du moment</h2><p id="mission"></p><button id="newMission" type="button">Recevoir une mission</button><p class="notice">Ces propositions sont libres et peuvent être différées. Aucune sanction ne s'accumule.</p></section>
