@@ -129,10 +129,20 @@ async function chargerCalendrierFirebase() {
 
     // Ne pas écraser les données locales à cette étape.
     console.log('Calendrier Firebase récupéré :', donnees.periodes.length, 'période(s).');
+    // Ne pas remplacer des périodes locales différentes.
+if (slots.length > 0) {
+  message.textContent =
+    'Calendrier local conservé : vérification nécessaire avant synchronisation.';
+  return;
+}
+    // Charger les périodes récupérées depuis Firebase.
+slots = donnees.periodes;
+saveSlots();
+renderSlots();
+refreshCalendar();
 
-    message.textContent =
-      'Calendrier Firebase consulté. Récupération des périodes en préparation.';
-
+   message.textContent =
+  'Calendrier récupéré et enregistré depuis Firebase.';
   } catch (erreur) {
     console.error('Lecture du calendrier impossible :', erreur);
     message.textContent =
