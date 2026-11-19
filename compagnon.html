@@ -112,9 +112,71 @@ synchroniserCalendrier();});
 renderSlots();
 const watchStatus=document.getElementById('watchStatus');
 function updateWatch(){watchStatus.textContent=watchActive?(document.hidden?'Veille en pause : page non visible.':isCalendarBlocked()?'Veille en pause : période protégée du calendrier.':'Veille active : prochaine interpellation imprévisible.'):'Veille arrêtée : aucune nouvelle interpellation automatique.';document.getElementById('startWatch').disabled=watchActive;document.getElementById('stopWatch').disabled=!watchActive}
-function stopWatch(){watchActive=false;clearTimeout(watchTimer);watchTimer=null;updateWatch()}
+
+function stopWatch() {
+  watchActive = false;
+  clearTimeout(watchTimer);
+  watchTimer = null;
+  updateWatch();
+  synchroniserDisponibilite(false);
+}
+
+async function synchroniserDisponibilite(disponible) {
+  try {
+    const auth = window.compagnonAuth;
+    const utilisateur = auth?.currentUser;
+
+    if (!utilisateur) {
+      console.warn("Disponibilité non synchronisée : utilisateur non connecté.");
+      return false;
+    }
+
+    const token = await utilisateur.getIdToken();
+
+    const reponse = await fetch(
+      "https://europe-west1-compagnon-du-seuil.cloudfunctions.net/enregistrerDisponibilite",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer " + token
+        },
+        body: JSON.stringify({ disponible })
+      }
+    );
+
+    if (!reponse.ok) {
+      throw new Error("HTTP " + reponse.status);
+    }
+
+    console.log("Disponibilité synchronisée avec Firebase :", disponible);
+    return true;
+
+  } catch (erreur) {
+    console.error("Erreur de synchronisation de disponibilité :", erreur);
+    return false;
+  }
+}
+
 function scheduleWatch(){clearTimeout(watchTimer);if(!watchActive||document.hidden||isCalendarBlocked())return;const delay=(20+Math.floor(Math.random()*56))*60000;watchTimer=setTimeout(()=>{watchTimer=null;if(!watchActive||document.hidden||isCalendarBlocked())return;if(getPending()===null){displayQuestion();document.getElementById('qtitle').textContent='Une interpellation imprévue';document.getElementById('question').scrollIntoView({behavior:'smooth',block:'center'});}scheduleWatch()},delay)}
-document.getElementById('startWatch').addEventListener('click',()=>{watchActive=true;updateWatch();scheduleWatch()});
+
+document.getElementById('startWatch').addEventListener('click', async () => {
+  const synchronise = await synchroniserDisponibilite(true);
+
+  if (!synchronise) {
+    watchActive = false;
+    clearTimeout(watchTimer);
+    watchTimer = null;
+    updateWatch();
+    alert("Impossible d'activer la disponibilité : connexion à Firebase nécessaire.");
+    return;
+  }
+
+  watchActive = true;
+  updateWatch();
+  scheduleWatch();
+});
+;
 document.getElementById('stopWatch').addEventListener('click',stopWatch);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)clearTimeout(watchTimer);else if(watchActive&&!isCalendarBlocked())scheduleWatch();refreshCalendar()});
 const pendingKey='compagnon_pending_v2';
