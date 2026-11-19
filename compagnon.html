@@ -53,9 +53,32 @@ try{const stored=JSON.parse(localStorage.getItem(slotsKey)||'[]');if(Array.isArr
 function localDateString(d){const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`}
 function isCalendarBlocked(){const now=Date.now();return slots.some(x=>x.start<=now&&now<x.end)}
 function formatSlot(ms){return new Date(ms).toLocaleString('fr-BE',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}
-function saveSlots(){try{localStorage.setItem(slotsKey,JSON.stringify(slots))}catch(e){document.getElementById('slotMessage').textContent='Enregistrement impossible sur cet appareil.'}} 
-  
-async function synchroniserCalendrier() {
+const calendrierEnAttenteKey = 'compagnon_calendrier_en_attente_v1';
+function saveSlots() {
+  try {
+    localStorage.setItem(slotsKey, JSON.stringify(slots));
+  } catch (erreur) {
+    document.getElementById('slotMessage').textContent =
+      'Enregistrement impossible sur cet appareil.';
+  }
+}
+function marquerCalendrierEnAttente() {
+  localStorage.setItem(
+    calendrierEnAttenteKey,
+    String(Date.now()) + '-' + Math.random()
+  );
+}
+  let synchronisationCalendrierEnCours = Promise.resolve();
+function synchroniserCalendrier() {
+  synchronisationCalendrierEnCours =
+    synchronisationCalendrierEnCours
+      .catch(() => {})
+      .then(() => effectuerSynchronisationCalendrier());
+
+  return synchronisationCalendrierEnCours;
+}
+
+async function effectuerSynchronisationCalendrier() {
   const message = document.getElementById('slotMessage');
 
   try {
@@ -67,7 +90,9 @@ async function synchroniserCalendrier() {
         'Calendrier enregistré sur cet appareil. Connecte-toi avec Google pour le synchroniser.';
       return;
     }
-
+const modificationEnvoyee =
+  localStorage.getItem(calendrierEnAttenteKey);
+    const periodesEnvoyees = JSON.stringify(slots);
     const token = await utilisateur.getIdToken();
 
     const reponse = await fetch(
@@ -78,18 +103,27 @@ async function synchroniserCalendrier() {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
         },
-        body: JSON.stringify({
-          periodes: slots
-        })
+        body: '{"periodes":' + periodesEnvoyees + '}'
       }
     );
 
     if (!reponse.ok) {
-      throw new Error('HTTP ' + reponse.status);
-    }
+  throw new Error('HTTP ' + reponse.status);
+}
 
-    message.textContent =
-      'Calendrier synchronisé avec Firebase.';
+// Effacer l'indicateur uniquement si aucune
+// nouvelle modification n'est intervenue.
+if (
+  modificationEnvoyee &&
+  localStorage.getItem(calendrierEnAttenteKey) === modificationEnvoyee
+) {
+  localStorage.removeItem(calendrierEnAttenteKey);
+  message.textContent =
+    'Calendrier synchronisé avec Firebase.';
+} else {
+  message.textContent =
+    'Calendrier modifié : synchronisation à vérifier.';
+}
 
   } catch (erreur) {
     message.textContent =
@@ -130,9 +164,9 @@ async function chargerCalendrierFirebase() {
     // Ne pas écraser les données locales à cette étape.
     console.log('Calendrier Firebase récupéré :', donnees.periodes.length, 'période(s).');
     // Ne pas remplacer des périodes locales différentes.
-if (slots.length > 0) {
+if (localStorage.getItem(calendrierEnAttenteKey)) {
   message.textContent =
-    'Calendrier local conservé : vérification nécessaire avant synchronisation.';
+    'Modifications locales en attente : calendrier Firebase non chargé.';
   return;
 }
     // Charger les périodes récupérées depuis Firebase.
@@ -152,13 +186,13 @@ refreshCalendar();
 
 window.chargerCalendrierFirebase = chargerCalendrierFirebase;
 
-function renderSlots(){const target=document.getElementById('slotsList');target.replaceChildren();slots.sort((a,b)=>a.start-b.start);const relevant=slots.filter(x=>x.end>Date.now()).slice(0,30);if(!relevant.length){const p=document.createElement('p');p.className='notice';p.textContent='Aucune période future enregistrée.';target.append(p)}for(const slot of relevant){const line=document.createElement('div');line.className='slot';const span=document.createElement('span');span.textContent=`${slot.reason} · ${formatSlot(slot.start)} — ${formatSlot(slot.end)}`;const btn=document.createElement('button');btn.type='button';btn.className='secondary';btn.textContent='Supprimer';btn.addEventListener('click',()=>{slots=slots.filter(x=>x.id!==slot.id);saveSlots();
+function renderSlots(){const target=document.getElementById('slotsList');target.replaceChildren();slots.sort((a,b)=>a.start-b.start);const relevant=slots.filter(x=>x.end>Date.now()).slice(0,30);if(!relevant.length){const p=document.createElement('p');p.className='notice';p.textContent='Aucune période future enregistrée.';target.append(p)}for(const slot of relevant){const line=document.createElement('div');line.className='slot';const span=document.createElement('span');span.textContent=`${slot.reason} · ${formatSlot(slot.start)} — ${formatSlot(slot.end)}`;const btn=document.createElement('button');btn.type='button';btn.className='secondary';btn.textContent='Supprimer';btn.addEventListener('click',()=>{slots=slots.filter(x=>x.id!==slot.id);marquerCalendrierEnAttente();saveSlots();
 renderSlots();
 refreshCalendar();
 synchroniserCalendrier();});line.append(span,btn);target.append(line)}}
 function refreshCalendar(){clearTimeout(calendarTimer);if(watchActive){if(isCalendarBlocked()){clearTimeout(watchTimer);watchTimer=null}else if(!document.hidden&&!watchTimer){scheduleWatch()}}updateWatch();const now=Date.now();const next=slots.flatMap(x=>[x.start,x.end]).filter(t=>t>now).sort((a,b)=>a-b)[0];calendarTimer=setTimeout(refreshCalendar,next?Math.max(1000,Math.min(next-now+1000,60000)):60000)}
 document.getElementById('slotDate').value=localDateString(new Date());
-document.getElementById('addSlot').addEventListener('click',()=>{const date=document.getElementById('slotDate').value,start=document.getElementById('slotStart').value,end=document.getElementById('slotEnd').value,reason=document.getElementById('slotReason').value,msg=document.getElementById('slotMessage');if(!date||!start||!end){msg.textContent='Indique la date et les deux heures.';return}const a=new Date(`${date}T${start}:00`),b=new Date(`${date}T${end}:00`);if(end<=start)b.setDate(b.getDate()+1);if(!Number.isFinite(a.getTime())||!Number.isFinite(b.getTime())||b-a>24*3600000){msg.textContent='Période invalide (maximum 24 heures).';return}slots.push({id:String(Date.now())+'-'+Math.random().toString(36).slice(2),start:a.getTime(),end:b.getTime(),reason});saveSlots();
+document.getElementById('addSlot').addEventListener('click',()=>{const date=document.getElementById('slotDate').value,start=document.getElementById('slotStart').value,end=document.getElementById('slotEnd').value,reason=document.getElementById('slotReason').value,msg=document.getElementById('slotMessage');if(!date||!start||!end){msg.textContent='Indique la date et les deux heures.';return}const a=new Date(`${date}T${start}:00`),b=new Date(`${date}T${end}:00`);if(end<=start)b.setDate(b.getDate()+1);if(!Number.isFinite(a.getTime())||!Number.isFinite(b.getTime())||b-a>24*3600000){msg.textContent='Période invalide (maximum 24 heures).';return}slots.push({id:String(Date.now())+'-'+Math.random().toString(36).slice(2),start:a.getTime(),end:b.getTime(),reason});marquerCalendrierEnAttente();saveSlots();
 renderSlots();
 refreshCalendar();
 msg.textContent='Période enregistrée sur cet appareil.';
@@ -185,6 +219,9 @@ async function synchroniserDisponibilite(disponible) {
       return false;
     }
 
+    const modificationAuDebut =
+  localStorage.getItem(calendrierEnAttenteKey);
+    
     const token = await utilisateur.getIdToken();
 
     const reponse = await fetch(
