@@ -257,8 +257,42 @@ document.getElementById('abonnerPush')
           });
       }
 
-      statut.textContent =
-        'Abonnement Push créé sur cet iPhone.';
+      
+const auth = window.compagnonAuth;
+const utilisateur = auth?.currentUser;
+
+if (!utilisateur) {
+  statut.textContent =
+    'Connecte-toi avec Google avant d’enregistrer cet appareil.';
+  return;
+}
+
+const token = await utilisateur.getIdToken();
+
+const reponse = await fetch(
+  'https://europe-west1-compagnon-du-seuil.cloudfunctions.net/enregistrerAbonnement',
+  {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    },
+    body: JSON.stringify({
+      subscription: abonnement.toJSON()
+    })
+  }
+);
+
+if (!reponse.ok) {
+  throw new Error(
+    'Firebase a refusé l’enregistrement (HTTP ' +
+    reponse.status + ').'
+  );
+}
+
+statut.textContent =
+  'Cet appareil est enregistré dans Firebase. Notifications automatiques désactivées.';
+
 
     } catch (erreur) {
       statut.textContent =
