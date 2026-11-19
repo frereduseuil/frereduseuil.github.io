@@ -98,6 +98,50 @@ async function synchroniserCalendrier() {
   }
 }
 
+async function chargerCalendrierFirebase() {
+  const message = document.getElementById('slotMessage');
+
+  try {
+    const utilisateur = window.compagnonAuth?.currentUser;
+    if (!utilisateur) return;
+
+    const token = await utilisateur.getIdToken();
+
+    const reponse = await fetch(
+      'https://europe-west1-compagnon-du-seuil.cloudfunctions.net/lireIndisponibilites',
+      {
+        method: 'GET',
+        headers: {
+          'Authorization': 'Bearer ' + token
+        }
+      }
+    );
+
+    if (!reponse.ok) {
+      throw new Error('HTTP ' + reponse.status);
+    }
+
+    const donnees = await reponse.json();
+
+    if (!donnees.success || !Array.isArray(donnees.periodes)) {
+      throw new Error('Calendrier reçu invalide.');
+    }
+
+    // Ne pas écraser les données locales à cette étape.
+    console.log('Calendrier Firebase récupéré :', donnees.periodes.length, 'période(s).');
+
+    message.textContent =
+      'Calendrier Firebase consulté. Récupération des périodes en préparation.';
+
+  } catch (erreur) {
+    console.error('Lecture du calendrier impossible :', erreur);
+    message.textContent =
+      'Impossible de récupérer le calendrier Firebase.';
+  }
+}
+
+window.chargerCalendrierFirebase = chargerCalendrierFirebase;
+
 function renderSlots(){const target=document.getElementById('slotsList');target.replaceChildren();slots.sort((a,b)=>a.start-b.start);const relevant=slots.filter(x=>x.end>Date.now()).slice(0,30);if(!relevant.length){const p=document.createElement('p');p.className='notice';p.textContent='Aucune période future enregistrée.';target.append(p)}for(const slot of relevant){const line=document.createElement('div');line.className='slot';const span=document.createElement('span');span.textContent=`${slot.reason} · ${formatSlot(slot.start)} — ${formatSlot(slot.end)}`;const btn=document.createElement('button');btn.type='button';btn.className='secondary';btn.textContent='Supprimer';btn.addEventListener('click',()=>{slots=slots.filter(x=>x.id!==slot.id);saveSlots();
 renderSlots();
 refreshCalendar();
@@ -460,6 +504,9 @@ onAuthStateChanged(auth, utilisateur => {
     statut.textContent = "Connecté avec Google.";
     connexion.classList.add("hidden");
     deconnexion.classList.remove("hidden");
+    if (typeof window.chargerCalendrierFirebase === "function") {
+  window.chargerCalendrierFirebase();
+}
   } else {
     statut.textContent = "Connexion non établie.";
     connexion.classList.remove("hidden");
