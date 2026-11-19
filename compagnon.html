@@ -53,7 +53,51 @@ try{const stored=JSON.parse(localStorage.getItem(slotsKey)||'[]');if(Array.isArr
 function localDateString(d){const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`}
 function isCalendarBlocked(){const now=Date.now();return slots.some(x=>x.start<=now&&now<x.end)}
 function formatSlot(ms){return new Date(ms).toLocaleString('fr-BE',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}
-function saveSlots(){try{localStorage.setItem(slotsKey,JSON.stringify(slots))}catch(e){document.getElementById('slotMessage').textContent='Enregistrement impossible sur cet appareil.'}}
+function saveSlots(){try{localStorage.setItem(slotsKey,JSON.stringify(slots))}catch(e){document.getElementById('slotMessage').textContent='Enregistrement impossible sur cet appareil.'}} 
+  
+async function synchroniserCalendrier() {
+  const message = document.getElementById('slotMessage');
+
+  try {
+    const auth = window.compagnonAuth;
+    const utilisateur = auth?.currentUser;
+
+    if (!utilisateur) {
+      message.textContent =
+        'Calendrier enregistré sur cet appareil. Connecte-toi avec Google pour le synchroniser.';
+      return;
+    }
+
+    const token = await utilisateur.getIdToken();
+
+    const reponse = await fetch(
+      'https://europe-west1-compagnon-du-seuil.cloudfunctions.net/enregistrerIndisponibilites',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + token
+        },
+        body: JSON.stringify({
+          periodes: slots
+        })
+      }
+    );
+
+    if (!reponse.ok) {
+      throw new Error('HTTP ' + reponse.status);
+    }
+
+    message.textContent =
+      'Calendrier synchronisé avec Firebase.';
+
+  } catch (erreur) {
+    message.textContent =
+      'Calendrier conservé sur cet appareil, mais synchronisation impossible : ' +
+      erreur.message;
+  }
+}
+
 function renderSlots(){const target=document.getElementById('slotsList');target.replaceChildren();slots.sort((a,b)=>a.start-b.start);const relevant=slots.filter(x=>x.end>Date.now()).slice(0,30);if(!relevant.length){const p=document.createElement('p');p.className='notice';p.textContent='Aucune période future enregistrée.';target.append(p)}for(const slot of relevant){const line=document.createElement('div');line.className='slot';const span=document.createElement('span');span.textContent=`${slot.reason} · ${formatSlot(slot.start)} — ${formatSlot(slot.end)}`;const btn=document.createElement('button');btn.type='button';btn.className='secondary';btn.textContent='Supprimer';btn.addEventListener('click',()=>{slots=slots.filter(x=>x.id!==slot.id);saveSlots();renderSlots();refreshCalendar()});line.append(span,btn);target.append(line)}}
 function refreshCalendar(){clearTimeout(calendarTimer);if(watchActive){if(isCalendarBlocked()){clearTimeout(watchTimer);watchTimer=null}else if(!document.hidden&&!watchTimer){scheduleWatch()}}updateWatch();const now=Date.now();const next=slots.flatMap(x=>[x.start,x.end]).filter(t=>t>now).sort((a,b)=>a-b)[0];calendarTimer=setTimeout(refreshCalendar,next?Math.max(1000,Math.min(next-now+1000,60000)):60000)}
 document.getElementById('slotDate').value=localDateString(new Date());
